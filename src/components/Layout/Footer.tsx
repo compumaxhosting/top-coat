@@ -129,7 +129,7 @@ const Footer = () => (
           © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
         </p>
         <p className="text-[#818898] text-xs">
-          Premium flooring, terrazzo, and decorative concrete solutions.
+          Premium flooring, terrazzo, and decorative concrete solutions..
         </p>
       </div>
     </div>
