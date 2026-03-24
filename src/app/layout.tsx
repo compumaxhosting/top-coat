@@ -16,19 +16,73 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://topcoat-llc.com"),
+
   title: {
-    default: "TopCoat Artistry LLC",
+    default: "Epoxy Flooring & Decorative Concrete NJ | TopCoat Artistry LLC",
     template: "%s | TopCoat Artistry LLC",
   },
+
   description:
-    "TopCoat Artistry LLC provides professional decorative painting, stamped concrete, epoxy flooring, terrazzo, and custom surface solutions with precision and craftsmanship.",
+    "Top-rated epoxy flooring contractor in New Jersey specializing in terrazzo, stamped concrete, garage floor coatings, and decorative concrete. 20+ years experience. Get a free quote today.",
+
   keywords: [
-    "Decorative painting",
-    "Stamped concrete",
-    "Epoxy flooring",
-    "Terrazzo flooring",
-    "Surface finishing",
+    "epoxy flooring contractor New Jersey",
+    "decorative concrete NJ",
+    "terrazzo flooring installation NJ",
+    "stamped concrete patio NJ",
+    "garage epoxy flooring NJ",
+    "metallic epoxy flooring",
+    "concrete resurfacing NJ",
+    "commercial epoxy flooring NJ",
+    "residential epoxy floors",
+    "decorative concrete contractor Wayne NJ",
   ],
+
+  authors: [{ name: "TopCoat Artistry LLC" }],
+  creator: "TopCoat Artistry LLC",
+  publisher: "TopCoat Artistry LLC",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Epoxy Flooring & Decorative Concrete NJ | TopCoat Artistry LLC",
+    description:
+      "Premium epoxy flooring, terrazzo, and decorative concrete services across New Jersey. Durable, luxury finishes built to last.",
+    url: "https://topcoat-llc.com",
+    siteName: "TopCoat Artistry LLC",
+    images: [
+      {
+        url: "/og-image.png", // 🔥 add this image in public folder
+        width: 1200,
+        height: 630,
+        alt: "Epoxy flooring and decorative concrete in New Jersey",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Epoxy Flooring & Decorative Concrete NJ | TopCoat Artistry LLC",
+    description:
+      "Top-rated epoxy flooring contractor in NJ. متخصص in terrazzo, stamped concrete & garage coatings.",
+    images: ["/og-image.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+
   verification: {
     google: "lpZ_-TCT1nbuvHSDi3FaXuvWw0OM5RVxYz1o15FH8tU",
   },
@@ -42,6 +96,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
+        {/* GEO SEO (VERY IMPORTANT) */}
+        <meta name="geo.region" content="US-NJ" />
+        <meta name="geo.placename" content="Wayne, New Jersey" />
+        <meta name="geo.position" content="40.9487;-74.2454" />
+        <meta name="ICBM" content="40.9487, -74.2454" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-B9B54X856E"
@@ -64,6 +127,40 @@ export default function RootLayout({
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-TWZ7246B');
+          `}
+        </Script>
+
+        {/* 🔥 LOCAL BUSINESS SCHEMA (MASSIVE SEO BOOST) */}
+        <Script
+          id="local-business-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "HomeAndConstructionBusiness",
+            "name": "TopCoat Artistry LLC",
+            "url": "https://topcoat-llc.com",
+            "logo": "https://topcoat-llc.com/logo.png",
+            "image": "https://topcoat-llc.com/og-image.jpg",
+            "telephone": "+1-201-315-2633",
+            "email": "almahairi@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "108 Fairfield Rd",
+              "addressLocality": "Wayne",
+              "addressRegion": "NJ",
+              "postalCode": "07470",
+              "addressCountry": "US"
+            },
+            "areaServed": {
+              "@type": "State",
+              "name": "New Jersey"
+            },
+            "description": "Epoxy flooring contractor in New Jersey specializing in decorative concrete, terrazzo, stamped concrete, and garage floor coatings.",
+            "sameAs": []
+          }
           `}
         </Script>
       </head>
