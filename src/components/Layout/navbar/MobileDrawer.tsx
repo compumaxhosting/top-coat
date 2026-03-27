@@ -157,7 +157,7 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 								<Instagram className="size-4 transition-transform duration-300 group-hover:scale-105" />
 							</a>
 							<a
-								href="https://www.facebook.com/top.coat.artistry?mibextid=ZbWKwL"
+								href="https://www.facebook.com/topcoatllc.net/"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="Follow us on Facebook"

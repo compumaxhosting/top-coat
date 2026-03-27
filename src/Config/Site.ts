@@ -55,7 +55,7 @@ export const siteConfig = {
     },
   ] as ServiceHighlight[],
   social: {
-    facebook: "https://www.facebook.com/top.coat.artistry?mibextid=ZbWKwL",
+    facebook: "https://www.facebook.com/topcoatllc.net/",
     instagram: "https://www.instagram.com/top.coat.artistry",
   },
 };
