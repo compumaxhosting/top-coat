@@ -57,5 +57,6 @@ export const siteConfig = {
   social: {
     facebook: "https://www.facebook.com/topcoatllc.net/",
     instagram: "https://www.instagram.com/top.coat.artistry",
+    tiktok: "https://www.tiktok.com/@top.coat.artistry",
   },
 };

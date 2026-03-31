@@ -143,33 +143,56 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 						</p>
 						<div className="flex items-center gap-3 [@media(max-height:760px)]:gap-2.5">
 							<a
-								href="https://www.instagram.com/top.coat.artistry"
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="Follow us on Instagram"
-								className={cn(
-									"group flex h-9 w-9 items-center justify-center rounded-sm [@media(max-height:760px)]:h-8 [@media(max-height:760px)]:w-8",
-									"border border-white/12 bg-white/5 text-white shadow-[0_10px_24px_-18px_rgba(255,255,255,0.3)]",
-									"hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8",
-									"transition-all duration-300"
-								)}
-							>
-								<Instagram className="size-4 transition-transform duration-300 group-hover:scale-105" />
-							</a>
+									href={siteConfig.social.instagram}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Follow us on Instagram"
+									className={cn(
+										"group flex h-9 w-9 items-center justify-center rounded-sm [@media(max-height:760px)]:h-8 [@media(max-height:760px)]:w-8",
+										"border border-white/12 bg-white/5 text-white shadow-[0_10px_24px_-18px_rgba(255,255,255,0.3)]",
+										"hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8",
+										"transition-all duration-300"
+									)}
+								>
+									<Instagram className="size-4 transition-transform duration-300 group-hover:scale-105" />
+								</a>
 							<a
-								href="https://www.facebook.com/topcoatllc.net/"
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="Follow us on Facebook"
-								className={cn(
-									"group flex h-9 w-9 items-center justify-center rounded-sm [@media(max-height:760px)]:h-8 [@media(max-height:760px)]:w-8",
-									"border border-white/12 bg-white/5 text-white shadow-[0_10px_24px_-18px_rgba(255,255,255,0.3)]",
-									"hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8",
-									"transition-all duration-300"
-								)}
-							>
-								<Facebook className="size-4 transition-transform duration-300 group-hover:scale-105" />
-							</a>
+									href={siteConfig.social.facebook}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Follow us on Facebook"
+									className={cn(
+										"group flex h-9 w-9 items-center justify-center rounded-sm [@media(max-height:760px)]:h-8 [@media(max-height:760px)]:w-8",
+										"border border-white/12 bg-white/5 text-white shadow-[0_10px_24px_-18px_rgba(255,255,255,0.3)]",
+										"hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8",
+										"transition-all duration-300"
+									)}
+								>
+									<Facebook className="size-4 transition-transform duration-300 group-hover:scale-105" />
+								</a>
+														<a
+															href={siteConfig.social.tiktok}
+															target="_blank"
+															rel="noopener noreferrer"
+															aria-label="Follow us on TikTok"
+															className={cn(
+																"group flex h-9 w-9 items-center justify-center rounded-sm [@media(max-height:760px)]:h-8 [@media(max-height:760px)]:w-8",
+																"border border-white/12 bg-white/5 text-white shadow-[0_10px_24px_-18px_rgba(255,255,255,0.3)]",
+																"hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8",
+																"transition-all duration-300"
+															)}
+														>
+															{/* TikTok SVG icon */}
+															<svg
+																xmlns="http://www.w3.org/2000/svg"
+																viewBox="0 0 24 24"
+																fill="currentColor"
+																className="size-4 transition-transform duration-300 group-hover:scale-105"
+																aria-hidden="true"
+															>
+																<path d="M12.75 2.25a.75.75 0 0 1 .75-.75h2.25a.75.75 0 0 1 .75.75c0 1.52.44 2.68 1.18 3.5.74.82 1.8 1.25 2.82 1.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75c-1.13 0-2.23-.23-3.18-.7v6.7a5.25 5.25 0 1 1-5.25-5.25.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75 1.5 1.5 0 1 0 1.5 1.5V2.25Z" />
+															</svg>
+														</a>
 							<div className="h-px flex-1 bg-white/6" />
 							<a
 								href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}

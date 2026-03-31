@@ -120,7 +120,7 @@ const Footer = () => (
 
             {/* ADDRESS (VERY IMPORTANT) */}
             <a
-              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.address)}`}
+              href="https://maps.app.goo.gl/kAzRomcnvKNRFmjK8"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-start gap-3 text-[#818898] hover:text-primary transition-colors text-sm"
@@ -150,6 +150,25 @@ const Footer = () => (
                 className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8"
               >
                 <Facebook className="size-4" />
+              </a>
+
+              <a
+                href={siteConfig.social.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow TopCoat Artistry LLC on TikTok"
+                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8"
+              >
+                {/* TikTok SVG icon */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="size-4"
+                  aria-hidden="true"
+                >
+                  <path d="M12.75 2.25a.75.75 0 0 1 .75-.75h2.25a.75.75 0 0 1 .75.75c0 1.52.44 2.68 1.18 3.5.74.82 1.8 1.25 2.82 1.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75c-1.13 0-2.23-.23-3.18-.7v6.7a5.25 5.25 0 1 1-5.25-5.25.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75 1.5 1.5 0 1 0 1.5 1.5V2.25Z" />
+                </svg>
               </a>
             </div>
           </div>
