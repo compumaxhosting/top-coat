@@ -5,9 +5,9 @@ import Image from "next/image";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const galleryImages = [
-	{ src: "/Images/stampedconcrete.jpeg", alt: "Stamped concrete driveway with natural stone pattern" },
-	{ src: "/Images/Decorative.jpeg", alt: "Decorative stamped concrete patio with intricate design" },
-	{ src: "/Images/Lawn.jpeg", alt: "Stamped concrete pathway through landscaped outdoor area" },
+	{ src: "/Images/stampedconcrete.webp", alt: "Stamped concrete driveway with natural stone pattern" },
+	{ src: "/Images/Decorative.webp", alt: "Decorative stamped concrete patio with intricate design" },
+	{ src: "/Images/Lawn.webp", alt: "Stamped concrete pathway through landscaped outdoor area" },
 ];
 
 const ProjectGallery = () => {

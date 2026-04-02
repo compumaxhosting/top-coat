@@ -36,7 +36,7 @@ const AboutSection = () => {
           >
             <div className="relative overflow-hidden rounded-lg">
               <Image
-                src="/Images/building-facade2.jpeg"
+                src="/Images/building-facade2.webp"
                 alt="Decorative concrete contractor applying textured surface finish in New Jersey"
                 width={900}
                 height={1000}
@@ -61,30 +61,40 @@ const AboutSection = () => {
 
             {/* 🔥 SEO H2 */}
             <h2 className="mb-6 font-serif text-4xl font-bold text-white/90 md:text-5xl">
-              Leading Epoxy Flooring & Decorative Concrete Contractor{" "}
-              <span className="text-gradient-copper">in New Jersey</span>
+              Premium Epoxy Flooring & Decorative Concrete{" "}
+              <span className="text-gradient-copper"> in New Jersey</span>
             </h2>
 
             {/* SEO CONTENT */}
             <p className="mb-4 font-sans leading-relaxed text-white/70">
-              TopCoat Artistry LLC is a trusted epoxy flooring and decorative
-              concrete contractor in New Jersey, with over 20 years of
-              experience delivering high-performance surface solutions. We
-              specialize in epoxy flooring, terrazzo installation, stamped
-              concrete, and custom decorative finishes for residential,
-              commercial, and industrial projects.
+              TopCoat Artistry LLC is New Jersey’s premier contractor for high-end surface transformations. With over 20 years of expertise, we deliver durable, artistic concrete solutions for residential and commercial properties. From industrial-grade garage coatings to elegant interior terrazzo, we turn functional surfaces into masterpieces.
             </p>
+            <h3 className="mb-6 font-serif text-2xl font-bold text-white/90 md:text-3xl">Professional Surfacing & Masonry Services</h3>
 
             <p className="mb-8 font-sans leading-relaxed text-white/70">
-              From garage floor coatings to large-scale commercial epoxy
-              systems, our team combines craftsmanship with advanced techniques
-              like polymer-modified concrete and metallic epoxy finishes. We
-              transform ordinary surfaces into durable, visually striking spaces
-              built to last.
+              We solve common flooring issues—like cracking, moisture damage, and wear—using premium materials engineered for the Northeast climate.
             </p>
+            <ul className="mb-8 list-disc space-y-2 pl-5 text-white/70">
+              <li>
+                <strong>Epoxy Flooring & Garage Coatings:</strong> High-performance,
+                slip-resistant finishes for Newark garages and industrial basements.
+              </li>
+              <li>
+                <strong>Decorative Stamped Concrete:</strong> Elegant patterns for patios
+                and walkways that mimic stone or brick.
+              </li>
+              <li>
+                <strong>Terrazzo & Custom Concrete:</strong> Seamless, high-end interior
+                flooring for modern homes and retail spaces.
+              </li>
+              <li>
+                <strong>Building Facades:</strong> Expert masonry restoration to enhance
+                curb appeal and structural integrity.
+              </li>
+            </ul>
 
             {/* HIGHLIGHTS */}
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {/* <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {highlights.map(({ icon: Icon, text }) => (
                 <div
                   key={text}
@@ -94,7 +104,7 @@ const AboutSection = () => {
                   <span className="text-sm font-sans text-white">{text}</span>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

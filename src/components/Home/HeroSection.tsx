@@ -9,7 +9,7 @@ const HeroSection = () => (
     {/* BACKGROUND IMAGE */}
     <div className="absolute inset-0">
       <Image
-        src="/Images/Hero-section.jpeg"
+        src="/Images/Hero-section.webp"
         alt="Epoxy flooring installation in New Jersey luxury showroom with metallic finish"
         fill
         priority

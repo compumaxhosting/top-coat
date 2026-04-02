@@ -48,7 +48,7 @@ const StorySection = () => {
 				>
 					<div className="relative h-112.5 w-full overflow-hidden rounded-xl">
 						<Image
-							src="/Images/About.jpeg"
+							src="/Images/About.webp"
 							alt="TopCoat artisan crafting a decorative floor"
 							fill
 							className="object-cover"

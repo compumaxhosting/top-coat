@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://topcoat-llc.com"),
+  metadataBase: new URL("https://www.topcoat-llc.com"),
 
   title: {
     default: "Epoxy Flooring & Decorative Concrete NJ | TopCoat Artistry LLC",
@@ -24,19 +24,15 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Top-rated epoxy flooring contractor in New Jersey specializing in terrazzo, stamped concrete, garage floor coatings, and decorative concrete. 20+ years experience. Get a free quote today.",
+    "TopCoat Artistry LLC provides expert epoxy flooring and decorative concrete in Wayne, Newark, and Jersey City, NJ. 20+ years of high-end garage coatings and terrazzo.",
 
   keywords: [
-    "epoxy flooring contractor New Jersey",
-    "decorative concrete NJ",
-    "terrazzo flooring installation NJ",
-    "stamped concrete patio NJ",
-    "garage epoxy flooring NJ",
-    "metallic epoxy flooring",
-    "concrete resurfacing NJ",
-    "commercial epoxy flooring NJ",
-    "residential epoxy floors",
-    "decorative concrete contractor Wayne NJ",
+    "Epoxy Flooring NJ",
+    "Stamped Concrete NJ",
+    "Garage Floor Epoxy",
+    "Terrazzo Flooring",
+    "Decorative Concrete Newark",
+    "Wayne NJ Concrete Contractor",
   ],
 
   authors: [{ name: "TopCoat Artistry LLC" }],
@@ -48,35 +44,34 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Epoxy Flooring & Decorative Concrete NJ | TopCoat Artistry LLC",
-    description:
-      "Premium epoxy flooring, terrazzo, and decorative concrete services across New Jersey. Durable, luxury finishes built to last.",
-    url: "https://topcoat-llc.com",
+    type: "website",
+    url: "https://www.topcoat-llc.com/",
     siteName: "TopCoat Artistry LLC",
+    title: "Premium Epoxy Flooring & Decorative Concrete in New Jersey",
+    description:
+      "Transform your surfaces with TopCoat Artistry LLC. High-end epoxy, terrazzo, and stamped concrete across Newark, Wayne, and Jersey City.",
     images: [
       {
-        url: "/og-image.png", // 🔥 add this image in public folder
+        url: "/images/hero-flooring.webp",
         width: 1200,
         height: 630,
         alt: "Epoxy flooring and decorative concrete in New Jersey",
       },
     ],
     locale: "en_US",
-    type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Epoxy Flooring & Decorative Concrete NJ | TopCoat Artistry LLC",
+    title: "TopCoat Artistry LLC | NJ Concrete & Epoxy Experts",
     description:
-      "Top-rated epoxy flooring contractor in NJ. متخصص in terrazzo, stamped concrete & garage coatings.",
-    images: ["/og-image.jpg"],
+      "20+ years of durable, high-end concrete finishes in North Jersey. Get a free estimate today.",
+    images: ["/images/hero-flooring.webp"],
   },
 
   robots: {
     index: true,
     follow: true,
-    nocache: false,
     googleBot: {
       index: true,
       follow: true,
@@ -96,11 +91,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        {/* GEO SEO (VERY IMPORTANT) */}
+        {/* GEO SEO */}
         <meta name="geo.region" content="US-NJ" />
         <meta name="geo.placename" content="Wayne, New Jersey" />
-        <meta name="geo.position" content="40.9487;-74.2454" />
-        <meta name="ICBM" content="40.9487, -74.2454" />
+        <meta name="geo.position" content="40.8876;-74.2574" />
+        <meta name="ICBM" content="40.8876, -74.2574" />
+
+        {/* Theme */}
+        <meta name="theme-color" content="#ffffff" />
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
@@ -130,22 +128,22 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* 🔥 LOCAL BUSINESS SCHEMA (MASSIVE SEO BOOST) */}
+        {/* 🔥 UPDATED SCHEMA */}
         <Script
-          id="local-business-schema"
+          id="schema"
           type="application/ld+json"
           strategy="afterInteractive"
         >
           {`
           {
             "@context": "https://schema.org",
-            "@type": "HomeAndConstructionBusiness",
+            "@type": "HousePainter",
             "name": "TopCoat Artistry LLC",
-            "url": "https://topcoat-llc.com",
-            "logo": "https://topcoat-llc.com/logo.png",
-            "image": "https://topcoat-llc.com/og-image.jpg",
+            "image": "https://www.topcoat-llc.com/logo.webp",
+            "url": "https://www.topcoat-llc.com/",
             "telephone": "+1-201-315-2633",
-            "email": "almahairi@gmail.com",
+            "priceRange": "$$",
+            "description": "Leading epoxy flooring and decorative concrete contractor in New Jersey, specializing in terrazzo, stamped concrete, and garage floor coatings with over 20 years of experience.",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "108 Fairfield Rd",
@@ -154,19 +152,32 @@ export default function RootLayout({
               "postalCode": "07470",
               "addressCountry": "US"
             },
-            "areaServed": {
-              "@type": "State",
-              "name": "New Jersey"
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "40.8876",
+              "longitude": "-74.2574"
             },
-            "description": "Epoxy flooring contractor in New Jersey specializing in decorative concrete, terrazzo, stamped concrete, and garage floor coatings.",
-            "sameAs": []
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+              }
+            ],
+            "areaServed": [
+              { "@type": "City", "name": "Wayne" },
+              { "@type": "City", "name": "Newark" },
+              { "@type": "City", "name": "Paterson" },
+              { "@type": "City", "name": "Jersey City" }
+            ]
           }
           `}
         </Script>
       </head>
 
       <body className="font-sans antialiased bg-background text-foreground">
-        {/* Google Tag Manager (noscript) */}
+        {/* GTM NOSCRIPT */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TWZ7246B"

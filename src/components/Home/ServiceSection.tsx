@@ -19,7 +19,7 @@ const services: Service[] = [
   {
     title: "Epoxy Flooring NJ",
     desc: "High-performance epoxy flooring systems in New Jersey for commercial, industrial, and residential spaces. Durable, chemical-resistant, and built to last.",
-    image: "/Images/Service-Epoxy-Flooring.jpeg",
+    image: "/Images/Service-Epoxy-Flooring.webp",
     path: "/services/epoxy-flooring",
     alt: "Epoxy flooring contractor in New Jersey installing commercial epoxy floor coating",
     animationDelayClass: "delay-0",
@@ -27,7 +27,7 @@ const services: Service[] = [
   {
     title: "Terrazzo Flooring Installation",
     desc: "Luxury terrazzo flooring installation in NJ for corporate lobbies, hotels, and high-end interiors with timeless durability and elegance.",
-    image: "/Images/terrazzo.jpeg",
+    image: "/Images/terrazzo.webp",
     path: "/services/terrazzo",
     alt: "Terrazzo flooring installation in New Jersey commercial building lobby",
     animationDelayClass: "delay-100",
@@ -35,7 +35,7 @@ const services: Service[] = [
   {
     title: "Building Facade Concrete Finishes",
     desc: "Modern decorative concrete facade solutions in New Jersey using vertical overlays and textured finishes for architectural impact.",
-    image: "/Images/Building-Facade-Renovation.jpeg",
+    image: "/Images/Building-Facade-Renovation.webp",
     path: "/services/building-facades",
     alt: "Decorative concrete building facade finish in New Jersey modern architecture",
     animationDelayClass: "delay-200",
@@ -43,7 +43,7 @@ const services: Service[] = [
   {
     title: "Garage Floor Epoxy Coatings",
     desc: "Garage epoxy flooring in NJ with anti-slip coatings, decorative flakes, and high durability for residential and commercial garages.",
-    image: "/Images/garage-floor.jpg",
+    image: "/Images/garage-floor.webp",
     path: "/services/garage-floors",
     alt: "Garage epoxy flooring coating with flakes in New Jersey residential garage",
     animationDelayClass: "delay-300",
@@ -51,7 +51,7 @@ const services: Service[] = [
   {
     title: "Stamped Concrete Patios & Driveways",
     desc: "Stamped concrete in New Jersey for patios, walkways, and driveways designed to replicate stone, brick, and tile finishes.",
-    image: "/Images/Lawn.jpeg",
+    image: "/Images/Lawn.webp",
     path: "/services/stamped-concrete",
     alt: "Stamped concrete patio design in New Jersey backyard with natural stone pattern",
     animationDelayClass: "delay-500",
@@ -59,7 +59,7 @@ const services: Service[] = [
   {
     title: "Custom Decorative Concrete",
     desc: "Bespoke decorative concrete solutions in NJ including overlays, resurfacing, and artistic finishes tailored to your vision.",
-    image: "/Images/custom-concrete2.jpeg",
+    image: "/Images/custom-concrete2.webp",
     path: "/services/custom-decorative-concrete",
     alt: "Custom decorative concrete surface finish in New Jersey with artistic texture",
     animationDelayClass: "delay-700",

@@ -5,7 +5,10 @@ import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig } from "@/Config/Site";
 
 const companyLinks = [
+
+  { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
+  { label: "Services", href: "/services" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Contact", href: "/contact" },
 ];
@@ -35,7 +38,7 @@ const Footer = () => (
             aria-label="TopCoat Artistry LLC - Epoxy Flooring Contractor New Jersey Home"
           >
             <Image
-              src="/Images/TopCoat-white-logo.png"
+              src="/Images/TopCoat-white-logo.webp"
               alt="TopCoat Artistry LLC logo - Epoxy Flooring and Decorative Concrete Contractor in New Jersey"
               width={300}
               height={112}
