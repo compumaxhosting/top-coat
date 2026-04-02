@@ -55,7 +55,7 @@ export default function Navbar() {
             aria-label="TopCoat Artistry LLC - Epoxy Flooring Contractor in New Jersey Home"
           >
             <Image
-              src="/Images/TopCoat-white-logo.png"
+              src="/Images/TopCoat-white-logo.webp"
               alt="TopCoat Artistry LLC logo - Epoxy Flooring and Decorative Concrete Contractor in New Jersey"
               width={300}
               height={112}

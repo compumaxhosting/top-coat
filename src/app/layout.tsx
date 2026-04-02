@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     siteName: "TopCoat Artistry LLC",
     images: [
       {
-        url: "/og-image.png", // 🔥 add this image in public folder
+        url: "/og-image.webp", // 🔥 add this image in public folder
         width: 1200,
         height: 630,
         alt: "Epoxy flooring and decorative concrete in New Jersey",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: "Epoxy Flooring & Decorative Concrete NJ | TopCoat Artistry LLC",
     description:
       "Top-rated epoxy flooring contractor in NJ. متخصص in terrazzo, stamped concrete & garage coatings.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.webp"],
   },
 
   robots: {
@@ -142,8 +142,8 @@ export default function RootLayout({
             "@type": "HomeAndConstructionBusiness",
             "name": "TopCoat Artistry LLC",
             "url": "https://topcoat-llc.com",
-            "logo": "https://topcoat-llc.com/logo.png",
-            "image": "https://topcoat-llc.com/og-image.jpg",
+            "logo": "https://topcoat-llc.com/logo.webp",
+            "image": "https://topcoat-llc.com/og-image.webp",
             "telephone": "+1-201-315-2633",
             "email": "almahairi@gmail.com",
             "address": {

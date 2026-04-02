@@ -36,7 +36,7 @@ const AboutSection = () => {
           >
             <div className="relative overflow-hidden rounded-lg">
               <Image
-                src="/Images/building-facade2.jpeg"
+                src="/Images/building-facade2.webp"
                 alt="Decorative concrete contractor applying textured surface finish in New Jersey"
                 width={900}
                 height={1000}

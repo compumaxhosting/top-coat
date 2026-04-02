@@ -34,7 +34,7 @@ const projects: Project[] = [
     id: "terrazzo-corporate-lobby-nj",
     name: "Commercial Terrazzo Flooring – NJ Corporate Lobby",
     type: "Commercial",
-    image: "/Images/terrazzo.jpeg",
+    image: "/Images/terrazzo.webp",
     description:
       "High-end terrazzo flooring installation for corporate office lobby in New Jersey.",
     alt: "Terrazzo flooring installation in New Jersey corporate lobby",
@@ -44,7 +44,7 @@ const projects: Project[] = [
     id: "industrial-epoxy-warehouse-nj",
     name: "Industrial Epoxy Flooring – Warehouse NJ",
     type: "Industrial",
-    image: "/Images/commercial-epoxy.jpg",
+    image: "/Images/commercial-epoxy.webp",
     description:
       "Heavy-duty epoxy flooring system for large industrial warehouse in New Jersey.",
     alt: "Industrial epoxy flooring coating in New Jersey warehouse",
@@ -54,7 +54,7 @@ const projects: Project[] = [
     id: "residential-decorative-concrete-floor",
     name: "Decorative Concrete Flooring – Modern Home NJ",
     type: "Residential",
-    image: "/Images/Lawn.jpeg",
+    image: "/Images/Lawn.webp",
     description:
       "Polished decorative concrete flooring for modern residential home in NJ.",
     alt: "Decorative concrete flooring in New Jersey modern home interior",
@@ -64,7 +64,7 @@ const projects: Project[] = [
     id: "metallic-epoxy-showroom-nj",
     name: "Metallic Epoxy Showroom Floor – NJ",
     type: "Commercial",
-    image: "/Images/epoxy-flooring2.jpeg",
+    image: "/Images/epoxy-flooring2.webp",
     description:
       "Mirror-finish metallic epoxy flooring for automotive showroom in New Jersey.",
     alt: "Metallic epoxy showroom floor in New Jersey with glossy finish",
@@ -74,7 +74,7 @@ const projects: Project[] = [
     id: "building-facade-concrete-nj",
     name: "Decorative Concrete Facade – Office Building NJ",
     type: "Commercial",
-    image: "/Images/Building-Facade-Renovation.jpeg",
+    image: "/Images/Building-Facade-Renovation.webp",
     description:
       "Textured concrete facade finish for modern commercial building in NJ.",
     alt: "Decorative concrete building facade in New Jersey commercial project",
@@ -84,7 +84,7 @@ const projects: Project[] = [
     id: "stamped-concrete-patio-nj",
     name: "Stamped Concrete Patio – Backyard NJ",
     type: "Decorative",
-    image: "/Images/Decorative.jpeg",
+    image: "/Images/Decorative.webp",
     description:
       "Custom stamped concrete patio with natural stone texture in New Jersey.",
     alt: "Stamped concrete patio in New Jersey backyard with stone pattern",
@@ -94,7 +94,7 @@ const projects: Project[] = [
     id: "garage-epoxy-floor-nj",
     name: "Garage Epoxy Flooring – Residential NJ",
     type: "Residential",
-    image: "/Images/Car-parking.jpeg",
+    image: "/Images/Car-parking.webp",
     description:
       "Durable garage epoxy coating with anti-slip flakes in New Jersey home.",
     alt: "Garage epoxy flooring with flakes in New Jersey residential garage",
@@ -104,7 +104,7 @@ const projects: Project[] = [
     id: "vertical-decorative-concrete-wall",
     name: "Vertical Decorative Concrete Wall Finish",
     type: "Decorative",
-    image: "/Images/concrete-home.jpeg",
+    image: "/Images/concrete-home.webp",
     description:
       "Custom vertical concrete surface with artistic finish for interior design.",
     alt: "Decorative concrete wall finish with texture and design",
@@ -114,7 +114,7 @@ const projects: Project[] = [
     id: "custom-textured-concrete-surface",
     name: "Custom Decorative Concrete Texture – NJ",
     type: "Decorative",
-    image: "/Images/custom-home.jpeg",
+    image: "/Images/custom-home.webp",
     description:
       "Artisan decorative concrete surface with copper-infused texture.",
     alt: "Custom decorative concrete texture with artistic finish in New Jersey",
@@ -124,7 +124,7 @@ const projects: Project[] = [
     id: "church-epoxy-flooring-nj",
     name: "Church Epoxy Flooring with Glass Aggregate – NJ",
     type: "Decorative",
-    image: "/Images/church1.jpeg",
+    image: "/Images/church1.webp",
     description:
       "Eco-friendly epoxy flooring using recycled glass for vibrant church interior.",
     alt: "Church epoxy flooring with glass aggregate in New Jersey",

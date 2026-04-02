@@ -5,9 +5,9 @@ import Image from "next/image";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const galleryImages = [
-	{ src: "/Images/Car-parking.jpeg", alt: "Coated garage floor with parked vehicles" },
-	{ src: "/Images/epoxy-flooring2.jpeg", alt: "Glossy epoxy garage floor with metallic finish" },
-	{ src: "/Images/commercial-epoxy.jpg", alt: "High-performance floor coating in a commercial garage" },
+	{ src: "/Images/Car-parking.webp", alt: "Coated garage floor with parked vehicles" },
+	{ src: "/Images/epoxy-flooring2.webp", alt: "Glossy epoxy garage floor with metallic finish" },
+	{ src: "/Images/commercial-epoxy.webp", alt: "High-performance floor coating in a commercial garage" },
 ];
 
 const ProjectGallery = () => {
