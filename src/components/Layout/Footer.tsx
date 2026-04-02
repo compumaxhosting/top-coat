@@ -127,7 +127,7 @@ const Footer = () => (
               aria-label="TopCoat Artistry LLC location in Wayne New Jersey on Google Maps"
             >
               <MapPin className="w-4 h-4 text-primary mt-0.5" />
-              <span>{siteConfig.address}, Wayne, NJ</span>
+              <span>{siteConfig.address}</span>
             </a>
 
             {/* SOCIAL */}
