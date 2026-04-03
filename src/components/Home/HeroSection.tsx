@@ -5,7 +5,7 @@ import { ArrowRight, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => (
-  <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-24 lg:pt-28 pb-5">
+  <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-18 lg:pt-28 pb-5">
     {/* BACKGROUND IMAGE */}
     <div className="absolute inset-0">
       <Image
@@ -13,10 +13,11 @@ const HeroSection = () => (
         alt="Epoxy flooring installation in New Jersey luxury showroom with metallic finish"
         fill
         priority
+        quality={60}
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-linear-to-r from-black/75 via-black/45 to-black/65" />
-      <div className="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-black/70 to-transparent sm:h-36" />
+      <div className="absolute inset-0 bg-linear-to-r from-transparent via-black/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-black/30 to-transparent sm:h-36" />
     </div>
 
     <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/50 to-transparent" />
@@ -30,7 +31,7 @@ const HeroSection = () => (
         </p>
 
         {/* 🔥 MAIN H1 (CRITICAL FOR SEO) */}
-        <h1 className="mb-6 text-5xl leading-[1.08] font-bold font-serif text-white/95 md:text-7xl lg:text-8xl">
+        <h1 className="mb-6 text-4xl leading-[1.08] font-bold font-serif text-white/95 md:text-5xl lg:text-6xl">
           Epoxy Flooring & Decorative Concrete{" "}
           <span className="text-gradient-copper">in New Jersey</span>
         </h1>
@@ -54,7 +55,7 @@ const HeroSection = () => (
             </Button>
           </Link>
 
-          <Link href="/#portfolio">
+          <Link href="/portfolio">
             <Button
               size="lg"
               variant="outline"

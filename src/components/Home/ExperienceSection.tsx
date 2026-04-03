@@ -70,7 +70,7 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[#14161A] py-16" ref={ref}>
+    <section className="relative overflow-hidden bg-[#14161A] py-16 md:py-20" ref={ref}>
       {/* Lines */}
       <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/40 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/40 to-transparent" />

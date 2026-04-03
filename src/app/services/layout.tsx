@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "TopCoat Artistry LLC",
     images: [
       {
-        url: "/images/services-portfolio.jpg",
+        url: "https://www.topcoat-llc.com/Images/Hero-section.webp",
         width: 1200,
         height: 630,
         alt: "Epoxy and decorative concrete services",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "NJ's Best Epoxy & Stamped Concrete Services",
     description:
       "Transform your space with TopCoat Artistry LLC. Serving Wayne, Newark, and Jersey City with 20+ years of flooring expertise.",
-    images: ["/images/services-portfolio.jpg"],
+    images: ["https://www.topcoat-llc.com/Images/Hero-section.webp"],
   },
 };
 

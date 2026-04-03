@@ -33,7 +33,7 @@ const CoreValuesSection = () => {
 		useScrollAnimation<HTMLDivElement>();
 
 	return (
-		<section className="bg-[#14161A] py-20">
+		<section className="bg-[#14161A] py-12">
 			<div className="container mx-auto px-4">
 				{/* Heading */}
 				<div

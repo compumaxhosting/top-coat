@@ -52,7 +52,7 @@ export const metadata: Metadata = {
       "Transform your surfaces with TopCoat Artistry LLC. High-end epoxy, terrazzo, and stamped concrete across Newark, Wayne, and Jersey City.",
     images: [
       {
-        url: "/images/hero-flooring.webp",
+        url: "/Images/hero-epoxy.webp",
         width: 1200,
         height: 630,
         alt: "Epoxy flooring and decorative concrete in New Jersey",
@@ -66,20 +66,21 @@ export const metadata: Metadata = {
     title: "TopCoat Artistry LLC | NJ Concrete & Epoxy Experts",
     description:
       "20+ years of durable, high-end concrete finishes in North Jersey. Get a free estimate today.",
-    images: ["/images/hero-flooring.webp"],
+    images: ["/Images/hero-epoxy.webp"],
   },
 
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
   },
 
   verification: {
     google: "lpZ_-TCT1nbuvHSDi3FaXuvWw0OM5RVxYz1o15FH8tU",
+  },
+
+  // ✅ Pinterest Verification Added
+  other: {
+    "p:domain_verify": "596afcb1388c302e37d8afe7bbce01f0",
   },
 };
 
@@ -120,15 +121,18 @@ export default function RootLayout({
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            (function(w,d,s,l,i){w[l]=w[l]||[];
+            w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;
+            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-TWZ7246B');
           `}
         </Script>
 
-        {/* 🔥 UPDATED SCHEMA */}
+        {/* SCHEMA */}
         <Script
           id="schema"
           type="application/ld+json"
@@ -139,11 +143,11 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "HousePainter",
             "name": "TopCoat Artistry LLC",
-            "image": "https://www.topcoat-llc.com/logo.webp",
+            "image": "https://www.topcoat-llc.com/Images/TopCoat-white-logo.webp",
             "url": "https://www.topcoat-llc.com/",
             "telephone": "+1-201-315-2633",
             "priceRange": "$$",
-            "description": "Leading epoxy flooring and decorative concrete contractor in New Jersey, specializing in terrazzo, stamped concrete, and garage floor coatings with over 20 years of experience.",
+            "description": "Leading epoxy flooring and decorative concrete contractor in New Jersey with 20+ years experience.",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "108 Fairfield Rd",
@@ -184,7 +188,7 @@ export default function RootLayout({
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
+          />
         </noscript>
 
         {children}

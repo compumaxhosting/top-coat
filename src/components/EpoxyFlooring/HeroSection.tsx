@@ -16,7 +16,7 @@ const HeroSection = () => {
 				<p className="mb-3 font-sans text-sm uppercase tracking-[0.3em] text-white/90">
 					Industrial &amp; Commercial Solutions
 				</p>
-				<h1 className="font-serif text-4xl font-bold text-white/95 md:text-6xl">Epoxy Flooring</h1>
+				<h2 className="font-serif text-4xl font-bold text-white/95 md:text-6xl">Epoxy Flooring</h2>
 			</div>
 		</section>
 	);

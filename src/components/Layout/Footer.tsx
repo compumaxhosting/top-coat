@@ -14,10 +14,11 @@ const companyLinks = [
 ];
 
 const servicesLinks = [
-  { label: "Epoxy Flooring NJ", href: "/services/epoxy-flooring" },
-  { label: "Stamped Concrete NJ", href: "/services/stamped-concrete" },
-  { label: "Garage Floor Epoxy", href: "/services/garage-floors" },
+  { label: "Epoxy Flooring", href: "/services/epoxy-flooring" },
   { label: "Terrazzo Flooring", href: "/services/terrazzo" },
+  { label: "Building Facade", href: "/services/building-facades" },
+  { label: "Garage Floor Epoxy", href: "/services/garage-floors" },
+  { label: "Stamped Concrete", href: "/services/stamped-concrete" },
   {
     label: "Decorative Concrete",
     href: "/services/custom-decorative-concrete",
@@ -104,25 +105,25 @@ const Footer = () => (
 
           <div className="space-y-3">
             {/* PHONE */}
-            <a
+            <Link
               href={formatPhoneHref(siteConfig.phone)}
               className="flex items-center gap-3 text-[#818898] hover:text-primary transition-colors text-sm"
             >
               <Phone className="w-4 h-4 text-primary" />
               {siteConfig.phone}
-            </a>
+            </Link>
 
             {/* EMAIL */}
-            <a
+            <Link
               href={`mailto:${siteConfig.email}`}
               className="flex items-center gap-3 text-[#818898] hover:text-primary transition-colors text-sm"
             >
               <Mail className="w-4 h-4 text-primary" />
               {siteConfig.email}
-            </a>
+            </Link>
 
             {/* ADDRESS (VERY IMPORTANT) */}
-            <a
+            <Link
               href="https://maps.app.goo.gl/kAzRomcnvKNRFmjK8"
               target="_blank"
               rel="noopener noreferrer"
@@ -131,11 +132,11 @@ const Footer = () => (
             >
               <MapPin className="w-4 h-4 text-primary mt-0.5" />
               <span>{siteConfig.address}</span>
-            </a>
+            </Link>
 
             {/* SOCIAL */}
             <div className="flex items-center gap-3 pt-2">
-              <a
+              <Link
                 href={siteConfig.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -143,9 +144,9 @@ const Footer = () => (
                 className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8"
               >
                 <Instagram className="size-4" />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href={siteConfig.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -153,9 +154,9 @@ const Footer = () => (
                 className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8"
               >
                 <Facebook className="size-4" />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href={siteConfig.social.tiktok}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -172,7 +173,7 @@ const Footer = () => (
                 >
                   <path d="M12.75 2.25a.75.75 0 0 1 .75-.75h2.25a.75.75 0 0 1 .75.75c0 1.52.44 2.68 1.18 3.5.74.82 1.8 1.25 2.82 1.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75c-1.13 0-2.23-.23-3.18-.7v6.7a5.25 5.25 0 1 1-5.25-5.25.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75 1.5 1.5 0 1 0 1.5 1.5V2.25Z" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
