@@ -70,7 +70,7 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[#14161A] py-16 md:py-20" ref={ref}>
+    <section className="relative overflow-hidden bg-[#14161A] py-14 md:py-16" ref={ref}>
       {/* Lines */}
       <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/40 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/40 to-transparent" />
@@ -82,12 +82,12 @@ const ExperienceSection = () => {
             Our Experience
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-white/90 mb-6">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white/90 mb-6">
             20+ Years of Epoxy Flooring & Decorative Concrete{" "}
             <span className="text-gradient-copper">in New Jersey</span>
           </h2>
 
-          <p className="text-white/90 max-w-2xl mx-auto font-sans leading-relaxed">
+          <p className="text-white/90 max-w-3xl mx-auto font-sans leading-relaxed">
             With over two decades of experience in epoxy flooring, terrazzo
             installation, and decorative concrete services in New Jersey, we
             have completed hundreds of residential, commercial, and industrial

@@ -5,7 +5,6 @@ import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig } from "@/Config/Site";
 
 const companyLinks = [
-
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/services" },
@@ -25,11 +24,12 @@ const servicesLinks = [
   },
 ];
 
-const formatPhoneHref = (phone: string) => `tel:${phone.replace(/\s+/g, "")}`;
+const formatPhoneHref = (phone: string) =>
+  `tel:${phone.replace(/\s+/g, "")}`;
 
 const Footer = () => (
   <footer className="bg-secondary border-t border-[#282c33]">
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mx-auto px-4 pt-16 pb-6 md:pb-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* BRAND */}
         <div>
@@ -49,13 +49,14 @@ const Footer = () => (
 
           <p className="text-[#818898] text-sm leading-relaxed mb-6">
             TopCoat Artistry LLC is a leading epoxy flooring and decorative
-            concrete contractor in New Jersey, specializing in terrazzo, stamped
-            concrete, garage floor coatings, and custom surface solutions. Over
-            20 years of experience delivering durable, high-end finishes.
+            concrete contractor in New Jersey, specializing in terrazzo,
+            stamped concrete, garage floor coatings, and custom surface
+            solutions. Over 20 years of experience delivering durable,
+            high-end finishes.
           </p>
 
           <p className="text-primary italic font-serif text-sm">
-            &quot; If You Can Imagine It, We Can Build It. &quot;
+            &quot; If&nbsp;You Can Imagine It, We Can Build It. &quot;
           </p>
         </div>
 
@@ -97,14 +98,13 @@ const Footer = () => (
           </ul>
         </div>
 
-        {/* CONTACT (NAP SEO BOOST) */}
+        {/* CONTACT */}
         <div>
           <h4 className="font-sans font-semibold text-[#efece7] uppercase tracking-widest text-sm mb-4">
             Contact
           </h4>
 
           <div className="space-y-3">
-            {/* PHONE */}
             <Link
               href={formatPhoneHref(siteConfig.phone)}
               className="flex items-center gap-3 text-[#818898] hover:text-primary transition-colors text-sm"
@@ -113,7 +113,6 @@ const Footer = () => (
               {siteConfig.phone}
             </Link>
 
-            {/* EMAIL */}
             <Link
               href={`mailto:${siteConfig.email}`}
               className="flex items-center gap-3 text-[#818898] hover:text-primary transition-colors text-sm"
@@ -122,13 +121,11 @@ const Footer = () => (
               {siteConfig.email}
             </Link>
 
-            {/* ADDRESS (VERY IMPORTANT) */}
             <Link
               href="https://maps.app.goo.gl/kAzRomcnvKNRFmjK8"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-start gap-3 text-[#818898] hover:text-primary transition-colors text-sm"
-              aria-label="TopCoat Artistry LLC location in Wayne New Jersey on Google Maps"
             >
               <MapPin className="w-4 h-4 text-primary mt-0.5" />
               <span>{siteConfig.address}</span>
@@ -140,8 +137,7 @@ const Footer = () => (
                 href={siteConfig.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Follow TopCoat Artistry LLC on Instagram"
-                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8"
+                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5"
               >
                 <Instagram className="size-4" />
               </Link>
@@ -150,8 +146,7 @@ const Footer = () => (
                 href={siteConfig.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Follow TopCoat Artistry LLC on Facebook"
-                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8"
+                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5"
               >
                 <Facebook className="size-4" />
               </Link>
@@ -160,16 +155,13 @@ const Footer = () => (
                 href={siteConfig.social.tiktok}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Follow TopCoat Artistry LLC on TikTok"
-                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/8"
+                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5"
               >
-                {/* TikTok SVG icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                   className="size-4"
-                  aria-hidden="true"
                 >
                   <path d="M12.75 2.25a.75.75 0 0 1 .75-.75h2.25a.75.75 0 0 1 .75.75c0 1.52.44 2.68 1.18 3.5.74.82 1.8 1.25 2.82 1.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75c-1.13 0-2.23-.23-3.18-.7v6.7a5.25 5.25 0 1 1-5.25-5.25.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75 1.5 1.5 0 1 0 1.5 1.5V2.25Z" />
                 </svg>
@@ -179,16 +171,15 @@ const Footer = () => (
         </div>
       </div>
 
-      {/* BOTTOM */}
-      <div className="border-t border-[#282c33] mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-[#818898] text-xs">
-          © {new Date().getFullYear()} TopCoat Artistry LLC. Epoxy Flooring &
-          Decorative Concrete Contractor in New Jersey.
-        </p>
+      {/* BOTTOM CENTERED */}
+      <div className="border-t border-[#282c33] mt-12 pt-6 text-center">
+        <Link
+          href="https://www.topcoat-llc.com/"
+          className="text-copper-light text-xs hover:underline"
+        >
+          © {new Date().getFullYear()} TopCoat Artistry LLC.
+        </Link>
 
-        <p className="text-[#818898] text-xs">
-          Serving Wayne NJ, Newark, Paterson, Jersey City & surrounding areas.
-        </p>
       </div>
     </div>
   </footer>

@@ -70,7 +70,7 @@ const ServicesSection = () => {
   const { ref, isVisible } = useScrollAnimation<HTMLElement>();
 
   return (
-    <section id="services" className=" py-16 md:py-20 bg-[#0D0F12]" ref={ref}>
+    <section id="services" className="py-14 md:py-16 bg-[#0D0F12]" ref={ref}>
       <div className="container mx-auto px-4">
         {/* HEADER */}
         <div className="text-center mb-16">
@@ -79,7 +79,7 @@ const ServicesSection = () => {
           </p>
 
           {/* 🔥 SEO H2 */}
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-white/90">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white/90">
             Epoxy Flooring & Decorative Concrete Services{" "}
             <span className="text-gradient-copper">in New Jersey</span>
           </h2>

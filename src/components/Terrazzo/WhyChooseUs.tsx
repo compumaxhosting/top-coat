@@ -27,13 +27,10 @@ const WhyChooseUs = () => {
 				<div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
 					<div className={`transition-all duration-700 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}>
 						<h2 className="mb-6 font-serif text-3xl font-bold text-white/90">
-							Why Choose Our <span className="text-gradient-copper">Terrazzo</span>
+							Professional Terrazzo Flooring Services in <br /><span className="text-gradient-copper">Wayne & North Jersey</span>
 						</h2>
 						<p className="mb-4 font-sans leading-relaxed text-white/70">
-							Terrazzo has been used in prestigious buildings for centuries, and the reason is
-							simple — nothing else combines that level of design freedom with the kind of
-							durability that outlasts the building itself. We bring that same craft to every
-							project, whether it&apos;s a corporate lobby, a church, or a luxury home.
+							TopCoat Artistry LLC is the premier choice for elegant, high-performance terrazzo flooring in Wayne, NJ. We specialize in both modern terrazzo floor installation services and precision terrazzo floor restoration services for residential and commercial properties. Serving Newark, Paterson, Jersey City, and the greater Passaic County area, we bring artistry and durability to every square foot.
 						</p>
 						<p className="mb-4 font-sans leading-relaxed text-white/70">
 							Our team designs each terrazzo floor from scratch using your chosen aggregates,

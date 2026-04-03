@@ -24,7 +24,7 @@ const AboutSection = () => {
   const { ref, isVisible } = useScrollAnimation<HTMLElement>();
 
   return (
-    <section className="bg-[#14161a] py-16 md:py-20" ref={ref}>
+    <section className="bg-[#14161a] py-14 md:py-16" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
         <div className="grid grid-cols-1 items-center gap-6 md:gap-16 lg:grid-cols-2">
           {/* IMAGE */}

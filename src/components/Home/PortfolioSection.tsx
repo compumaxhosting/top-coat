@@ -140,7 +140,7 @@ const PortfolioSection = () => {
     active === "All" ? projects : projects.filter((p) => p.type === active);
 
   return (
-    <section id="portfolio" className="bg-[#0D0F12]  py-16 md:py-20" ref={ref}>
+    <section id="portfolio" className="bg-[#0D0F12] py-14 md:py-16" ref={ref}>
       <div className="container mx-auto px-4">
         {/* HEADER */}
         <div className="text-center mb-12">
@@ -149,7 +149,7 @@ const PortfolioSection = () => {
           </p>
 
           {/* 🔥 SEO H2 */}
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-white/90">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white/90">
             Epoxy Flooring & Decorative Concrete Projects{" "}
             <span className="text-gradient-copper">in New Jersey</span>
           </h2>

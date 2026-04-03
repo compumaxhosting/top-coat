@@ -16,28 +16,25 @@ const HeroSection = () => (
         quality={60}
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-linear-to-r from-transparent via-black/30 to-transparent" />
-      <div className="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-black/30 to-transparent sm:h-36" />
     </div>
 
-    <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/50 to-transparent" />
 
     {/* CONTENT */}
-    <div className="relative z-10 container mx-auto px-4 text-center">
-      <div className="mx-auto max-w-4xl">
+    <div className="relative z-10 container mx-auto px-4 text-center inline bg-black/50 md:bg-black/45" >
+      <div className="mx-auto max-w-4xl  text-center inline">
         {/* TOP TAGLINE */}
-        <p className="mb-6 text-sm font-sans uppercase tracking-[0.3em] text-white/90">
+        <p className="mb-6 text-sm p-0 inline px-1 text-center font-sans uppercase tracking-[0.3em] text-white/90">
           Epoxy Flooring & Decorative Concrete Experts in New Jersey
         </p>
 
         {/* 🔥 MAIN H1 (CRITICAL FOR SEO) */}
-        <h1 className="mb-6 text-4xl leading-[1.08] font-bold font-serif text-white/95 md:text-5xl lg:text-6xl">
-          Epoxy Flooring & Decorative Concrete{" "}
-          <span className="text-gradient-copper">in New Jersey</span>
+        <h1 className="mb-6 text-4xl leading-[1.08] font-bold font-serif text-yellow-300 md:text-5xl lg:text-6xl">
+          Epoxy Flooring & Decorative Concrete{" "} <br />
+          <span className="text-red-500">in New Jersey</span>
         </h1>
 
         {/* SUPPORTING TEXT (KEYWORD RICH) */}
-        <p className="mx-auto mb-10 max-w-2xl text-lg font-sans text-white md:text-xl">
+        <p className="mx-auto mb-10 max-w-4xl text-lg font-sans text-white md:text-xl">
           20+ years of experience delivering premium epoxy flooring, terrazzo,
           stamped concrete, and custom decorative concrete solutions for
           residential, commercial, and industrial spaces.
