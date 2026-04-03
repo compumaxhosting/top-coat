@@ -76,7 +76,7 @@ const StorySection = () => {
 						href="/contact"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="text-blue-500 hover:underline"
+						className="text-copper-light underline hover:underline"
 					>
 						Contact Us for a Free Estimate
 					</Link>

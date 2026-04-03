@@ -11,11 +11,11 @@ import { cn } from "@/lib/utils";
 import type { NavLink } from "./types";
 
 const servicesLinks = [
-	{ title: "Epoxy Flooring NJ", path: "/services/epoxy-flooring" },
-	{ title: "Terrazzo Flooring Installation", path: "/services/terrazzo" },
-	{ title: "Building Facade Concrete Finishes", path: "/services/building-facades" },
-	{ title: "Garage Floor Epoxy Coatings", path: "/services/garage-floors" },
-	{ title: "Stamped Concrete Patios & Driveways", path: "/services/stamped-concrete" },
+	{ title: "Epoxy Flooring", path: "/services/epoxy-flooring" },
+	{ title: "Terrazzo Flooring", path: "/services/terrazzo" },
+	{ title: "Building Facade", path: "/services/building-facades" },
+	{ title: "Garage Floor", path: "/services/garage-floors" },
+	{ title: "Stamped Concrete", path: "/services/stamped-concrete" },
 	{ title: "Custom Decorative Concrete", path: "/services/custom-decorative-concrete" },
 ];
 

@@ -30,7 +30,7 @@ const HeroSection = () => (
         {/* 🔥 MAIN H1 (CRITICAL FOR SEO) */}
         <h1 className="mb-6 text-4xl leading-[1.08] font-bold font-serif text-yellow-300 md:text-5xl lg:text-6xl">
           Epoxy Flooring & Decorative Concrete{" "} <br />
-          <span className="text-red-500">in New Jersey</span>
+          <span className="text-white">in New Jersey</span>
         </h1>
 
         {/* SUPPORTING TEXT (KEYWORD RICH) */}
