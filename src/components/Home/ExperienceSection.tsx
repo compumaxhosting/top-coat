@@ -135,7 +135,7 @@ const ExperienceSection = () => {
 
           <p className="text-white font-semibold">
             Ready to upgrade your surface?{" "}
-            <span className="text-primary underline cursor-pointer">
+            <span className="text-primary cursor-pointer">
               Request a Free Estimate Today
             </span>
           </p>

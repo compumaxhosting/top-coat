@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import Link from "next/link";
 
 const highlights = [
   { icon: Clock, text: "20+ Years Experience" },
@@ -67,7 +68,9 @@ const AboutSection = () => {
 
             {/* SEO CONTENT */}
             <p className="mb-4 font-sans leading-relaxed text-white/70">
-              TopCoat Artistry LLC is New Jersey’s premier contractor for high-end surface transformations. With over 20 years of expertise, we deliver durable, artistic concrete solutions for residential and commercial properties. From industrial-grade garage coatings to elegant interior terrazzo, we turn functional surfaces into masterpieces.
+              <Link href="/" target="_blank">
+                TopCoat Artistry LLC
+              </Link> is New Jersey’s premier contractor for high-end surface transformations. With over 20 years of expertise, we deliver durable, artistic concrete solutions for residential and commercial properties. From industrial-grade garage coatings to elegant interior terrazzo, we turn functional surfaces into masterpieces.
             </p>
             <h3 className="mb-6 font-serif text-2xl font-bold text-white/90 md:text-3xl">Professional Surfacing & Masonry Services</h3>
 

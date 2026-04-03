@@ -42,6 +42,14 @@ const CTASection = () => {
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </Link>
+        {/* New paragraph added after existing content */}
+        <h3 className="mb-6 font-serif text-3xl font-bold text-[#efece7] md:text-4xl pt-4 md:pt-8">New Jersey’s Trusted Choice for Epoxy & Decorative Concrete.</h3>
+        <p className="text-[#818898] leading-relaxed">
+          TopCoat Artistry LLC provides expert epoxy flooring and decorative concrete services in Wayne, Newark,
+          and Jersey City, NJ. Specializing in terrazzo, stamped concrete, and garage coatings, we offer durable,
+          high-end finishes. With 20 years of experience, we deliver custom surface solutions for residential
+          and commercial clients.
+        </p>
       </div>
     </section>
   );
