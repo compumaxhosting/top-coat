@@ -10,6 +10,19 @@ const stats = [
   { label: "Client Satisfaction Rate", value: 99, suffix: "%" },
 ];
 
+const faqs = [
+  {
+    question: "Who is the best epoxy flooring contractor in North Jersey?",
+    answer:
+      "TopCoat Artistry LLC is a top-rated specialist in North Jersey, offering 20+ years of experience in garage floor epoxy and decorative concrete in cities like Wayne and Jersey City.",
+  },
+  {
+    question: "Is stamped concrete better than pavers for NJ weather?",
+    answer:
+      "Professional stamped concrete is highly durable for NJ’s freeze-thaw cycles. It provides a seamless surface that prevents weed growth and shifting, common issues with traditional pavers.",
+  },
+];
+
 const delayClasses = ["delay-0", "delay-200", "delay-300"];
 
 function AnimatedCounter({
@@ -50,24 +63,7 @@ function AnimatedCounter({
 
 const ExperienceSection = () => {
   const { ref, isVisible } = useScrollAnimation<HTMLElement>();
-  const [activeFaq, setActiveFaq] = useState<number | null>(null);
-
-  const toggleFaq = (index: number) => {
-    setActiveFaq(activeFaq === index ? null : index);
-  };
-
-  const faqs = [
-    {
-      question: "Who is the best epoxy flooring contractor in North Jersey?",
-      answer:
-        "TopCoat Artistry LLC is a top-rated specialist in North Jersey, offering 20+ years of experience in garage floor epoxy and decorative concrete in cities like Wayne and Jersey City.",
-    },
-    {
-      question: "Is stamped concrete better than pavers for NJ weather?",
-      answer:
-        "Professional stamped concrete is highly durable for NJ’s freeze-thaw cycles. It provides a seamless surface that prevents weed growth and shifting, common issues with traditional pavers.",
-    },
-  ];
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section className="relative overflow-hidden bg-[#14161A] py-14 md:py-16" ref={ref}>
@@ -147,29 +143,50 @@ const ExperienceSection = () => {
             Frequently Asked Questions
           </h3>
 
-          {faqs.map((faq, index) => (
-            <div key={index} className="border border-white/10 rounded-lg">
-              <button
-                onClick={() => toggleFaq(index)}
-                className="w-full px-6 py-4 flex justify-between items-center text-left hover:bg-white/5 transition"
+          {faqs.map((faq, index) => {
+            const isOpen = openIndex === index;
+
+            return (
+              <div
+                key={index}
+                className={`rounded-lg border transition-all duration-300 ${
+                  isOpen
+                    ? "border-primary/40 bg-white/3"
+                    : "border-white/10 bg-transparent"
+                }`}
               >
-                <span className="font-semibold text-white">
-                  {faq.question}
-                </span>
+                <button
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${index}`}
+                  className="w-full px-6 py-4 flex justify-between items-center text-left transition-colors duration-300 hover:bg-white/5"
+                >
+                  <span className="font-semibold text-white">
+                    {faq.question}
+                  </span>
 
-                <ChevronRight
-                  className={`w-5 h-5 text-white transition-transform ${activeFaq === index ? "rotate-90" : ""
+                  <ChevronRight
+                    className={`h-5 w-5 text-white/90 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                      isOpen ? "rotate-90" : "rotate-0"
                     }`}
-                />
-              </button>
+                  />
+                </button>
 
-              {activeFaq === index && (
-                <div className="px-6 pb-4 text-white/70">
-                  {faq.answer}
+                <div
+                  id={`faq-answer-${index}`}
+                  className={`origin-top overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                    isOpen
+                      ? "max-h-56 opacity-100"
+                      : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <div className="px-6 pb-5 text-white/70 leading-relaxed">
+                    {faq.answer}
+                  </div>
                 </div>
-              )}
-            </div>
-          ))}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

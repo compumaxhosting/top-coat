@@ -1,20 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.topcoat-llc.com"),
 
-  title: "Epoxy Flooring Wayne NJ | TopCoat Artistry LLC | Garage & Commercial",
+  title: "Building Facade Contractors New Jersey | Restoration & Repair | TopCoat Artistry",
 
   description:
-    "TopCoat Artistry LLC offers professional epoxy flooring in Wayne, Newark, & Jersey City. High-performance garage epoxy, commercial coatings, and industrial floor installation. Get a free estimate today!",
+    "TopCoat Artistry LLC: Leading building facade contractors in New Jersey. Expert facade restoration, waterproofing, and exterior renovation in Wayne, Newark, & Jersey City. Protect your building today!",
 
   keywords: [
-    "epoxy flooring Wayne NJ",
-    "epoxy floor coating Newark",
-    "garage epoxy flooring Paterson",
-    "residential epoxy flooring Jersey City",
-    "industrial epoxy floor installation",
+    "building facade contractors near me",
+    "facade restoration services NJ",
+    "facade repair New Jersey",
+    "exterior building renovation Wayne",
+    "facade waterproofing Newark",
     "TopCoat Artistry LLC",
   ],
 
@@ -34,7 +33,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.topcoat-llc.com/services/epoxy-flooring",
+    canonical: "https://www.topcoat-llc.com/services/building-facades",
   },
 
   referrer: "strict-origin-when-cross-origin",
@@ -42,44 +41,49 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black",
-    title: "TopCoat Artistry",
+    title: "TopCoat Facades",
   },
 
   openGraph: {
     type: "website",
-    url: "https://www.topcoat-llc.com/services/epoxy-flooring",
-    title: "TopCoat Artistry LLC: Durable Epoxy Flooring & Coatings in North Jersey",
+    url: "https://www.topcoat-llc.com/services/building-facades",
+    title: "Expert Building Facade Restoration & Repair Services in NJ",
     description:
-      "Transform your garage, home, or business with industrial-grade epoxy floor coatings. Serving Wayne, Newark, Paterson, and Jersey City.",
+      "Industrial-grade facade restoration and waterproofing for commercial properties in Wayne, Newark, and Jersey City. Professional care by TopCoat Artistry LLC.",
     siteName: "TopCoat Artistry LLC",
     images: [
       {
-        url: "https://www.topcoat-llc.com/Images/Service-Epoxy-Flooring.webp",
+        url: "https://www.topcoat-llc.com/Images/building-facade.webp",
         width: 1200,
         height: 630,
-        alt: "Epoxy flooring installation in Wayne NJ",
+        alt: "Building facade restoration in New Jersey",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Epoxy Flooring Wayne NJ | Garage & Commercial Coatings | TopCoat",
+    title: "NJ Building Facade Contractors | Restoration & Waterproofing",
     description:
-      "High-performance epoxy flooring for garages, homes, and businesses in Wayne, Newark & Jersey City.",
-    images: ["https://www.topcoat-llc.com/Images/Service-Epoxy-Flooring.webp"],
+      "Restore and protect your building exterior with TopCoat Artistry LLC. Serving Wayne, Paterson, and Newark with expert facade repair.",
+    images: ["https://www.topcoat-llc.com/Images/building-facade.webp"],
     site: "@topcoatartistry",
+  },
+
+  other: {
+    "cache-control": "public",
+    expires: "Wed, 01 Jan 2030 00:00:00 GMT",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#1a1a1a",
+  themeColor: "#2c3e50",
 };
 
-export default function ServicesLayout({
+export default function BuildingFacadesLayout({
   children,
 }: {
-  children: ReactNode;
+  children: React.ReactNode;
 }) {
   return (
     <>
@@ -88,12 +92,13 @@ export default function ServicesLayout({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HousePainter",
+            "@type": "GeneralContractor",
             name: "TopCoat Artistry LLC",
-            image: "https://www.topcoat-llc.com/Images/Service-Epoxy-Flooring.webp",
-            "@id": "https://www.topcoat-llc.com/services/epoxy-flooring",
-            url: "https://www.topcoat-llc.com/services/epoxy-flooring",
+            image: "https://www.topcoat-llc.com/Images/building-facade.webp",
+            "@id": "https://www.topcoat-llc.com/services/building-facades",
+            url: "https://www.topcoat-llc.com/services/building-facades",
             telephone: "+1-201-315-2633",
+            priceRange: "$$$",
             address: {
               "@type": "PostalAddress",
               streetAddress: "108 Fairfield Rd",
@@ -113,30 +118,36 @@ export default function ServicesLayout({
               { "@type": "City", name: "Paterson" },
               { "@type": "City", name: "Jersey City" },
             ],
-            priceRange: "$$",
             hasOfferCatalog: {
               "@type": "OfferCatalog",
-              name: "Epoxy Flooring Services",
+              name: "Building Facade Services",
               itemListElement: [
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Garage Epoxy Flooring",
+                    name: "Building Facade Restoration",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Commercial Epoxy Flooring",
+                    name: "Facade Waterproofing",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Industrial Epoxy Flooring",
+                    name: "Exterior Building Renovation",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Building Facade Repair",
                   },
                 },
               ],

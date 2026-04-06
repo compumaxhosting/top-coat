@@ -1,20 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.topcoat-llc.com"),
 
-  title: "Epoxy Flooring Wayne NJ | TopCoat Artistry LLC | Garage & Commercial",
+  title: "Custom Decorative Concrete NJ | Bespoke Surface Artistry | TopCoat Artistry",
 
   description:
-    "TopCoat Artistry LLC offers professional epoxy flooring in Wayne, Newark, & Jersey City. High-performance garage epoxy, commercial coatings, and industrial floor installation. Get a free estimate today!",
+    "TopCoat Artistry LLC: Premier decorative concrete contractors in NJ. Expert custom installation, colored concrete, and stamped designs in Wayne, Newark, & Jersey City. Artisan-grade outdoor surfaces.",
 
   keywords: [
-    "epoxy flooring Wayne NJ",
-    "epoxy floor coating Newark",
-    "garage epoxy flooring Paterson",
-    "residential epoxy flooring Jersey City",
-    "industrial epoxy floor installation",
+    "decorative concrete contractors near me",
+    "custom decorative concrete NJ",
+    "decorative concrete installation Wayne NJ",
+    "custom concrete patio Newark",
+    "decorative concrete Jersey City",
     "TopCoat Artistry LLC",
   ],
 
@@ -34,7 +33,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.topcoat-llc.com/services/epoxy-flooring",
+    canonical: "https://www.topcoat-llc.com/services/custom-decorative-concrete",
   },
 
   referrer: "strict-origin-when-cross-origin",
@@ -47,39 +46,44 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    url: "https://www.topcoat-llc.com/services/epoxy-flooring",
-    title: "TopCoat Artistry LLC: Durable Epoxy Flooring & Coatings in North Jersey",
+    title: "Bespoke Surface Artistry: Premier Custom Decorative Concrete NJ",
     description:
-      "Transform your garage, home, or business with industrial-grade epoxy floor coatings. Serving Wayne, Newark, Paterson, and Jersey City.",
+      "Elevate your outdoor space with artisan-grade decorative concrete. Serving Wayne, Newark, and Jersey City with custom colors and textures. Professional NJ installation.",
+    url: "https://www.topcoat-llc.com/services/custom-decorative-concrete",
     siteName: "TopCoat Artistry LLC",
     images: [
       {
-        url: "https://www.topcoat-llc.com/Images/Service-Epoxy-Flooring.webp",
+        url: "https://www.topcoat-llc.com/Images/Decorative.webp",
         width: 1200,
         height: 630,
-        alt: "Epoxy flooring installation in Wayne NJ",
+        alt: "Custom decorative concrete in New Jersey",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Epoxy Flooring Wayne NJ | Garage & Commercial Coatings | TopCoat",
+    title: "Custom Decorative Concrete Contractors | Wayne & Newark NJ",
     description:
-      "High-performance epoxy flooring for garages, homes, and businesses in Wayne, Newark & Jersey City.",
-    images: ["https://www.topcoat-llc.com/Images/Service-Epoxy-Flooring.webp"],
+      "Artisan-grade concrete finishes for patios, walkways, and more. Transform your NJ property with TopCoat Artistry LLC. Get a free quote today.",
+    images: ["https://www.topcoat-llc.com/Images/Decorative.webp"],
     site: "@topcoatartistry",
+  },
+
+  other: {
+    "cache-control": "public",
+    expires: "Wed, 01 Jan 2030 00:00:00 GMT",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#1a1a1a",
+  themeColor: "#3d3d3d",
 };
 
-export default function ServicesLayout({
+export default function CustomDecorativeConcreteLayout({
   children,
 }: {
-  children: ReactNode;
+  children: React.ReactNode;
 }) {
   return (
     <>
@@ -88,12 +92,13 @@ export default function ServicesLayout({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HousePainter",
+            "@type": "GeneralContractor",
             name: "TopCoat Artistry LLC",
-            image: "https://www.topcoat-llc.com/Images/Service-Epoxy-Flooring.webp",
-            "@id": "https://www.topcoat-llc.com/services/epoxy-flooring",
-            url: "https://www.topcoat-llc.com/services/epoxy-flooring",
+            image: "https://www.topcoat-llc.com/Images/Decorative.webp",
+            "@id": "https://www.topcoat-llc.com/services/custom-decorative-concrete",
+            url: "https://www.topcoat-llc.com/services/custom-decorative-concrete",
             telephone: "+1-201-315-2633",
+            priceRange: "$$$",
             address: {
               "@type": "PostalAddress",
               streetAddress: "108 Fairfield Rd",
@@ -113,30 +118,36 @@ export default function ServicesLayout({
               { "@type": "City", name: "Paterson" },
               { "@type": "City", name: "Jersey City" },
             ],
-            priceRange: "$$",
             hasOfferCatalog: {
               "@type": "OfferCatalog",
-              name: "Epoxy Flooring Services",
+              name: "Custom Decorative Concrete Services",
               itemListElement: [
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Garage Epoxy Flooring",
+                    name: "Custom Decorative Concrete Installation",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Commercial Epoxy Flooring",
+                    name: "Colored Decorative Concrete",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Industrial Epoxy Flooring",
+                    name: "Custom Concrete Patio Construction",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Artisan Stamped Concrete",
                   },
                 },
               ],

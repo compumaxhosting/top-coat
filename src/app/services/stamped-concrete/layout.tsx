@@ -1,20 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.topcoat-llc.com"),
 
-  title: "Epoxy Flooring Wayne NJ | TopCoat Artistry LLC | Garage & Commercial",
+  title: "Stamped Concrete Wayne NJ | Decorative Patios & Driveways | TopCoat Artistry",
 
   description:
-    "TopCoat Artistry LLC offers professional epoxy flooring in Wayne, Newark, & Jersey City. High-performance garage epoxy, commercial coatings, and industrial floor installation. Get a free estimate today!",
+    "TopCoat Artistry LLC: Professional stamped concrete in Wayne, Newark, & Jersey City. We specialize in decorative stamped concrete patios, driveways, and installation services. Salt-resistant NJ finishes. Free quotes!",
 
   keywords: [
-    "epoxy flooring Wayne NJ",
-    "epoxy floor coating Newark",
-    "garage epoxy flooring Paterson",
-    "residential epoxy flooring Jersey City",
-    "industrial epoxy floor installation",
+    "stamped concrete near me",
+    "stamped concrete contractors Wayne NJ",
+    "stamped concrete patio Newark",
+    "stamped concrete driveway Jersey City",
+    "decorative concrete Paterson",
     "TopCoat Artistry LLC",
   ],
 
@@ -34,7 +33,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.topcoat-llc.com/services/epoxy-flooring",
+    canonical: "https://www.topcoat-llc.com/services/stamped-concrete",
   },
 
   referrer: "strict-origin-when-cross-origin",
@@ -42,44 +41,49 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black",
-    title: "TopCoat Artistry",
+    title: "TopCoat Concrete",
   },
 
   openGraph: {
     type: "website",
-    url: "https://www.topcoat-llc.com/services/epoxy-flooring",
-    title: "TopCoat Artistry LLC: Durable Epoxy Flooring & Coatings in North Jersey",
+    title: "Expert Stamped Concrete Patios & Driveways in North Jersey",
     description:
-      "Transform your garage, home, or business with industrial-grade epoxy floor coatings. Serving Wayne, Newark, Paterson, and Jersey City.",
+      "Elevate your curb appeal with professional stamped concrete services. Serving Wayne, Newark, Paterson, and Jersey City. High-end textures by TopCoat Artistry LLC.",
+    url: "https://www.topcoat-llc.com/services/stamped-concrete",
     siteName: "TopCoat Artistry LLC",
     images: [
       {
-        url: "https://www.topcoat-llc.com/Images/Service-Epoxy-Flooring.webp",
+        url: "https://www.topcoat-llc.com/Images/stamped-concrete.webp",
         width: 1200,
         height: 630,
-        alt: "Epoxy flooring installation in Wayne NJ",
+        alt: "Stamped concrete patio in New Jersey",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Epoxy Flooring Wayne NJ | Garage & Commercial Coatings | TopCoat",
+    title: "Stamped Concrete Contractors in Wayne & Newark NJ",
     description:
-      "High-performance epoxy flooring for garages, homes, and businesses in Wayne, Newark & Jersey City.",
-    images: ["https://www.topcoat-llc.com/Images/Service-Epoxy-Flooring.webp"],
+      "Custom stamped concrete installation for NJ homes. Beautiful, weather-resistant outdoor surfaces. Get your free estimate from TopCoat Artistry LLC today.",
+    images: ["https://www.topcoat-llc.com/Images/stamped-concrete.webp"],
     site: "@topcoatartistry",
+  },
+
+  other: {
+    "cache-control": "public",
+    expires: "Wed, 01 Jan 2030 00:00:00 GMT",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#1a1a1a",
+  themeColor: "#4a5d4e",
 };
 
-export default function ServicesLayout({
+export default function StampedConcreteLayout({
   children,
 }: {
-  children: ReactNode;
+  children: React.ReactNode;
 }) {
   return (
     <>
@@ -88,12 +92,13 @@ export default function ServicesLayout({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HousePainter",
+            "@type": "GeneralContractor",
             name: "TopCoat Artistry LLC",
-            image: "https://www.topcoat-llc.com/Images/Service-Epoxy-Flooring.webp",
-            "@id": "https://www.topcoat-llc.com/services/epoxy-flooring",
-            url: "https://www.topcoat-llc.com/services/epoxy-flooring",
+            image: "https://www.topcoat-llc.com/Images/stamped-concrete.webp",
+            "@id": "https://www.topcoat-llc.com/services/stamped-concrete",
+            url: "https://www.topcoat-llc.com/services/stamped-concrete",
             telephone: "+1-201-315-2633",
+            priceRange: "$$",
             address: {
               "@type": "PostalAddress",
               streetAddress: "108 Fairfield Rd",
@@ -113,30 +118,29 @@ export default function ServicesLayout({
               { "@type": "City", name: "Paterson" },
               { "@type": "City", name: "Jersey City" },
             ],
-            priceRange: "$$",
             hasOfferCatalog: {
               "@type": "OfferCatalog",
-              name: "Epoxy Flooring Services",
+              name: "Stamped Concrete Services",
               itemListElement: [
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Garage Epoxy Flooring",
+                    name: "Stamped Concrete Installation",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Commercial Epoxy Flooring",
+                    name: "Stamped Concrete Patio Construction",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Industrial Epoxy Flooring",
+                    name: "Stamped Concrete Driveway Installation",
                   },
                 },
               ],

@@ -7,15 +7,12 @@ import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const benefits = [
-	"Fully bespoke designs tailored to your architectural style",
-	"Hand-finished textures with premium artisan detailing",
-	"Durable polymer-modified systems for long-term performance",
-	"Interior and exterior applications with weather-ready options",
-	"Custom color blending, stains, and metallic accents",
-	"Seamless integration with modern and classic spaces",
-	"Acid staining and integral pigment for rich tonal depth",
-	"Micro-topping overlays for thin, lightweight transformations",
-	"Compatible with radiant heat systems for modern installations",
+  "Colored Decorative Concrete Services NJ with UV-stable pigments for fade-resistant patios and walkways",
+  "Decorative Concrete Installation Wayne NJ with slate, stone, and hardwood-inspired finishes",
+  "Custom Concrete Patio Contractors NJ for bespoke outdoor living environments",
+  "Weather-resistant decorative concrete engineered for Passaic and Essex County climate",
+  "High-performance artisan-grade systems that balance luxury appearance with durability",
+  "Custom design options for homes, commercial spaces, and outdoor entertaining areas",
 ];
 
 const WhyChooseUs = () => {
@@ -28,36 +25,41 @@ const WhyChooseUs = () => {
           <div
             className={`transition-all duration-700 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}
           >
-            <h2 className="mb-6 font-serif text-3xl font-bold text-white/90">
-              Why Choose Our{" "}
-              <span className="text-gradient-copper">Custom Concrete</span>
+            <h1 className="mb-6 font-serif text-3xl font-bold text-white/90">
+              Premier Custom Decorative Concrete in <span className="text-gradient-copper">New Jersey</span>
+            </h1>
+            <p className="mb-4 font-sans leading-relaxed text-white/70">
+              TopCoat Artistry LLC sets the gold standard for high-end custom decorative concrete in NJ. As the leading decorative concrete contractors near me, we specialize in transforming standard concrete into architectural centerpieces. Serving Wayne, Newark, Paterson, and Jersey City, our &quot;artisan-grade&quot; finishes offer a seamless blend of aesthetic luxury and &quot;industrial-grade&quot; durability.
+            </p>
+
+            <h2 className="mt-6 mb-3 font-serif text-lg font-semibold text-white/90">
+              Tailored Solutions for Elite Outdoor Living
             </h2>
+
             <p className="mb-4 font-sans leading-relaxed text-white/70">
-              Not every space fits a standard finish, and that&apos;s exactly
-              where our custom decorativeoncrete work comes in. We sit down with
-              you, understand your space, your aesthetic, and your practical
-              needs — then we build a surface that reflects all of that with
-              real craftsmanship.
+              Our decorative concrete services New Jersey provide &quot;weather-resistant&quot; beauty engineered to withstand the Passaic and Essex County climate:
             </p>
-            <p className="mb-4 font-sans leading-relaxed text-white/70">
-              From hand-applied micro-toppings and acid-stained floors to
-              sculpted wall textures and metallic feature finishes, we use a
-              wide range of techniques to create surfaces that genuinely stand
-              out. Each project is treated as its own piece — no two are ever
-              the same.
-            </p>
+
+            <ul className="mb-6 space-y-3 text-sm text-white/70">
+              <li>• Colored Decorative Concrete Services NJ: We utilize UV-stable pigments to create vibrant, fade-resistant patios and walkways.</li>
+              <li>• Decorative Concrete Installation Wayne NJ: Precision-crafted designs that authentically replicate the texture of natural slate, hand-cut stone, or hardwood.</li>
+              <li>• Custom Concrete Patio Contractors NJ: We design bespoke outdoor living environments that significantly enhance property value near landmarks like Eagle Rock Reservation.</li>
+            </ul>
+
+            <h3 className="mt-6 mb-3 font-serif text-lg font-semibold text-white/90">
+              The Distinction of Professional Concrete Artistry
+            </h3>
+
             <p className="mb-8 font-sans leading-relaxed text-white/70">
-              We work across residential homes, commercial interiors, and
-              hospitality spaces, using durable polymer-modified systems that
-              look as good in ten years as they do on installation day. If you
-              can imagine it, we can build it.
+              As the preferred stamped and decorative concrete contractors NJ, we bring E-E-A-T-certified expertise to every project. Whether you require decorative concrete Newark NJ or a specialized finish in Jersey City, we deliver &quot;cost-effective&quot; luxury that outperforms traditional pavers in longevity and maintenance.
             </p>
             <Button
               asChild
               className="bg-primary text-primary-foreground hover:bg-copper-light"
             >
               <Link href="/contact">
-                Get a Free Quote <ArrowRight className="ml-2 h-4 w-4" />
+                Schedule a Design Consultation in Wayne or North Jersey Today!
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>
@@ -65,7 +67,7 @@ const WhyChooseUs = () => {
             className={`transition-all delay-200 duration-700 ${isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"}`}
           >
             <h3 className="mb-6 font-serif text-xl font-semibold text-white/90">
-              Key Benefits
+              Why Homeowners and Designers Choose TopCoat
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {benefits.map((benefit, index) => (
@@ -83,6 +85,9 @@ const WhyChooseUs = () => {
                 </div>
               ))}
             </div>
+            <p className="mt-6 font-sans text-sm leading-relaxed text-white/65">
+              We combine bespoke design with long-lasting concrete performance for homes and businesses across North Jersey.
+            </p>
           </div>
         </div>
       </div>

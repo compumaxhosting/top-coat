@@ -7,15 +7,12 @@ import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const benefits = [
-	"Weather-resistant coatings that endure extreme conditions",
-	"Modern textured and smooth finish options",
-	"Lightweight polymer-modified systems for renovation projects",
-	"UV-stable pigments for lasting color integrity",
-	"Fire-resistant concrete formulations available",
-	"Custom geometric and organic patterns",
-	"Seamless waterproof barrier that protects structural integrity",
-	"Expert surface preparation for maximum adhesion and longevity",
-	"Compatible with new builds and existing renovation projects",
+	"Facade Restoration Contractors NJ for comprehensive cleaning, structural repair, and aesthetic renewal",
+	"Facade Waterproofing Services New Jersey to protect against freeze-thaw cycles near the Hudson River and Passaic Falls",
+	"Building Exterior Facade Repair NJ for cracks, masonry issues, and modern exterior renovation needs",
+	"Industrial-grade materials selected for long-term durability and weather resistance",
+	"Local NJ building code knowledge and architectural awareness for Essex and Hudson Counties",
+	"Commercial and residential facade solutions tailored to the property and the environment",
 ];
 
 const WhyChooseUs = () => {
@@ -26,39 +23,57 @@ const WhyChooseUs = () => {
 			<div className="container mx-auto px-4">
 				<div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
 					<div className={`transition-all duration-700 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}>
-						<h2 className="mb-6 font-serif text-3xl font-bold text-white/90">
-							Why Choose Our <span className="text-gradient-copper">Building Facades</span>
+						<h1 className="mb-6 font-serif text-3xl font-bold text-white/90">
+							Expert Building Facade Contractors in <span className="text-gradient-copper">New Jersey</span>
+						</h1>
+
+						<p className="mb-4 font-sans leading-relaxed text-white/70">
+							TopCoat Artistry LLC is the premier choice for professional building facade contractors in New Jersey. We specialize in high-performance facade restoration services near me for commercial and residential properties. Serving Wayne, Newark, Paterson, and Jersey City, our team protects your investment from the harsh Passaic County elements with durable, aesthetic solutions.
+						</p>
+
+						<h2 className="mt-6 mb-3 font-serif text-lg font-semibold text-white/90">
+							Specialized Exterior Restoration & Repair
 						</h2>
+
 						<p className="mb-4 font-sans leading-relaxed text-white/70">
-							Your building&apos;s exterior is the first thing people see, and it deserves more than
-							a coat of paint. We design and install vertical concrete facade systems that genuinely
-							transform a structure — giving it character, depth, and a finish that holds up year
-							after year regardless of the weather.
+							Our North Jersey experts address common building pain points with &quot;industrial-grade&quot; materials:
 						</p>
+
+						<ul className="mb-6 space-y-3 text-sm text-white/70">
+							<li>• Facade Restoration Contractors NJ: Comprehensive cleaning, structural repair, and aesthetic renewal for aging structures.</li>
+							<li>• Facade Waterproofing Services New Jersey: Essential protection against freeze-thaw cycles near the Hudson River and Passaic Falls.</li>
+							<li>• Building Exterior Facade Repair NJ: Professional handling of cracks, masonry issues, and modern exterior building renovation services NJ.</li>
+						</ul>
+
+						<h3 className="mt-6 mb-3 font-serif text-lg font-semibold text-white/90">
+							Why Partner with TopCoat Artistry LLC?
+						</h3>
+
 						<p className="mb-4 font-sans leading-relaxed text-white/70">
-							We work with architects, property owners, and contractors to select textures,
-							colors, and systems that suit the building&apos;s design intent. Whether the goal is a
-							clean minimal finish or a bold expressive look, we have the materials and skill to
-							deliver it with precision.
+							As local building facade contractors near me, we demonstrate E-E-A-T through precision craftsmanship and &quot;weather-resistant&quot; coatings. We understand local NJ building codes and the specific architectural needs of Essex and Hudson Counties.
 						</p>
-						<p className="mb-8 font-sans leading-relaxed text-white/70">
-							Our polymer-modified concrete systems are lightweight, weather-resistant, and
-							built to protect the structure beneath. With over two decades of experience, we
-							know what it takes to get a facade installation done right — from surface prep
-							all the way through to final sealing.
+
+						<h3 className="mt-6 mb-3 font-serif text-lg font-semibold text-gradient-copper">
+							Expert Facade Restoration & Exterior Building Renovation Services NJ
+						</h3>
+
+						<p className="mb-6 font-sans leading-relaxed text-white/70">
+							TopCoat Artistry LLC is a leading building facade contractor in New Jersey, providing homeowners and commercial managers with expert facade restoration services. We offer durable exterior building renovation services NJ to enhance aesthetics and structural integrity in Wayne, Newark, Paterson, and Jersey City.
 						</p>
+
 						<Button asChild className="bg-primary text-primary-foreground hover:bg-copper-light">
 							<Link href="/contact">
-								Get a Free Quote <ArrowRight className="ml-2 h-4 w-4" />
+								Request a Free Facade Inspection in Wayne or Jersey City!
+								<ArrowRight className="ml-2 h-4 w-4" />
 							</Link>
 						</Button>
 					</div>
 					<div className={`transition-all delay-200 duration-700 ${isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"}`}>
-						<h3 className="mb-6 font-serif text-xl font-semibold text-white/90">Key Benefits</h3>
+						<h3 className="mb-6 font-serif text-xl font-semibold text-white/90">Why Partner with TopCoat Artistry LLC?</h3>
 						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 							{benefits.map((benefit, index) => (
 								<div key={benefit} className="group relative rounded-lg bg-[#0d0f12] border border-[#282c33] p-5 transition-all duration-300 hover:border-primary/40 hover:bg-[#111316]">
-									<div className="absolute top-0 left-0 h-[2px] w-0 rounded-tl-lg bg-gradient-to-r from-primary to-transparent transition-all duration-500 group-hover:w-full" />
+									<div className="absolute top-0 left-0 h-0.5 w-0 rounded-tl-lg bg-linear-to-r from-primary to-transparent transition-all duration-500 group-hover:w-full" />
 									<span className="mb-3 block font-serif text-2xl font-bold text-primary/60 leading-none">
 										{String(index + 1).padStart(2, "0")}
 									</span>
