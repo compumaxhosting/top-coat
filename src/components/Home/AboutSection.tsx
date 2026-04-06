@@ -40,7 +40,7 @@ const AboutSection = () => {
                 alt="Decorative concrete contractor applying textured surface finish in New Jersey"
                 width={900}
                 height={1000}
-                quality={70}
+                quality={60}
                 className="h-125 w-full object-cover"
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/65 via-black/25 to-transparent" />

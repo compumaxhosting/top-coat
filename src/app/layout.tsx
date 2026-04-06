@@ -105,21 +105,8 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
 
         {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-B9B54X856E"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-B9B54X856E');
-          `}
-        </Script>
-
         {/* Google Tag Manager */}
-        <Script id="gtm-script" strategy="afterInteractive">
+          <Script id="gtm-script" strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];
             w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
