@@ -1,24 +1,24 @@
 "use client";
 
 import Image from "next/image";
-import {
-  CalendarCheck,
-  Clock,
-  DollarSign,
-  HeadphonesIcon,
-  Users,
-} from "lucide-react";
+// import {
+//   CalendarCheck,
+//   Clock,
+//   DollarSign,
+//   HeadphonesIcon,
+//   Users,
+// } from "lucide-react";
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Link from "next/link";
 
-const highlights = [
-  { icon: Clock, text: "20+ Years Experience" },
-  { icon: Users, text: "Skilled Professional Team" },
-  { icon: DollarSign, text: "Competitive Pricing" },
-  { icon: CalendarCheck, text: "On-Time Delivery" },
-  { icon: HeadphonesIcon, text: "Professional Aftersales" },
-];
+// const highlights = [
+//   { icon: Clock, text: "20+ Years Experience" },
+//   { icon: Users, text: "Skilled Professional Team" },
+//   { icon: DollarSign, text: "Competitive Pricing" },
+//   { icon: CalendarCheck, text: "On-Time Delivery" },
+//   { icon: HeadphonesIcon, text: "Professional Aftersales" },
+// ];
 
 const AboutSection = () => {
   const { ref, isVisible } = useScrollAnimation<HTMLElement>();
