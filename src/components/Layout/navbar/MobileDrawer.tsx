@@ -65,7 +65,7 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 
 			{/* Navigation Links */}
 			<nav className="flex flex-1 flex-col gap-0 px-5 py-3">
-				{links.map((link, index) => {
+				{links.map((link) => {
 					const isActive = isActiveLink(link.href);
 					const isServices = link.label === "Services";
 
@@ -91,18 +91,27 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 							</button>
 
 							{/* Services Dropdown */}
-							{isServices && servicesOpen && (
-								<div className="flex flex-col pl-4 border-l border-white/10 bg-black/90 z-50 relative">
-									{servicesLinks.map((item) => (
-										<Link
-											key={item.title}
-											href={item.path}
-											onClick={onClose}
-											className="block px-2 py-2 text-sm text-copper-light hover:text-primary hover:bg-white/5 transition"
-										>
-											{item.title}
-										</Link>
-									))}
+							{isServices && (
+								<div
+									className={cn(
+										"mt-1 ml-2 overflow-hidden rounded-sm border-l border-primary/35 bg-white/3 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]",
+										servicesOpen
+											? "max-h-80 translate-y-0 opacity-100"
+											: "max-h-0 -translate-y-1 opacity-0 pointer-events-none"
+									)}
+								>
+									<div className="py-1 pl-3 pr-2">
+										{servicesLinks.map((item) => (
+											<Link
+												key={item.title}
+												href={item.path}
+												onClick={onClose}
+												className="block rounded-sm px-2 py-2 text-xs font-sans tracking-wide text-copper-light/90 transition-colors duration-200 hover:bg-white/6 hover:text-primary"
+											>
+												{item.title}
+											</Link>
+										))}
+									</div>
 								</div>
 							)}
 						</div>
