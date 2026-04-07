@@ -1,42 +1,42 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Eye } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => (
   <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-18 lg:pt-28 pb-5">
     {/* BACKGROUND IMAGE */}
-    <div className="absolute inset-0">
+    <div className="absolute inset-0 -z-10">
       <Image
         src="/Images/Hero-section.webp"
         alt="Epoxy flooring installation in New Jersey luxury showroom with metallic finish"
         fill
         priority
-        quality={60}
+        quality={55} // 🔥 slightly reduced
+        sizes="100vw" // 🔥 important for LCP
         className="object-cover"
       />
 
+      {/* overlays (kept lightweight) */}
       <div className="absolute inset-0 bg-linear-to-r from-transparent via-black/40 to-transparent" />
       <div className="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-black/40 to-transparent sm:h-36" />
     </div>
 
-
     {/* CONTENT */}
-    <div className="relative z-10 container mx-auto px-4 text-center inline " >
-      <div className="mx-auto max-w-4xl  text-center inline">
+    <div className="relative z-10 container mx-auto px-4 text-center">
+      <div className="mx-auto max-w-4xl">
         {/* TOP TAGLINE */}
-        <p className="mb-6 text-sm p-0 inline px-1 text-center font-sans uppercase tracking-[0.3em] text-white/90">
+        <p className="mb-6 text-sm px-1 font-sans uppercase tracking-[0.3em] text-white/90">
           Epoxy Flooring & Decorative Concrete Experts in New Jersey
         </p>
 
-        {/* 🔥 MAIN H1 (CRITICAL FOR SEO) */}
+        {/* 🔥 MAIN H1 */}
         <h1 className="mb-6 text-4xl leading-[1.08] font-bold font-serif text-amber-300 md:text-5xl lg:text-6xl">
-          Epoxy Flooring & Decorative Concrete{" "} <br />
+          Epoxy Flooring & Decorative Concrete <br />
           <span className="text-white">in New Jersey</span>
         </h1>
 
-        {/* SUPPORTING TEXT (KEYWORD RICH) */}
+        {/* SUPPORTING TEXT */}
         <p className="mx-auto mb-10 max-w-4xl text-lg font-sans text-white md:text-xl">
           20+ years of experience delivering premium epoxy flooring, terrazzo,
           stamped concrete, and custom decorative concrete solutions for
@@ -45,21 +45,21 @@ const HeroSection = () => (
 
         {/* CTA BUTTONS */}
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Link href="/contact">
+          <Link href="/contact" prefetch={false}>
             <Button
               size="lg"
-              className="bg-primary px-8 py-6 text-base font-sans tracking-wide text-primary-foreground hover:bg-copper-light cursor-pointer"
+              className="bg-primary px-8 py-6 text-base font-sans tracking-wide text-primary-foreground hover:bg-copper-light"
             >
               Get Free Quote
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
 
-          <Link href="/portfolio">
+          <Link href="/portfolio" prefetch={false}>
             <Button
               size="lg"
               variant="outline"
-              className="border-primary/30 bg-[#0d0f12] px-8 py-6 text-base font-sans tracking-wide text-white hover:border-primary hover:bg-transparent cursor-pointer"
+              className="border-primary/30 bg-[#0d0f12] px-8 py-6 text-base font-sans tracking-wide text-white hover:border-primary hover:bg-transparent"
             >
               <Eye className="mr-2 h-5 w-5" />
               View Our Projects

@@ -1,19 +1,28 @@
-import Footer from '@/components/Layout/Footer'
-import Navbar from '@/components/Layout/Navbar'
-import BackToTop from '@/components/Layout/BackToTop'
-import AboutSection from '@/components/Home/AboutSection'
-import CTASection from '@/components/Home/CTASection'
-import ExperienceSection from '@/components/Home/ExperienceSection'
-import HeroSection from '@/components/Home/HeroSection'
-import PortfolioSection from '@/components/Home/PortfolioSection'
-import ServicesSection from '@/components/Home/ServiceSection'
-import React from 'react'
+import dynamic from "next/dynamic";
+import Navbar from "@/components/Layout/Navbar";
+import HeroSection from "@/components/Home/HeroSection";
 
-const page = () => {
+// Lazy load below-the-fold
+const AboutSection = dynamic(() => import("@/components/Home/AboutSection"));
+const ServicesSection = dynamic(
+  () => import("@/components/Home/ServiceSection"),
+);
+const ExperienceSection = dynamic(
+  () => import("@/components/Home/ExperienceSection"),
+);
+const PortfolioSection = dynamic(
+  () => import("@/components/Home/PortfolioSection"),
+);
+const CTASection = dynamic(() => import("@/components/Home/CTASection"));
+const Footer = dynamic(() => import("@/components/Layout/Footer"));
+const BackToTop = dynamic(() => import("@/components/Layout/BackToTop")); // ✅ FIXED
+
+const Page = () => {
   return (
     <>
       <Navbar />
       <HeroSection />
+
       <AboutSection />
       <ServicesSection />
       <ExperienceSection />
@@ -22,7 +31,7 @@ const page = () => {
       <Footer />
       <BackToTop />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default Page;
