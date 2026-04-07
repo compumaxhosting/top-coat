@@ -114,7 +114,7 @@ const Footer = () => (
             </Link>
 
             <Link
-              href={`mailto:${"Almahairi@gmail.com"}`}
+              href={`mailto:${siteConfig.email}`}
               className="flex items-center gap-3 text-[#818898] hover:text-primary transition-colors text-sm"
             >
               <Mail className="w-4 h-4 text-primary" />
