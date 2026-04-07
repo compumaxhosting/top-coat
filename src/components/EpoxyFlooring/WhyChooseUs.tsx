@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
 	return (
 		<section className="bg-[#14161A] py-20 overflow-hidden" ref={ref}>
 			<div className="container mx-auto px-4">
-				<div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
+					<div className="grid grid-cols-1 gap-6 md:gap-16 lg:grid-cols-2">
 					<div
 						className={`transition-all duration-700 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
 							}`}
@@ -67,10 +67,10 @@ const WhyChooseUs = () => {
 
 						<Button
 							asChild
-							className="bg-primary text-primary-foreground hover:bg-copper-light"
+							className="bg-primary h-auto whitespace-normal py-3 text-center leading-snug text-primary-foreground hover:bg-copper-light"
 						>
 							<Link href="/contact">
-								Schedule your free on-site estimate in Wayne or surrounding NJ areas today!
+								Get a Free Quote
 								<ArrowRight className="ml-2 h-4 w-4" />
 							</Link>
 						</Button>

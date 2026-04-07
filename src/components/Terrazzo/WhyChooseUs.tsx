@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
 	return (
 		<section className="bg-[#14161A] py-20 overflow-hidden" ref={ref}>
 			<div className="container mx-auto px-4">
-				<div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
+					<div className="grid grid-cols-1 gap-6 md:gap-16 lg:grid-cols-2">
 					{/* Left Column - Main Content */}
 					<div className={`transition-all duration-700 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}>
 						<h1 className="mb-6 font-serif text-3xl font-bold text-white/90">

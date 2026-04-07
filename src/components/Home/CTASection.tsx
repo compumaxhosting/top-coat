@@ -36,9 +36,9 @@ const CTASection = () => {
         <Link href="/contact">
           <Button
             size="lg"
-            className="bg-primary px-10 py-7 text-lg font-sans tracking-wide text-primary-foreground hover:bg-copper-light cursor-pointer"
+            className="bg-primary h-auto whitespace-normal px-6 py-3 text-center text-base font-sans leading-snug text-primary-foreground hover:bg-copper-light md:px-10 md:py-4 cursor-pointer"
           >
-            Get Free Quote Now
+            Get a Free Quote
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </Link>

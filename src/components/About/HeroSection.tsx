@@ -12,7 +12,7 @@ const HeroSection = () => {
 				sizes="100vw"
 			/>
 			<div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black/80" />
-			<div className="relative z-10 pt-20 text-center">
+		\t<div className="relative z-10 pt-10 md:pt-20 text-center">
 				<p className="mb-3 font-sans text-sm uppercase tracking-[0.3em] text-primary">
 					Our Story
 				</p>

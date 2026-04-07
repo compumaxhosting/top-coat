@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
 	return (
 		<section className="bg-[#14161A] py-20 overflow-hidden" ref={ref}>
 			<div className="container mx-auto px-4">
-				<div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
+					<div className="grid grid-cols-1 gap-6 md:gap-16 lg:grid-cols-2">
 					<div className={`transition-all duration-700 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}>
 						<h1 className="mb-6 font-serif text-3xl font-bold text-white/90">
 							Top-Rated Garage Floor Coating in <span className="text-gradient-copper">Wayne & North Jersey</span>
@@ -59,9 +59,9 @@ const WhyChooseUs = () => {
 						<p className="mb-6 font-sans leading-relaxed text-white/70">
 							TopCoat Artistry LLC provides professional garage floor coating near me for New Jersey homeowners seeking durable, salt-resistant surfaces. Our expert garage epoxy floor coating transforms damaged concrete into a seamless, high-performance floor. We serve Wayne, Newark, and Jersey City with reliable, long-lasting garage resurfacing.
 						</p>
-						<Button asChild className="bg-primary text-primary-foreground hover:bg-copper-light">
+						<Button asChild className="bg-primary h-auto whitespace-normal py-3 text-center leading-snug text-primary-foreground hover:bg-copper-light">
 							<Link href="/contact">
-								Claim your Free On-Site Estimate in Passaic or Essex County!
+								Get a Free Quote
 								<ArrowRight className="ml-2 h-4 w-4" />
 							</Link>
 						</Button>

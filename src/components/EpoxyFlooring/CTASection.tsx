@@ -13,10 +13,10 @@ const CTASection = () => {
 				<Button
 					asChild
 					size="lg"
-					className="bg-primary px-10 py-7 text-lg font-sans text-primary-foreground hover:bg-copper-light"
+					className="bg-primary h-auto whitespace-normal px-6 py-3 text-center text-base font-sans leading-snug text-primary-foreground hover:bg-copper-light md:px-10 md:py-4"
 				>
 					<Link href="/contact">
-						Schedule your free on-site estimate in Wayne or surrounding NJ areas today! <ArrowRight className="ml-2 h-5 w-5" />
+						Get a Free Quote <ArrowRight className="ml-2 h-5 w-5" />
 					</Link>
 				</Button>
 			</div>

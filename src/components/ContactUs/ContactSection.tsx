@@ -104,7 +104,7 @@ const Contact = () => {
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 gap-6 md:gap-16 lg:grid-cols-2">
             {/* Form */}
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Server Error Alert */}

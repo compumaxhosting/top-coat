@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
 	return (
 		<section className="bg-[#14161A] py-20 overflow-hidden" ref={ref}>
 			<div className="container mx-auto px-4">
-				<div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
+					<div className="grid grid-cols-1 gap-6 md:gap-16 lg:grid-cols-2">
 					<div className={`transition-all duration-700 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}>
 						<h1 className="mb-6 font-serif text-3xl font-bold text-white/90">
 							Expert Building Facade Contractors in <span className="text-gradient-copper">New Jersey</span>
@@ -61,9 +61,9 @@ const WhyChooseUs = () => {
 							TopCoat Artistry LLC is a leading building facade contractor in New Jersey, providing homeowners and commercial managers with expert facade restoration services. We offer durable exterior building renovation services NJ to enhance aesthetics and structural integrity in Wayne, Newark, Paterson, and Jersey City.
 						</p>
 
-						<Button asChild className="bg-primary text-primary-foreground hover:bg-copper-light">
+						<Button asChild className="bg-primary h-auto whitespace-normal py-3 text-center leading-snug text-primary-foreground hover:bg-copper-light">
 							<Link href="/contact">
-								Request a Free Facade Inspection in Wayne or Jersey City!
+								Get a Free Quote
 								<ArrowRight className="ml-2 h-4 w-4" />
 							</Link>
 						</Button>
