@@ -22,7 +22,6 @@ const Page = () => {
     <>
       <Navbar />
       <HeroSection />
-
       <AboutSection />
       <ServicesSection />
       <ExperienceSection />

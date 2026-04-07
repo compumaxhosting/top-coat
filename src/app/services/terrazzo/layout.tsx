@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.topcoat-llc.com/services/terrazzo-flooring",
+    canonical: " https://www.topcoat-llc.com/services/terrazzo",
   },
 
   referrer: "strict-origin-when-cross-origin",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Expert Terrazzo Floor Installation & Polishing in North Jersey",
     description:
       "Premium terrazzo restoration and installation for homes and businesses in Wayne, Newark, and Jersey City. Discover the durability of TopCoat Artistry LLC.",
-    url: "https://www.topcoat-llc.com/services/terrazzo-flooring",
+    url: " https://www.topcoat-llc.com/services/terrazzo",
     siteName: "TopCoat Artistry LLC",
     images: [
       {
@@ -95,8 +95,8 @@ export default function TerrazzoLayout({
             "@type": "HousePainter",
             name: "TopCoat Artistry LLC",
             image: "https://www.topcoat-llc.com/Images/terrazzo.webp",
-            "@id": "https://www.topcoat-llc.com/services/terrazzo-flooring",
-            url: "https://www.topcoat-llc.com/services/terrazzo-flooring",
+            "@id": " https://www.topcoat-llc.com/services/terrazzo",
+            url: " https://www.topcoat-llc.com/services/terrazzo",
             telephone: "+1-201-315-2633",
             priceRange: "$$",
             address: {
