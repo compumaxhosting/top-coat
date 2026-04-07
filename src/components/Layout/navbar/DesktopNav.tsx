@@ -80,17 +80,32 @@ export function DesktopNav({ links }: DesktopNavProps) {
 						</Link>
 
 						{/* SERVICES DROPDOWN */}
-						{isServices && openDropdown && (
-							<div className="absolute top-full left-[-4px] w-72 bg-white/90 border border-white/10 shadow-xl rounded-md z-50">
-								{servicesLinks.map((item) => (
-									<Link
-										key={item.title}
-										href={item.path}
-										className="block px-4 py-2 text-sm text-copper-light hover:text-primary hover:bg-copper-light hover:text-white transition"
-									>
-										{item.title}
-									</Link>
-								))}
+						{isServices && (
+							<div
+								className={cn(
+									"absolute top-full left-0 z-50 w-72 pt-3 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]",
+									openDropdown
+										? "translate-y-0 opacity-100 pointer-events-auto"
+										: "-translate-y-1 opacity-0 pointer-events-none"
+								)}
+							>
+								<div className="overflow-hidden rounded-sm border border-white/12 bg-[#14161A]/96 backdrop-blur-md shadow-[0_24px_60px_-24px_rgba(0,0,0,0.75)] ring-1 ring-primary/20">
+									<div className="h-px w-full bg-linear-to-r from-transparent via-primary/45 to-transparent" />
+									<div className="p-2">
+										{servicesLinks.map((item) => (
+											<Link
+												key={item.title}
+												href={item.path}
+												className="group flex items-center justify-between rounded-sm px-3 py-2.5 text-sm font-sans text-[#efece7cc] transition-colors duration-200 hover:bg-white/6 hover:text-primary"
+											>
+												<span>{item.title}</span>
+												<span className="text-[10px] tracking-[0.2em] uppercase text-primary/0 transition-colors duration-200 group-hover:text-primary/80">
+													View
+												</span>
+											</Link>
+										))}
+									</div>
+								</div>
 							</div>
 						)}
 					</div>
