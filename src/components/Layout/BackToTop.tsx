@@ -58,7 +58,7 @@ const BackToTop = () => {
       onClick={scrollToTop}
       aria-label="Back to top - TopCoat Artistry LLC Epoxy Flooring NJ"
       title="Scroll back to top"
-      className={`group fixed bottom-8 right-8 z-50 flex items-center justify-center cursor-pointer transition-all duration-300 ${
+      className={`group fixed bottom-24 right-4 md:right-6 lg:bottom-8 lg:right-8 z-50 flex items-center justify-center cursor-pointer transition-all duration-300 ${
         visible
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-4 pointer-events-none"

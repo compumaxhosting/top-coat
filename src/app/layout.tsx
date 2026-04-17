@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import BottomMenu from "@/components/Layout/BottomMenu";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -179,6 +180,7 @@ export default function RootLayout({
         </noscript>
 
         {children}
+        <BottomMenu />
       </body>
     </html>
   );
