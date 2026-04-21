@@ -29,10 +29,10 @@ const bottomMenuItems = [
 
 const BottomMenu = () => {
   return (
-    <div className="lg:hidden fixed inset-x-0 bottom-0 z-50 px-3 pb-[calc(env(safe-area-inset-bottom)+0.5rem)]">
+    <div className="fixed inset-x-0 bottom-0 z-50 lg:hidden">
       <nav
         aria-label="Quick contact actions"
-        className="mx-auto max-w-md rounded-2xl border border-white/10 bg-[#0d0f12f2] shadow-[0_-8px_24px_rgba(0,0,0,0.28)] backdrop-blur-md"
+        className="w-full border-t border-black/10 bg-primary shadow-[0_-6px_16px_rgba(0,0,0,0.18)] pb-[env(safe-area-inset-bottom)]"
       >
         <ul className="grid grid-cols-3">
           {bottomMenuItems.map((item) => {
@@ -45,9 +45,9 @@ const BottomMenu = () => {
                   aria-label={item.ariaLabel}
                   target={item.external ? "_blank" : undefined}
                   rel={item.external ? "noopener noreferrer" : undefined}
-                  className="group flex min-h-16 flex-col items-center justify-center gap-1 border-r border-white/10 text-[#efece7] transition-colors duration-300 last:border-r-0 hover:bg-white/5 hover:text-primary"
+                  className="group flex min-h-16 flex-col items-center justify-center gap-1 border-r border-black/10 text-[#0d0f12] transition-colors duration-300 last:border-r-0 hover:bg-[#0d0f12] hover:text-primary"
                 >
-                  <Icon className="h-5 w-5 text-primary transition-transform duration-300 group-hover:-translate-y-0.5" />
+                  <Icon className="h-5 w-5 transition-transform duration-300 group-hover:-translate-y-0.5" />
                   <span className="text-[11px] font-semibold uppercase tracking-[0.14em]">
                     {item.label}
                   </span>
