@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 export default function BlogPostContent() {
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
@@ -9,528 +9,503 @@ export default function BlogPostContent() {
 	const faqs = [
 		{
 			question: "How long does epoxy flooring last?",
-			answer: "Epoxy flooring can last 10 to 20 years depending on usage, maintenance, and installation quality.",
+			answer:
+				"Epoxy flooring can last 10 to 20 years depending on usage, maintenance, and installation quality.",
 		},
 		{
 			question: "Is epoxy flooring slippery?",
-			answer: "It can be, but anti-slip additives can be added to improve safety.",
+			answer:
+				"It can be, but anti-slip additives can be added to improve safety.",
 		},
 		{
 			question: "Can epoxy be applied over damaged concrete?",
-			answer: "Yes, but proper surface preparation and repairs are necessary before application.",
+			answer:
+				"Yes, but proper surface preparation and repairs are necessary before application.",
 		},
 		{
 			question: "How long does installation take?",
-			answer: "Most projects are completed within 1 to 3 days depending on size and complexity.",
+			answer:
+				"Most projects are completed within 1 to 3 days depending on size and complexity.",
 		},
 		{
 			question: "Is epoxy flooring good for garages?",
-			answer: "Yes, it is one of the best options for garages due to its resistance to oil, stains, and heavy vehicles.",
+			answer:
+				"Yes, it is one of the best options for garages due to its resistance to oil, stains, and heavy vehicles.",
+		},
+	];
+
+	const benefits = [
+		{
+			icon: "◈",
+			title: "Exceptional Durability",
+			body: "Withstands heavy traffic, machinery, and daily wear without cracking or peeling.",
+		},
+		{
+			icon: "◇",
+			title: "Low Maintenance",
+			body: "Easy to clean, resistant to stains, no grout lines or gaps to worry about.",
+		},
+		{
+			icon: "◉",
+			title: "Cost-Effective",
+			body: "Long-term savings over traditional flooring through reduced repairs and replacements.",
+		},
+		{
+			icon: "◎",
+			title: "Aesthetic Appeal",
+			body: "Available in metallic finishes, solid colors, and decorative flake systems.",
+		},
+		{
+			icon: "◐",
+			title: "Chemical Resistance",
+			body: "Perfect for garages, warehouses, and industrial areas exposed to spills.",
+		},
+		{
+			icon: "◑",
+			title: "Water Resistant",
+			body: "Seamless surface eliminates moisture ingress — ideal for basements and kitchens.",
+		},
+	];
+
+	const steps = [
+		{
+			num: "01",
+			title: "Surface Preparation",
+			desc: "Cleaning, grinding, and profiling the concrete substrate.",
+		},
+		{
+			num: "02",
+			title: "Crack Repair",
+			desc: "Filling damage and imperfections before coating begins.",
+		},
+		{
+			num: "03",
+			title: "Primer Application",
+			desc: "Bonding primer seals the surface for adhesion.",
+		},
+		{
+			num: "04",
+			title: "Epoxy Coating",
+			desc: "Main epoxy layers are applied at specified thickness.",
+		},
+		{
+			num: "05",
+			title: "Topcoat Sealing",
+			desc: "UV-stable polyurethane seal for gloss and protection.",
 		},
 	];
 
 	return (
-		<article className="bg-[#0D0F12] py-16 md:py-24">
-			<div className="container mx-auto px-4 md:px-8 max-w-4xl">
-				{/* Introduction */}
-				<section className="mb-16">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-6">
+		<article className="min-h-screen bg-charcoal text-secondary-foreground">
+			<div className="mx-auto flex w-full max-w-7xl flex-col justify-center px-4">
+				<div className="w-full pt-8">
+					<p className="mb-3 font-sans text-xs uppercase tracking-[0.2em] text-primary">
+						Flooring Guide · Wayne & North Jersey
+					</p>
+					<h2 className="mb-6 font-serif text-3xl leading-tight text-secondary-foreground md:text-5xl">
 						Why Epoxy Flooring is a Smart Investment
 					</h2>
-					<p className="text-white/80 text-lg leading-relaxed mb-4">
-						Epoxy flooring is one of the most durable, cost-effective, and visually appealing flooring solutions available today. It creates a seamless, long-lasting surface that resists damage, stains, and wear, making it ideal for both residential and commercial spaces.
+					<p className="max-w-4xl font-sans text-base leading-relaxed text-secondary-foreground/70 md:text-lg">
+						A seamless, long-lasting surface that resists damage, stains, and wear
+						 and is ideal for residential, commercial, and industrial spaces alike.
 					</p>
-					<p className="text-white/80 text-lg leading-relaxed">
-						Whether you&apos;re upgrading a garage, renovating a retail store, or improving an industrial facility, epoxy flooring delivers performance, aesthetics, and value in one solution. Its versatility, low maintenance, and modern finish make it a top choice across industries.
+					<p className="mt-5 max-w-4xl font-sans text-base leading-relaxed text-secondary-foreground/70 md:text-lg">
+						Whether you&apos;re upgrading a garage, renovating a retail store, or
+						 improving an industrial facility, epoxy flooring delivers performance,
+						 aesthetics, and value in one solution. Its versatility, low
+						 maintenance, and modern finish make it a top choice across industries.
+					</p>
+				</div>
+
+				<div className="w-full">
+				<section className="border-b border-charcoal-lighter py-16">
+					<Label>Definition</Label>
+					<SectionHeading>What is Epoxy Flooring?</SectionHeading>
+					<p className="font-sans text-base leading-relaxed text-secondary-foreground/70">
+						Epoxy flooring is a surface coating made by mixing resin and hardener to
+						 create a strong, durable plastic-like material. Once applied, it bonds
+						 tightly to concrete floors, forming a seamless and resistant surface.
+					</p>
+					<blockquote className="mt-8 border-l-2 border-primary pl-6 font-serif text-lg italic leading-relaxed text-secondary-foreground/75">
+						A protective and decorative coating applied over concrete surfaces,
+						 known for its durability, chemical resistance, and high-gloss finish.
+					</blockquote>
+				</section>
+
+				<section className="border-b border-charcoal-lighter py-16">
+					<Label>Why Choose</Label>
+					<SectionHeading>Why Choose Epoxy Flooring?</SectionHeading>
+					<p className="font-sans text-base leading-relaxed text-secondary-foreground/70">
+						Epoxy flooring is chosen for its strength, longevity, and sleek
+						 appearance. It outperforms traditional flooring options like tiles or
+						 vinyl in demanding environments.
+					</p>
+					<p className="mt-5 font-sans text-base leading-relaxed text-secondary-foreground/70">
+						Epoxy flooring is ideal because it offers durability, resistance to
+						 damage, easy maintenance, and a modern finish, making it suitable for
+						 both homes and businesses.
 					</p>
 				</section>
 
-				{/* What is Epoxy Flooring */}
-				<section className="mb-16">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-6">
-						What is Epoxy Flooring?
-					</h2>
-					<div className="space-y-4">
-						<p className="text-white/80 text-lg leading-relaxed">
-							Epoxy flooring is a surface coating made by mixing resin and hardener to create a strong, durable plastic-like material. Once applied, it bonds tightly to concrete floors, forming a seamless and resistant surface.
-						</p>
-						<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-6">
-							<p className="text-white/80 text-base leading-relaxed">
-								<span className="text-white/95 font-semibold">Definition:</span> Epoxy flooring is a protective and decorative coating applied over concrete surfaces, known for its durability, chemical resistance, and glossy finish.
-							</p>
-						</div>
-					</div>
-				</section>
-
-				{/* Why Choose Epoxy Flooring */}
-				<section className="mb-16">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-6">
-						Why Choose Epoxy Flooring?
-					</h2>
-					<p className="text-white/80 text-lg leading-relaxed mb-6">
-						Epoxy flooring is chosen for its strength, longevity, and sleek appearance. It outperforms traditional flooring options like tiles or vinyl in demanding environments.
+				<section className="border-b border-charcoal-lighter py-16">
+					<Label>Advantages</Label>
+					<SectionHeading>Key Benefits</SectionHeading>
+					<p className="mb-10 font-sans text-base leading-relaxed text-secondary-foreground/70">
+						Epoxy outperforms traditional flooring options like tiles or vinyl in demanding environments, combining resilience with a refined aesthetic.
 					</p>
-					<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-6">
-						<p className="text-white/80 text-base leading-relaxed">
-							<span className="text-white/95 font-semibold">Why it matters:</span> Epoxy flooring is ideal because it offers durability, resistance to damage, easy maintenance, and a modern finish, making it suitable for both homes and businesses.
-						</p>
-					</div>
-				</section>
-
-				{/* Key Benefits */}
-				<section className="mb-16">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-6">
-						Key Benefits of Epoxy Flooring
-					</h2>
-					<div className="grid md:grid-cols-2 gap-6 mb-8">
-						<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-8 hover:border-white/20 transition">
-							<h3 className="text-white/95 font-semibold text-xl mb-3">Exceptional Durability</h3>
-							<p className="text-white/70">Epoxy floors can withstand heavy traffic, machinery, and daily wear without cracking or peeling.</p>
-						</div>
-						<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-8 hover:border-white/20 transition">
-							<h3 className="text-white/95 font-semibold text-xl mb-3">Low Maintenance</h3>
-							<ul className="text-white/70 space-y-2">
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Easy to clean</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Resistant to stains</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>No grout lines or gaps</span>
-								</li>
-							</ul>
-						</div>
-						<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-8 hover:border-white/20 transition">
-							<h3 className="text-white/95 font-semibold text-xl mb-3">Cost-Effective Solution</h3>
-							<p className="text-white/70">Compared to frequent repairs of traditional flooring, epoxy offers long-term savings.</p>
-						</div>
-						<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-8 hover:border-white/20 transition">
-							<h3 className="text-white/95 font-semibold text-xl mb-3">Aesthetic Appeal</h3>
-							<ul className="text-white/70 space-y-2">
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Metallic finishes</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Solid colors</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Decorative flakes</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div className="grid md:grid-cols-2 gap-6">
-						<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-8 hover:border-white/20 transition">
-							<h3 className="text-white/95 font-semibold text-xl mb-3">Chemical & Water Resistance</h3>
-							<p className="text-white/70">Perfect for garages, warehouses, and industrial areas.</p>
-						</div>
-						<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-8">
-							<h3 className="text-white/95 font-semibold text-xl mb-4">Summary of Benefits</h3>
-							<ul className="text-white/70 space-y-2">
-								<li className="flex items-start">
-									<span className="mr-3">✓</span>
-									<span>Long lifespan</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">✓</span>
-									<span>High resistance</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">✓</span>
-									<span>Modern look</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">✓</span>
-									<span>Budget-friendly</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				{/* Types of Epoxy Flooring */}
-				<section className="mb-16">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-6">
-						Types of Epoxy Flooring Systems
-					</h2>
-					<div className="overflow-x-auto">
-						<table className="w-full text-white/80">
-							<thead>
-								<tr className="border-b border-[#282c33]">
-									<th className="text-left py-4 px-4 font-semibold text-white/95">Type</th>
-									<th className="text-left py-4 px-4 font-semibold text-white/95">Best For</th>
-									<th className="text-left py-4 px-4 font-semibold text-white/95">Features</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr className="border-b border-[#282c33] hover:bg-[#14161A] transition">
-									<td className="py-4 px-4">Self-Leveling Epoxy</td>
-									<td className="py-4 px-4">Commercial spaces</td>
-									<td className="py-4 px-4">Smooth, seamless finish</td>
-								</tr>
-								<tr className="border-b border-[#282c33] hover:bg-[#14161A] transition">
-									<td className="py-4 px-4">Epoxy Mortar Floors</td>
-									<td className="py-4 px-4">Industrial environments</td>
-									<td className="py-4 px-4">Heavy-duty durability</td>
-								</tr>
-								<tr className="border-b border-[#282c33] hover:bg-[#14161A] transition">
-									<td className="py-4 px-4">Flake Epoxy</td>
-									<td className="py-4 px-4">Garages & homes</td>
-									<td className="py-4 px-4">Decorative and slip-resistant</td>
-								</tr>
-								<tr className="hover:bg-[#14161A] transition">
-									<td className="py-4 px-4">Metallic Epoxy</td>
-									<td className="py-4 px-4">Showrooms & interiors</td>
-									<td className="py-4 px-4">High-end glossy appearance</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</section>
-
-				{/* Where Can Epoxy Flooring Be Used */}
-				<section className="mb-16">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-6">
-						Where Can Epoxy Flooring Be Used?
-					</h2>
-					<div className="grid md:grid-cols-3 gap-6 mb-8">
-						<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-8">
-							<h3 className="text-white/95 font-semibold text-lg mb-4">Residential Applications</h3>
-							<ul className="text-white/70 space-y-3">
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Garage floors</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Basements</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Kitchens</span>
-								</li>
-							</ul>
-						</div>
-						<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-8">
-							<h3 className="text-white/95 font-semibold text-lg mb-4">Commercial Applications</h3>
-							<ul className="text-white/70 space-y-3">
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Retail stores</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Offices</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Restaurants</span>
-								</li>
-							</ul>
-						</div>
-						<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-8">
-							<h3 className="text-white/95 font-semibold text-lg mb-4">Industrial Applications</h3>
-							<ul className="text-white/70 space-y-3">
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Warehouses</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Factories</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Manufacturing units</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-6">
-						<p className="text-white/80 text-base leading-relaxed">
-							<span className="text-white/95 font-semibold">Versatility:</span> Epoxy flooring can be used in homes, garages, offices, retail stores, and industrial facilities due to its durability and resistance to wear and chemicals.
-						</p>
-					</div>
-				</section>
-
-				{/* Cost of Epoxy Flooring */}
-				<section className="mb-16">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-6">
-						Cost of Epoxy Flooring
-					</h2>
-					<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-6 mb-8">
-						<p className="text-white/80 text-base mb-4">The cost depends on:</p>
-						<ul className="text-white/70 space-y-2">
-							<li className="flex items-start">
-								<span className="mr-3">•</span>
-								<span>Floor size</span>
-							</li>
-							<li className="flex items-start">
-								<span className="mr-3">•</span>
-								<span>Surface condition</span>
-							</li>
-							<li className="flex items-start">
-								<span className="mr-3">•</span>
-								<span>Type of epoxy used</span>
-							</li>
-						</ul>
-					</div>
-					<div className="mb-8">
-						<h3 className="text-white/95 font-semibold text-lg mb-4">Average Pricing</h3>
-						<div className="overflow-x-auto">
-							<table className="w-full text-white/80">
-								<thead>
-									<tr className="border-b border-[#282c33]">
-										<th className="text-left py-4 px-4 font-semibold text-white/95">Type</th>
-										<th className="text-left py-4 px-4 font-semibold text-white/95">Cost per sq. ft</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr className="border-b border-[#282c33] hover:bg-[#0D0F12] transition">
-										<td className="py-4 px-4">Basic Epoxy</td>
-										<td className="py-4 px-4">$3 – $7</td>
-									</tr>
-									<tr className="border-b border-[#282c33] hover:bg-[#0D0F12] transition">
-										<td className="py-4 px-4">Decorative Epoxy</td>
-										<td className="py-4 px-4">$7 – $12</td>
-									</tr>
-									<tr className="hover:bg-[#0D0F12] transition">
-										<td className="py-4 px-4">Industrial Grade</td>
-										<td className="py-4 px-4">$10 – $15+</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</section>
-
-				{/* Epoxy vs Traditional */}
-				<section className="mb-16">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-6">
-						Epoxy Flooring vs Traditional Flooring
-					</h2>
-					<div className="overflow-x-auto">
-						<table className="w-full text-white/80">
-							<thead>
-								<tr className="border-b border-[#282c33]">
-									<th className="text-left py-4 px-4 font-semibold text-white/95">Feature</th>
-									<th className="text-left py-4 px-4 font-semibold text-white/95">Epoxy Flooring</th>
-									<th className="text-left py-4 px-4 font-semibold text-white/95">Tiles/Vinyl</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr className="border-b border-[#282c33] hover:bg-[#14161A] transition">
-									<td className="py-4 px-4 font-medium">Durability</td>
-									<td className="py-4 px-4">High</td>
-									<td className="py-4 px-4">Medium</td>
-								</tr>
-								<tr className="border-b border-[#282c33] hover:bg-[#14161A] transition">
-									<td className="py-4 px-4 font-medium">Maintenance</td>
-									<td className="py-4 px-4">Low</td>
-									<td className="py-4 px-4">Medium</td>
-								</tr>
-								<tr className="border-b border-[#282c33] hover:bg-[#14161A] transition">
-									<td className="py-4 px-4 font-medium">Lifespan</td>
-									<td className="py-4 px-4">10–20 years</td>
-									<td className="py-4 px-4">5–10 years</td>
-								</tr>
-								<tr className="border-b border-[#282c33] hover:bg-[#14161A] transition">
-									<td className="py-4 px-4 font-medium">Water Resistance</td>
-									<td className="py-4 px-4">Excellent</td>
-									<td className="py-4 px-4">Moderate</td>
-								</tr>
-								<tr className="hover:bg-[#14161A] transition">
-									<td className="py-4 px-4 font-medium">Appearance</td>
-									<td className="py-4 px-4">Modern</td>
-									<td className="py-4 px-4">Standard</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</section>
-
-				{/* Installation Process */}
-				<section className="mb-16">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-6">
-						How is Epoxy Flooring Installed?
-					</h2>
-					<h3 className="text-white/95 font-semibold text-lg mb-6">Step-by-Step Process</h3>
-					<div className="space-y-4">
-						{[
-							"Surface preparation (cleaning & grinding)",
-							"Crack and damage repair",
-							"Primer application",
-							"Epoxy coating application",
-							"Topcoat sealing",
-						].map((step, idx) => (
-							<div key={idx} className="flex gap-4">
-								<div className="shrink-0 w-8 h-8 rounded-full bg-[#14161A] border border-[#282c33] flex items-center justify-center text-white/70 font-semibold">
-									{idx + 1}
-								</div>
-								<div className="grow pt-1">
-									<p className="text-white/80">{step}</p>
-								</div>
-							</div>
-						))}
-					</div>
-					<div className="mt-8 bg-[#14161A] border border-[#282c33] rounded-lg p-6">
-						<p className="text-white/80 text-base leading-relaxed">
-							<span className="text-white/95 font-semibold">Installation Summary:</span> Epoxy flooring is installed by preparing the concrete surface, applying primer, adding epoxy layers, and sealing it for a durable finish.
-						</p>
-					</div>
-				</section>
-
-				{/* Maintenance */}
-				<section className="mb-16">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-6">
-						Maintenance Tips for Epoxy Floors
-					</h2>
-					<div className="grid md:grid-cols-2 gap-4 mb-8">
-						{[
-							"Sweep regularly",
-							"Mop with mild detergent",
-							"Avoid harsh chemicals",
-							"Clean spills quickly",
-						].map((tip, idx) => (
-							<div key={idx} className="bg-[#14161A] border border-[#282c33] rounded-lg p-6">
-								<p className="text-white/80 flex items-center gap-3">
-									<span className="text-lg">✓</span>
-									{tip}
+					<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+						{benefits.map((b, i) => (
+							<div key={i} className="rounded-lg border border-charcoal-lighter bg-charcoal-light p-6">
+								<span className="mb-4 block text-xl leading-none text-primary">
+									{b.icon}
+								</span>
+								<h3 className="mb-2 font-sans text-xs font-semibold uppercase tracking-[0.08em] text-secondary-foreground">
+									{b.title}
+								</h3>
+								<p className="font-sans text-sm leading-relaxed text-secondary-foreground/70">
+									{b.body}
 								</p>
 							</div>
 						))}
 					</div>
-					<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-6">
-						<p className="text-white/80 text-base leading-relaxed">
-							Epoxy floors require minimal upkeep and maintain their shine with basic cleaning.
+					<div className="mt-8 rounded-lg border border-charcoal-lighter bg-charcoal-light p-6">
+						<p className="mb-4 font-sans text-xs uppercase tracking-[0.16em] text-primary">
+							Summary of Benefits
 						</p>
+						<ul className="grid grid-cols-1 gap-2 md:grid-cols-2">
+							{[
+								"Long lifespan",
+								"High resistance",
+								"Modern look",
+								"Budget-friendly",
+							].map((item) => (
+								<li key={item} className="font-sans text-sm text-secondary-foreground/70">
+									• {item}
+								</li>
+							))}
+						</ul>
 					</div>
 				</section>
 
-				{/* Local Region */}
-				<section className="mb-16">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-6">
-						Epoxy Flooring in Wayne & North Jersey
-					</h2>
-					<p className="text-white/80 text-lg leading-relaxed mb-6">
-						If you&apos;re located in Wayne or North Jersey, epoxy flooring is especially beneficial due to seasonal weather changes.
+				<section className="border-b border-charcoal-lighter py-16">
+					<Label>Systems</Label>
+					<SectionHeading>Types of Epoxy Flooring</SectionHeading>
+					<div className="mt-8 overflow-x-auto rounded-lg border border-charcoal-lighter bg-charcoal-light p-4">
+						<table className="w-full border-collapse text-left font-sans text-sm text-secondary-foreground/70">
+							<thead>
+								<tr className="border-b border-charcoal-lighter">
+									{["System", "Best For", "Key Feature"].map((h) => (
+										<th key={h} className="px-0 py-3 text-xs font-medium uppercase tracking-[0.18em] text-primary">
+											{h}
+										</th>
+									))}
+								</tr>
+							</thead>
+							<tbody>
+								{[
+									["Self-Leveling", "Commercial spaces", "Smooth, seamless finish"],
+									["Epoxy Mortar Floors", "Industrial environments", "Heavy-duty durability"],
+									["Flake Epoxy", "Garages & homes", "Decorative and slip-resistant"],
+									["Metallic Epoxy", "Showrooms & interiors", "High-end gloss appearance"],
+								].map(([type, best, feat], i) => (
+									<tr key={i} className="border-b border-charcoal-lighter">
+										<td className="px-0 py-4 font-medium text-secondary-foreground">
+											{type}
+										</td>
+										<td className="px-0 py-4">{best}</td>
+										<td className="px-0 py-4">{feat}</td>
+									</tr>
+								))}
+							</tbody>
+						</table>
+					</div>
+				</section>
+
+				<section className="border-b border-charcoal-lighter py-16">
+					<Label>Applications</Label>
+					<SectionHeading>Where It&apos;s Used</SectionHeading>
+					<div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+						{[
+							{
+								title: "Residential",
+								items: ["Garage floors", "Basements", "Kitchens & laundry"],
+							},
+							{
+								title: "Commercial",
+								items: ["Retail stores", "Office lobbies", "Restaurants"],
+							},
+							{
+								title: "Industrial",
+								items: ["Warehouses", "Factories", "Manufacturing units"],
+							},
+						].map((col, i) => (
+							<div key={i} className="rounded-lg border border-charcoal-lighter bg-charcoal-light p-6">
+								<p className="mb-4 font-sans text-xs uppercase tracking-[0.18em] text-primary">
+									{col.title}
+								</p>
+								<ul className="space-y-3">
+									{col.items.map((item, j) => (
+										<li key={j} className="border-b border-charcoal-lighter pb-2 text-sm text-secondary-foreground/70 last:border-b-0 last:pb-0">
+											{item}
+										</li>
+									))}
+								</ul>
+							</div>
+						))}
+					</div>
+					<p className="mt-8 font-sans text-base leading-relaxed text-secondary-foreground/70">
+						Epoxy flooring can be used in homes, garages, offices, retail stores,
+						 and industrial facilities due to its durability and resistance to wear
+						 and chemicals.
 					</p>
-					<div className="grid md:grid-cols-2 gap-6 mb-8">
-						<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-8">
-							<h3 className="text-white/95 font-semibold text-lg mb-4">Why It Works Locally</h3>
-							<ul className="text-white/70 space-y-3">
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Handles moisture and humidity</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Resistant to salt damage (winter)</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">•</span>
-									<span>Ideal for garages and basements</span>
-								</li>
-							</ul>
-						</div>
-						<div className="bg-[#14161A] border border-[#282c33] rounded-lg p-8">
-							<h3 className="text-white/95 font-semibold text-lg mb-4">Real-World Example</h3>
-							<p className="text-white/70 mb-4">A retail store in North Jersey upgraded to epoxy flooring and saw:</p>
-							<ul className="text-white/70 space-y-3">
-								<li className="flex items-start">
-									<span className="mr-3">✓</span>
-									<span>40% reduction in maintenance costs</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">✓</span>
-									<span>Improved customer experience</span>
-								</li>
-								<li className="flex items-start">
-									<span className="mr-3">✓</span>
-									<span>Increased durability under high foot traffic</span>
-								</li>
-							</ul>
-						</div>
-					</div>
 				</section>
 
-				{/* Conclusion */}
-				<section className="mb-16">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-6">
-						Conclusion
-					</h2>
-					<div className="space-y-4">
-						<p className="text-white/80 text-lg leading-relaxed">
-							Epoxy flooring is more than just a surface upgrade. It&apos;s a long-term investment in durability, style, and functionality. Whether for a home garage or a large commercial facility, it delivers unmatched performance and value.
-						</p>
-						<p className="text-white/80 text-lg leading-relaxed">
-							If you&apos;re in Wayne or North Jersey, this flooring solution is particularly practical due to its resistance to weather, moisture, and wear.
-						</p>
-					</div>
-				</section>
-
-				{/* FAQ Section */}
-				<section className="mb-16">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-8">
-						Frequently Asked Questions
-					</h2>
-					<div className="space-y-4">
-						{faqs.map((faq, index) => (
-							<div
-								key={index}
-								className={`rounded-lg border bg-[#14161A] transition-all duration-300 ${
-									openFAQIndex === index
-										? "border-white/30"
-										: "border-[#282c33]"
-								}`}
-							>
-								<button
-									onClick={() =>
-										setOpenFAQIndex(openFAQIndex === index ? null : index)
-									}
-									aria-expanded={openFAQIndex === index}
-									className="flex w-full items-center justify-between p-6 text-left font-medium text-white/90 transition-colors duration-300 hover:bg-white/5"
-								>
-									<span>{faq.question}</span>
-									<ChevronRight
-										className={`h-5 w-5 text-white/60 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-											openFAQIndex === index ? "rotate-90" : ""
-										}`}
-									/>
-								</button>
-								{openFAQIndex === index && (
-									<div className="border-t border-[#282c33] px-6 py-4 text-white/70">
-										{faq.answer}
-									</div>
-								)}
+				<section className="border-b border-charcoal-lighter py-16">
+					<Label>Investment</Label>
+					<SectionHeading>Cost of Epoxy Flooring</SectionHeading>
+					<p className="mb-4 font-sans text-base leading-relaxed text-secondary-foreground/70">
+						Pricing varies by floor size, surface condition, and epoxy type. Below is a general guide for budgeting your project.
+					</p>
+					<p className="mb-3 font-sans text-sm uppercase tracking-[0.12em] text-primary">
+						The cost depends on:
+					</p>
+					<ul className="mb-8 grid grid-cols-1 gap-2 md:grid-cols-3">
+						{["Floor size", "Surface condition", "Type of epoxy used"].map((item) => (
+							<li key={item} className="font-sans text-sm text-secondary-foreground/70">
+								• {item}
+							</li>
+						))}
+					</ul>
+					<p className="mb-4 font-sans text-sm uppercase tracking-[0.12em] text-primary">
+						Average Pricing
+					</p>
+					<div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+						{[
+							{ tier: "Basic Epoxy", price: "$3 – $7", note: "per sq. ft." },
+							{ tier: "Decorative", price: "$7 – $12", note: "per sq. ft." },
+							{ tier: "Industrial Grade", price: "$10 – $15+", note: "per sq. ft." },
+						].map((row, i) => (
+							<div key={i} className="rounded-lg border border-charcoal-lighter bg-charcoal-light p-6">
+								<p className="mb-2 font-sans text-xs uppercase tracking-[0.16em] text-secondary-foreground/60">
+									{row.tier}
+								</p>
+								<p className="mb-1 font-serif text-3xl text-primary">
+									{row.price}
+								</p>
+								<p className="font-sans text-xs text-secondary-foreground/60">
+									{row.note}
+								</p>
 							</div>
 						))}
 					</div>
 				</section>
 
-				{/* CTA Section */}
-				<section className="bg-linear-to-r from-[#14161A] to-[#1a1d23] border border-[#282c33] rounded-lg p-8 md:p-12 text-center">
-					<h2 className="font-serif text-3xl md:text-4xl font-bold text-white/95 mb-4">
+				<section className="border-b border-charcoal-lighter py-16">
+					<Label>Comparison</Label>
+					<SectionHeading>Epoxy vs. Traditional Flooring</SectionHeading>
+					<div className="mt-8 overflow-x-auto rounded-lg border border-charcoal-lighter bg-charcoal-light p-4">
+						<table className="w-full border-collapse text-left font-sans text-sm text-secondary-foreground/70">
+							<thead>
+								<tr className="border-b border-charcoal-lighter">
+									{["Feature", "Epoxy Flooring", "Tiles / Vinyl"].map((h, i) => (
+										<th
+											key={h}
+											className={`px-0 py-3 text-xs font-medium uppercase tracking-[0.18em] ${i === 1 ? "text-primary" : "text-secondary-foreground/60"}`}
+										>
+											{h}
+										</th>
+									))}
+								</tr>
+							</thead>
+							<tbody>
+								{[
+									["Durability", "High", "Medium"],
+									["Maintenance", "Low", "Medium"],
+									["Lifespan", "10–20 years", "5–10 years"],
+									["Water Resistance", "Excellent", "Moderate"],
+									["Appearance", "Modern", "Standard"],
+								].map(([feat, epoxy, trad], i) => (
+									<tr key={i} className="border-b border-charcoal-lighter">
+										<td className="px-0 py-4 text-xs uppercase tracking-[0.06em] text-secondary-foreground/60">
+											{feat}
+										</td>
+										<td className="px-0 py-4 font-medium text-secondary-foreground">{epoxy}</td>
+										<td className="px-0 py-4">{trad}</td>
+									</tr>
+								))}
+							</tbody>
+						</table>
+					</div>
+				</section>
+
+				<section className="border-b border-charcoal-lighter py-16">
+					<Label>Process</Label>
+					<SectionHeading>How Epoxy is Installed</SectionHeading>
+					<div className="mt-10">
+						{steps.map((step, i) => (
+							<div
+								key={i}
+								className={`flex gap-6 py-7 ${i < steps.length - 1 ? "border-b border-charcoal-lighter" : ""}`}
+							>
+								<span className="min-w-8 pt-1 font-serif text-xs tracking-[0.06em] text-primary">
+									{step.num}
+								</span>
+								<div>
+									<p className="mb-1 font-sans text-sm font-semibold uppercase tracking-[0.04em] text-secondary-foreground">
+										{step.title}
+									</p>
+									<p className="font-sans text-sm leading-relaxed text-secondary-foreground/70">
+										{step.desc}
+									</p>
+								</div>
+							</div>
+						))}
+					</div>
+					<p className="mt-8 font-sans text-base leading-relaxed text-secondary-foreground/70">
+						Epoxy flooring is installed by preparing the concrete surface, applying
+						 primer, adding epoxy layers, and sealing it for a durable finish.
+					</p>
+				</section>
+
+				<section className="border-b border-charcoal-lighter py-16">
+					<Label>Care</Label>
+					<SectionHeading>Maintenance Tips</SectionHeading>
+					<p className="mb-9 font-sans text-base leading-relaxed text-secondary-foreground/70">
+						Epoxy floors require minimal upkeep and maintain their shine with basic cleaning routines.
+					</p>
+					<div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+						{["Sweep regularly", "Mop with mild detergent", "Avoid harsh chemicals", "Clean spills quickly"].map(
+							(tip, i) => (
+								<div key={i} className="flex items-start gap-3 rounded-lg border border-charcoal-lighter bg-charcoal-light p-5">
+									<span className="pt-1 text-primary">—</span>
+									<p className="font-sans text-sm leading-relaxed text-secondary-foreground/70">
+										{tip}
+									</p>
+								</div>
+							)
+						)}
+					</div>
+				</section>
+
+				<section className="border-b border-charcoal-lighter py-16">
+					<Label>Local Context</Label>
+					<SectionHeading>Epoxy in Wayne & North Jersey</SectionHeading>
+					<p className="mb-12 font-sans text-base leading-relaxed text-secondary-foreground/70">
+						If you&apos;re located in Wayne or North Jersey, epoxy flooring is especially
+						 beneficial due to seasonal weather changes.
+					</p>
+					<div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+						<div className="rounded-lg border border-charcoal-lighter bg-charcoal-light p-6">
+							<p className="mb-4 font-sans text-xs uppercase tracking-[0.16em] text-primary">
+								Why It Works Here
+							</p>
+							<ul className="space-y-3">
+								{["Handles moisture and humidity", "Resistant to salt damage (winter)", "Ideal for garages and basements"].map((item, i) => (
+									<li key={i} className="flex gap-3 font-sans text-sm text-secondary-foreground/70">
+										<span className="pt-1 text-primary">◆</span>
+										{item}
+									</li>
+								))}
+							</ul>
+						</div>
+						<div className="rounded-lg border border-charcoal-lighter bg-charcoal-light p-6">
+							<p className="mb-4 font-sans text-xs uppercase tracking-[0.16em] text-secondary-foreground/60">
+								Real-World Result
+							</p>
+							<p className="mb-5 font-serif text-base italic leading-relaxed text-secondary-foreground/70">
+								A North Jersey retail store upgraded to epoxy and saw significant gains.
+							</p>
+							<ul className="space-y-2">
+								{["40% reduction in maintenance costs", "Improved customer experience due to clean aesthetics", "Increased durability under high foot traffic"].map((item, i) => (
+									<li key={i} className="flex gap-2 font-sans text-sm text-secondary-foreground/70">
+										<span className="text-primary">↗</span>
+										{item}
+									</li>
+								))}
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section className="border-b border-charcoal-lighter py-16">
+					<Label>Summary</Label>
+					<SectionHeading>Conclusion</SectionHeading>
+					<p className="font-sans text-base leading-relaxed text-secondary-foreground/70">
+						Epoxy flooring is more than just a surface upgrade. It&apos;s a long-term investment in durability, style, and functionality. Whether for a home garage or a large commercial facility, it delivers unmatched performance and value.
+					</p>
+					<p className="mt-5 font-sans text-base leading-relaxed text-secondary-foreground/70">
+						If you&apos;re in Wayne or North Jersey, this flooring solution is particularly practical given its resilience against weather, moisture, and wear.
+					</p>
+				</section>
+
+				<section className="border-b border-charcoal-lighter py-14">
+					<Label>FAQ</Label>
+					<SectionHeading>Frequently Asked Questions</SectionHeading>
+					<div className="mt-8 flex flex-col">
+						{faqs.map((faq, index) => (
+							<div key={index} className="border-b border-charcoal-lighter">
+								<button
+									onClick={() => setOpenFAQIndex(openFAQIndex === index ? null : index)}
+									className="flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left transition-colors duration-300 hover:text-primary"
+									aria-expanded={openFAQIndex === index}
+								>
+									<span className={`font-serif text-base leading-relaxed transition-colors ${openFAQIndex === index ? "text-secondary-foreground" : "text-secondary-foreground/70"}`}>
+										{faq.question}
+									</span>
+									<span className={`shrink-0 text-xl leading-none text-primary transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${openFAQIndex === index ? "rotate-45" : "rotate-0"}`}>
+										+
+									</span>
+								</button>
+								<div
+									className={`grid transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+										openFAQIndex === index
+											? "grid-rows-[1fr] opacity-100"
+											: "grid-rows-[0fr] opacity-0"
+									}`}
+								>
+									<div className="overflow-hidden">
+										<div className="pb-6 font-sans text-sm leading-relaxed text-secondary-foreground/70 md:text-base">
+											{faq.answer}
+										</div>
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+				</section>
+
+				<section className="py-16 md:py-20">
+					<p className="mb-4 font-sans text-xs uppercase tracking-[0.2em] text-primary">
+						Get Started
+					</p>
+					<h2 className="mb-5 max-w-2xl font-serif text-3xl leading-tight text-secondary-foreground md:text-5xl">
 						Ready to Upgrade Your Floors?
 					</h2>
-					<p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
+					<p className="mb-8 max-w-2xl font-sans text-base leading-relaxed text-secondary-foreground/70">
 						Contact a professional epoxy flooring specialist today and transform your space with a durable, modern finish.
 					</p>
-					<a
+					<Link
 						href="/services/epoxy-flooring"
-						className="inline-block px-8 py-3 bg-white/10 border border-white/30 text-white/90 rounded-lg hover:bg-white/20 transition-all duration-300 font-medium"
+						className="inline-flex items-center gap-3 rounded-lg border border-primary px-6 py-3 font-sans text-xs uppercase tracking-[0.12em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
 					>
 						Learn More About Our Services
-					</a>
+						<span className="text-base">→</span>
+					</Link>
 				</section>
+				</div>
 			</div>
 		</article>
+	);
+}
+
+function Label({ children }: { children: React.ReactNode }) {
+	return <p className="mb-3 font-sans text-xs uppercase tracking-[0.2em] text-primary">{children}</p>;
+}
+
+function SectionHeading({ children }: { children: React.ReactNode }) {
+	return (
+		<h2 className="mb-5 font-serif text-3xl leading-tight text-secondary-foreground md:text-4xl">
+			{children}
+		</h2>
 	);
 }

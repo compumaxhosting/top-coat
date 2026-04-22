@@ -8,7 +8,7 @@ const EpoxyBlogPostPage = () => {
 	return (
 		<>
 			<Navbar />
-			<main className="bg-[#0D0F12]">
+			<main>
 				<BlogPostHero />
 				<BlogPostContent />
 			</main>
