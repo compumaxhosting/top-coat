@@ -71,24 +71,34 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 
 					return (
 						<div key={link.label} className="flex flex-col">
-							{/* Main link button */}
-							<button
-								onClick={isServices ? toggleServices : onClose}
-								className={cn(
-									"group relative flex items-center justify-between w-full gap-3 rounded-sm px-2 py-2.5 text-sm font-sans font-medium tracking-widest uppercase border-b border-white/6 last:border-b-0 transition-all duration-300 active:scale-95",
-									isActive ? "bg-primary/10 text-primary" : "text-white/50 hover:text-white hover:bg-white/5"
-								)}
-							>
-								<span className="transition-transform duration-300 group-hover:translate-x-1">{link.label}</span>
-								{isServices && (
+							{isServices ? (
+								<button
+									onClick={toggleServices}
+									className={cn(
+										"group relative flex items-center justify-between w-full gap-3 rounded-sm px-2 py-2.5 text-sm font-sans font-medium tracking-widest uppercase border-b border-white/6 last:border-b-0 transition-all duration-300 active:scale-95",
+										isActive ? "bg-primary/10 text-primary" : "text-white/50 hover:text-white hover:bg-white/5"
+									)}
+								>
+									<span className="transition-transform duration-300 group-hover:translate-x-1">{link.label}</span>
 									<ChevronDown
 										className={cn(
 											"w-3 h-3 transition-transform duration-300",
 											servicesOpen ? "rotate-180" : "rotate-0"
 										)}
 									/>
-								)}
-							</button>
+								</button>
+							) : (
+								<Link
+									href={link.href}
+									onClick={onClose}
+									className={cn(
+										"group relative flex items-center justify-between w-full gap-3 rounded-sm px-2 py-2.5 text-sm font-sans font-medium tracking-widest uppercase border-b border-white/6 last:border-b-0 transition-all duration-300 active:scale-95",
+										isActive ? "bg-primary/10 text-primary" : "text-white/50 hover:text-white hover:bg-white/5"
+									)}
+								>
+									<span className="transition-transform duration-300 group-hover:translate-x-1">{link.label}</span>
+								</Link>
+							)}
 
 							{/* Services Dropdown */}
 							{isServices && (
