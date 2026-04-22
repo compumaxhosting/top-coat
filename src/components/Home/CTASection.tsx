@@ -46,7 +46,7 @@ const CTASection = () => {
         <h3 className="font-serif text-xl  font-bold text-[#efece7] md:text-4xl pt-8 md:pt-8">Premium Epoxy Flooring & Decorative Concrete in NJ & NYC </h3>
         <h3 className="mb-6 font-serif text-xl  font-bold text-[#efece7] md:text-3xl">– Serving Wayne, Newark, Paterson, Jersey City & Bergen County</h3>
         <p className="mx-auto  max-w-5xl font-sans text-lg text-[#818898]">
-          TopCoat Artistry LLC serves Wayne, Newark, Paterson, Jersey City, New York City & Bergen County towns—Paramus, Ridgewood, Glen Rock, Saddle River, Upper Saddle River, Ramsey, Mahwah, Midland Park, Hillsdale, Teaneck, Montvale, River Vale, Westwood, Park Ridge—and Montville in Morris County, offering epoxy flooring, garage floor coatings, terrazzo, stamped concrete, and custom decorative surfaces in NJ & NYC.&quot;
+          TopCoat Artistry LLC serves Wayne, Newark, Paterson, Jersey City, New York City & Bergen County towns—Paramus, Ridgewood, Glen Rock, Saddle River, Upper Saddle River, Ramsey, Mahwah, Midland Park, Hillsdale, Teaneck, Montvale, River Vale, Westwood, Park Ridge—and Montville in Morris County, offering epoxy flooring, garage floor coatings, terrazzo, stamped concrete, and custom decorative surfaces in NJ & NYC.
         </p>
       </div>
     </section>
