@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "http://topcoat-llc.com/";
+  const baseUrl = "https://topcoat-llc.com/";
 
   return [
     {
@@ -67,6 +67,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/services/terrazzo`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/epoxy-flooring-benefits-for-homes-businesses`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
