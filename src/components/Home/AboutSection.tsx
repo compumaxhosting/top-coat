@@ -76,22 +76,22 @@ const AboutSection = () => {
             </p>
             <ul className="mb-8 list-disc space-y-2 pl-5 text-white/70">
               <li>
-                <strong><Link href="/services/epoxy-flooring" target="_blank">
+                <strong><Link href="/services/epoxy-flooring">
                 Epoxy Flooring & Garage Coatings</Link>:</strong> High-performance,
                 slip-resistant finishes for Newark garages and industrial basements.
               </li>
               <li>
-                <strong><Link href="/services/stamped-concrete" target="_blank">
+                <strong><Link href="/services/stamped-concrete">
                 Decorative Stamped Concrete</Link>:</strong> Elegant patterns for patios
                 and walkways that mimic stone or brick.
               </li>
               <li>
-                <strong><Link href="/services/terrazzo" target="_blank">
+                <strong><Link href="/services/terrazzo">
                 Terrazzo & Custom Concrete</Link>:</strong> Seamless, high-end interior
                 flooring for modern homes and retail spaces.
               </li>
               <li>
-                <strong><Link href="/services/building-facades" target="_blank">
+                <strong><Link href="/services/building-facades">
                 Building Facades</Link>:</strong> Expert masonry restoration to enhance
                 curb appeal and structural integrity.
               </li>

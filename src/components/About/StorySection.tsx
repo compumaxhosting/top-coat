@@ -35,12 +35,32 @@ const StorySection = () => {
 						<p className="leading-relaxed text-white/70">
 							We address common flooring frustrations—such as cracking and staining—using advanced materials engineered for the Northeast climate.
 						</p>
-						<ul className="list-inside list-disc space-y-2 pl-4">
-							<li><strong>Garage Floor Epoxy:</strong> Slip-resistant, chemical-proof coatings built for NJ winters.</li>
-							<li><strong>Decorative Stamped Concrete:</strong> The beauty of natural stone with superior concrete durability.</li>
-							<li><strong>Terrazzo & Custom Surfaces:</strong> Elegant, seamless interior flooring tailored to your vision.</li>
-							<li><strong>Building Facades:</strong> Expert masonry and aesthetic restoration for lasting curb appeal.</li>
-						</ul>
+							<ul className="list-inside list-disc space-y-2 pl-4">
+								<li>
+									<strong>
+										<Link href="/services/garage-floors">Garage Floor Epoxy:</Link>
+									</strong>{" "}
+									Slip-resistant, chemical-proof coatings built for NJ winters.
+								</li>
+								<li>
+									<strong>
+										<Link href="/services/stamped-concrete">Decorative Stamped Concrete:</Link>
+									</strong>{" "}
+									The beauty of natural stone with superior concrete durability.
+								</li>
+								<li>
+									<strong>
+										<Link href="/services/terrazzo">Terrazzo &amp; Custom Surfaces:</Link>
+									</strong>{" "}
+									Elegant, seamless interior flooring tailored to your vision.
+								</li>
+								<li>
+									<strong>
+										<Link href="/services/building-facades">Building Facades:</Link>
+									</strong>{" "}
+									Expert masonry and aesthetic restoration for lasting curb appeal.
+								</li>
+							</ul>
 					</div>
 				</div>
 
