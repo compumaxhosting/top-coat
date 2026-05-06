@@ -19,4 +19,14 @@ export const blogPosts: BlogPost[] = [
 		date: "April 2026",
 		readTime: "8 min read",
 	},
+	{
+		slug: "terrazzo-flooring-services-in-wayne-nj",
+		title: "Complete Guide to Terrazzo Flooring Services in Wayne & North Jersey",
+		excerpt:
+			"Explore terrazzo flooring services in Wayne & North Jersey. Learn costs, benefits, installation, and expert tips for long-lasting floors.",
+		image: "/Images/terrazzo-interior.webp",
+		category: "Terrazzo Flooring",
+		date: "6 May 2026",
+		readTime: "8 min read",
+	},
 ];

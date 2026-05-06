@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function IntroSection() {
@@ -15,7 +16,7 @@ export default function IntroSection() {
 			</p>
 			<p className="mt-5 max-w-4xl font-sans text-base leading-relaxed text-secondary-foreground/70 md:text-lg">
 				Whether you&apos;re upgrading a garage, renovating a retail store, or improving
-				an industrial facility, epoxy flooring delivers performance, aesthetics, and
+				an industrial facility, <Link href="/services/epoxy-flooring" className="text-secondary-foreground/70">epoxy flooring</Link> delivers performance, aesthetics, and
 				value in one solution. Its versatility, low maintenance, and modern finish
 				make it a top choice across industries.
 			</p>
