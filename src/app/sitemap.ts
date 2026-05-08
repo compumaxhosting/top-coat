@@ -1,104 +1,93 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "http://www.topcoat-llc.com";
+  const baseUrl = "https://www.topcoat-llc.com";
+  const lastModified = new Date("2026-05-08T12:18:52+00:00");
 
   return [
     {
       url: `${baseUrl}/`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "yearly",
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/services`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
-      priority: 0.9,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/services/epoxy-flooring`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/services/terrazzo`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/services/building-facades`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/services/garage-floors`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/services/stamped-concrete`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/services/custom-decorative-concrete`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/portfolio`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/blog/epoxy-flooring-benefits-for-homes-businesses`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "weekly",
-      priority: 0.7,
+      priority: 0.64,
     },
     {
       url: `${baseUrl}/blog/terrazzo-flooring-services-in-wayne-nj`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "weekly",
-      priority: 0.7,
+      priority: 0.64,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "yearly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/tel:2013152633`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
-      url: "https://www.topcoat-llc.com/",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
+      priority: 0.8,
     },
   ];
 }
