@@ -16,7 +16,7 @@ export const blogPosts: BlogPost[] = [
 			"Discover why epoxy flooring is the most durable, cost-effective, and visually appealing flooring solution for both residential and commercial spaces.",
 		image: "/Images/Service-Epoxy-Flooring.webp",
 		category: "Epoxy Flooring",
-		date: "April 2026",
+		date: "22 April 2026",
 		readTime: "8 min read",
 	},
 	{

@@ -25,7 +25,7 @@ const BlogPage = () => {
 						</div>
 
 						<div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
-							{blogPosts.map((post) => (
+							{[...blogPosts].reverse().map((post) => (
 								<BlogCard key={post.slug} post={post} />
 							))}
 						</div>
