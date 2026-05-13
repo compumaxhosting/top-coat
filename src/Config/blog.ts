@@ -20,6 +20,16 @@ export const blogPosts: BlogPost[] = [
 		readTime: "8 min read",
 	},
 	{
+		slug: "building-facade-solutions-in-new-jersey",
+		title: "Building Facade Solutions in New Jersey: Enhancing Durability, Design, and Curb Appeal",
+		excerpt:
+			"Explore building facade systems and restoration services in New Jersey — materials, benefits, and local considerations to protect and enhance your property.",
+		image: "/Images/building-facade-blog.webp",
+		category: "Building Facades",
+		date: "13 May 2026",
+		readTime: "8 min read",
+	},
+	{
 		slug: "terrazzo-flooring-services-in-wayne-nj",
 		title: "Complete Guide to Terrazzo Flooring Services in Wayne & North Jersey",
 		excerpt:
