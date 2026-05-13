@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.topcoat-llc.com/services/building-facades",
+    canonical: "https://www.topcoat-llc.com/services/building-facade-contractors-wayne-nj",
   },
 
   referrer: "strict-origin-when-cross-origin",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    url: "https://www.topcoat-llc.com/services/building-facades",
+    url: "https://www.topcoat-llc.com/services/building-facade-contractors-wayne-nj",
     title: "Expert Building Facade Restoration & Repair Services in NJ",
     description:
       "Industrial-grade facade restoration and waterproofing for commercial properties in Wayne, Newark, and Jersey City. Professional care by TopCoat Artistry LLC.",
@@ -95,8 +95,8 @@ export default function BuildingFacadesLayout({
             "@type": "GeneralContractor",
             name: "TopCoat Artistry LLC",
             image: "https://www.topcoat-llc.com/Images/building-facade.webp",
-            "@id": "https://www.topcoat-llc.com/services/building-facades",
-            url: "https://www.topcoat-llc.com/services/building-facades",
+            "@id": "https://www.topcoat-llc.com/services/building-facade-contractors-wayne-nj",
+            url: "https://www.topcoat-llc.com/services/building-facade-contractors-wayne-nj",
             telephone: "+1-201-315-2633",
             priceRange: "$$$",
             address: {

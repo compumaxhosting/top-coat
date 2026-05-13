@@ -9,18 +9,19 @@ const companyLinks = [
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Portfolio", href: "/portfolio" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 
 const servicesLinks = [
-  { label: "Epoxy Flooring", href: "/services/epoxy-flooring" },
-  { label: "Terrazzo Flooring", href: "/services/terrazzo" },
-  { label: "Building Facade", href: "/services/building-facades" },
-  { label: "Garage Floor Epoxy", href: "/services/garage-floors" },
-  { label: "Stamped Concrete", href: "/services/stamped-concrete" },
+  { label: "Epoxy Flooring", href: "/services/epoxy-flooring-wayne-new-jersey" },
+  { label: "Terrazzo Flooring", href: "/services/terrazzo-flooring-contractors-wayne-nj" },
+  { label: "Building Facade", href: "/services/building-facade-contractors-wayne-nj" },
+  { label: "Garage Floor Epoxy", href: "/services/garage-floor-coating-contractors-in-wayne-nj" },
+  { label: "Stamped Concrete", href: "/services/stamped-concrete-contractors-wayne-nj" },
   {
     label: "Decorative Concrete",
-    href: "/services/custom-decorative-concrete",
+    href: "/services/custom-decorative-concrete-contractors-wayne-nj",
   },
 ];
 

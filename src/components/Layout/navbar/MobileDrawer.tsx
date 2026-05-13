@@ -12,12 +12,12 @@ import { cn } from "@/lib/utils";
 import type { NavLink } from "./types";
 
 const servicesLinks = [
-	{ title: "Epoxy Flooring NJ", path: "/services/epoxy-flooring" },
-	{ title: "Terrazzo Flooring Installation", path: "/services/terrazzo" },
-	{ title: "Building Facade Concrete Finishes", path: "/services/building-facades" },
-	{ title: "Garage Floor Epoxy Coatings", path: "/services/garage-floors" },
-	{ title: "Stamped Concrete Patios & Driveways", path: "/services/stamped-concrete" },
-	{ title: "Custom Decorative Concrete", path: "/services/custom-decorative-concrete" },
+	{ title: "Epoxy Flooring NJ", path: "/services/epoxy-flooring-wayne-new-jersey" },
+	{ title: "Terrazzo Flooring Installation", path: "/services/terrazzo-flooring-contractors-wayne-nj" },
+	{ title: "Building Facade Concrete Finishes", path: "/services/building-facade-contractors-wayne-nj" },
+	{ title: "Garage Floor Epoxy Coatings", path: "/services/garage-floor-coating-contractors-in-wayne-nj" },
+	{ title: "Stamped Concrete Patios & Driveways", path: "/services/stamped-concrete-contractors-wayne-nj" },
+	{ title: "Custom Decorative Concrete", path: "/services/custom-decorative-concrete-contractors-wayne-nj" },
 ];
 
 type MobileDrawerProps = {

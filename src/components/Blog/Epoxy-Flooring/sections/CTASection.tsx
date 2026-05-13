@@ -14,7 +14,7 @@ export default function CTASection() {
 				space with a durable, modern finish.
 			</p>
 			<Link
-				href="/services/epoxy-flooring"
+				href="/services/epoxy-flooring-wayne-new-jersey"
 				className="inline-flex items-center gap-3 rounded-lg border border-primary px-6 py-3 font-sans text-xs uppercase tracking-[0.12em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
 			>
 				Learn More About Our Services

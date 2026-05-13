@@ -17,7 +17,7 @@ const EpoxyFlooringPage = () => {
 				<WhyChooseUs />
 				<Details />
 				<ProjectGallery />
-				<OtherServices currentSlug="epoxy-flooring" />
+				<OtherServices currentSlug="epoxy-flooring-wayne-new-jersey" />
 				<CTASection />
 			</main>
 			<Footer />

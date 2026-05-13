@@ -38,25 +38,25 @@ const StorySection = () => {
 							<ul className="list-inside list-disc space-y-2 pl-4">
 								<li>
 									<strong>
-										<Link href="/services/garage-floors">Garage Floor Epoxy:</Link>
+												<Link href="/services/garage-floor-coating-contractors-in-wayne-nj">Garage Floor Epoxy:</Link>
 									</strong>{" "}
 									Slip-resistant, chemical-proof coatings built for NJ winters.
 								</li>
 								<li>
 									<strong>
-										<Link href="/services/stamped-concrete">Decorative Stamped Concrete:</Link>
+												<Link href="/services/stamped-concrete-contractors-wayne-nj">Decorative Stamped Concrete:</Link>
 									</strong>{" "}
 									The beauty of natural stone with superior concrete durability.
 								</li>
 								<li>
 									<strong>
-										<Link href="/services/terrazzo">Terrazzo &amp; Custom Surfaces:</Link>
+												<Link href="/services/terrazzo-flooring-contractors-wayne-nj">Terrazzo &amp; Custom Surfaces:</Link>
 									</strong>{" "}
 									Elegant, seamless interior flooring tailored to your vision.
 								</li>
 								<li>
 									<strong>
-										<Link href="/services/building-facades">Building Facades:</Link>
+												<Link href="/services/building-facade-contractors-wayne-nj">Building Facades:</Link>
 									</strong>{" "}
 									Expert masonry and aesthetic restoration for lasting curb appeal.
 								</li>

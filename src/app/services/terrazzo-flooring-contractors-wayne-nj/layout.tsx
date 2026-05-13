@@ -3,17 +3,17 @@ import type { Metadata, Viewport } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.topcoat-llc.com"),
 
-  title: "Stamped Concrete Wayne NJ | Decorative Patios & Driveways | TopCoat Artistry",
+  title: "Terrazzo Flooring Wayne NJ | Restoration & Installation | TopCoat Artistry",
 
   description:
-    "TopCoat Artistry LLC: Professional stamped concrete in Wayne, Newark, & Jersey City. We specialize in decorative stamped concrete patios, driveways, and installation services. Salt-resistant NJ finishes. Free quotes!",
+    "TopCoat Artistry LLC: Expert terrazzo flooring in Wayne, Newark, Paterson, & Jersey City. We specialize in terrazzo floor installation, professional polishing, and restoration services. Free NJ estimates!",
 
   keywords: [
-    "stamped concrete near me",
-    "stamped concrete contractors Wayne NJ",
-    "stamped concrete patio Newark",
-    "stamped concrete driveway Jersey City",
-    "decorative concrete Paterson",
+    "terrazzo flooring contractors near me",
+    "terrazzo flooring Wayne NJ",
+    "terrazzo floor restoration Newark",
+    "terrazzo polishing Jersey City",
+    "commercial terrazzo NJ",
     "TopCoat Artistry LLC",
   ],
 
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.topcoat-llc.com/services/stamped-concrete",
+    canonical: "https://www.topcoat-llc.com/services/terrazzo-flooring-contractors-wayne-nj",
   },
 
   referrer: "strict-origin-when-cross-origin",
@@ -41,32 +41,32 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black",
-    title: "TopCoat Concrete",
+    title: "TopCoat Terrazzo",
   },
 
   openGraph: {
     type: "website",
-    title: "Expert Stamped Concrete Patios & Driveways in North Jersey",
+    title: "Expert Terrazzo Floor Installation & Polishing in North Jersey",
     description:
-      "Elevate your curb appeal with professional stamped concrete services. Serving Wayne, Newark, Paterson, and Jersey City. High-end textures by TopCoat Artistry LLC.",
-    url: "https://www.topcoat-llc.com/services/stamped-concrete",
+      "Premium terrazzo restoration and installation for homes and businesses in Wayne, Newark, and Jersey City. Discover the durability of TopCoat Artistry LLC.",
+    url: "https://www.topcoat-llc.com/services/terrazzo-flooring-contractors-wayne-nj",
     siteName: "TopCoat Artistry LLC",
     images: [
       {
-        url: "https://www.topcoat-llc.com/Images/stamped-concrete.webp",
+        url: "https://www.topcoat-llc.com/Images/terrazzo.webp",
         width: 1200,
         height: 630,
-        alt: "Stamped concrete patio in New Jersey",
+        alt: "Terrazzo flooring in New Jersey",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Stamped Concrete Contractors in Wayne & Newark NJ",
+    title: "Terrazzo Flooring Contractors Wayne & Newark NJ",
     description:
-      "Custom stamped concrete installation for NJ homes. Beautiful, weather-resistant outdoor surfaces. Get your free estimate from TopCoat Artistry LLC today.",
-    images: ["https://www.topcoat-llc.com/Images/stamped-concrete.webp"],
+      "Restore your floors to a mirror finish. TopCoat Artistry LLC offers professional terrazzo polishing and installation across North Jersey.",
+    images: ["https://www.topcoat-llc.com/Images/terrazzo.webp"],
     site: "@topcoatartistry",
   },
 
@@ -77,10 +77,10 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#4a5d4e",
+  themeColor: "#f8f9fa",
 };
 
-export default function StampedConcreteLayout({
+export default function TerrazzoLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -92,11 +92,11 @@ export default function StampedConcreteLayout({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "GeneralContractor",
+            "@type": "HousePainter",
             name: "TopCoat Artistry LLC",
-            image: "https://www.topcoat-llc.com/Images/stamped-concrete.webp",
-            "@id": "https://www.topcoat-llc.com/services/stamped-concrete",
-            url: "https://www.topcoat-llc.com/services/stamped-concrete",
+            image: "https://www.topcoat-llc.com/Images/terrazzo.webp",
+            "@id": "https://www.topcoat-llc.com/services/terrazzo-flooring-contractors-wayne-nj",
+            url: "https://www.topcoat-llc.com/services/terrazzo-flooring-contractors-wayne-nj",
             telephone: "+1-201-315-2633",
             priceRange: "$$",
             address: {
@@ -120,27 +120,27 @@ export default function StampedConcreteLayout({
             ],
             hasOfferCatalog: {
               "@type": "OfferCatalog",
-              name: "Stamped Concrete Services",
+              name: "Terrazzo and Epoxy Services",
               itemListElement: [
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Stamped Concrete Installation",
+                    name: "Terrazzo Floor Installation",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Stamped Concrete Patio Construction",
+                    name: "Terrazzo Floor Restoration",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Stamped Concrete Driveway Installation",
+                    name: "Terrazzo Polishing",
                   },
                 },
               ],

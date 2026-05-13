@@ -17,7 +17,7 @@ const StampedConcretePage = () => {
 				<WhyChooseUs />
 				<Details />
 				<ProjectGallery />
-				<OtherServices currentSlug="stamped-concrete" />
+				<OtherServices currentSlug="stamped-concrete-contractors-wayne-nj" />
 				<CTASection />
 			</main>
 			<Footer />

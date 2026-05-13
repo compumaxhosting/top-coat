@@ -17,7 +17,7 @@ const BuildingFacadesPage = () => {
 				<WhyChooseUs />
 				<Details />
 				<ProjectGallery />
-				<OtherServices currentSlug="building-facades" />
+				<OtherServices currentSlug="building-facade-contractors-wayne-nj" />
 				<CTASection />
 			</main>
 			<Footer />

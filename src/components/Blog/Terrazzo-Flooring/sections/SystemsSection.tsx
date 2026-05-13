@@ -6,7 +6,7 @@ export default function SystemsSection() {
     <section className="border-b border-charcoal-lighter py-16">
       <Label>Systems</Label>
       <SectionHeading>Types of Terrazzo Flooring</SectionHeading>
-      <p className="mt-4 font-sans text-base leading-relaxed text-secondary-foreground/70"><strong>Quick Answer:</strong> There are three main types of <Link href="/services/terrazzo" className="text-secondary-foreground/70">terrazzo flooring</Link>: epoxy terrazzo, cement terrazzo, and sand cushion terrazzo.</p>
+      <p className="mt-4 font-sans text-base leading-relaxed text-secondary-foreground/70"><strong>Quick Answer:</strong> There are three main types of <Link href="/services/terrazzo-flooring-contractors-wayne-nj" className="text-secondary-foreground/70">terrazzo flooring</Link>: epoxy terrazzo, cement terrazzo, and sand cushion terrazzo.</p>
 
       <div className="mt-6 space-y-6">
         <div>

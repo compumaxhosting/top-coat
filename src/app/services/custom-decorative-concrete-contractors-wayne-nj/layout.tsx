@@ -3,17 +3,17 @@ import type { Metadata, Viewport } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.topcoat-llc.com"),
 
-  title: "Terrazzo Flooring Wayne NJ | Restoration & Installation | TopCoat Artistry",
+  title: "Custom Decorative Concrete NJ | Bespoke Surface Artistry | TopCoat Artistry",
 
   description:
-    "TopCoat Artistry LLC: Expert terrazzo flooring in Wayne, Newark, Paterson, & Jersey City. We specialize in terrazzo floor installation, professional polishing, and restoration services. Free NJ estimates!",
+    "TopCoat Artistry LLC: Premier decorative concrete contractors in NJ. Expert custom installation, colored concrete, and stamped designs in Wayne, Newark, & Jersey City. Artisan-grade outdoor surfaces.",
 
   keywords: [
-    "terrazzo flooring contractors near me",
-    "terrazzo flooring Wayne NJ",
-    "terrazzo floor restoration Newark",
-    "terrazzo polishing Jersey City",
-    "commercial terrazzo NJ",
+    "decorative concrete contractors near me",
+    "custom decorative concrete NJ",
+    "decorative concrete installation Wayne NJ",
+    "custom concrete patio Newark",
+    "decorative concrete Jersey City",
     "TopCoat Artistry LLC",
   ],
 
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: " https://www.topcoat-llc.com/services/terrazzo",
+    canonical: "https://www.topcoat-llc.com/services/custom-decorative-concrete-contractors-wayne-nj",
   },
 
   referrer: "strict-origin-when-cross-origin",
@@ -41,32 +41,32 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black",
-    title: "TopCoat Terrazzo",
+    title: "TopCoat Artistry",
   },
 
   openGraph: {
     type: "website",
-    title: "Expert Terrazzo Floor Installation & Polishing in North Jersey",
+    title: "Bespoke Surface Artistry: Premier Custom Decorative Concrete NJ",
     description:
-      "Premium terrazzo restoration and installation for homes and businesses in Wayne, Newark, and Jersey City. Discover the durability of TopCoat Artistry LLC.",
-    url: " https://www.topcoat-llc.com/services/terrazzo",
+      "Elevate your outdoor space with artisan-grade decorative concrete. Serving Wayne, Newark, and Jersey City with custom colors and textures. Professional NJ installation.",
+    url: "https://www.topcoat-llc.com/services/custom-decorative-concrete-contractors-wayne-nj",
     siteName: "TopCoat Artistry LLC",
     images: [
       {
-        url: "https://www.topcoat-llc.com/Images/terrazzo.webp",
+        url: "https://www.topcoat-llc.com/Images/Decorative.webp",
         width: 1200,
         height: 630,
-        alt: "Terrazzo flooring in New Jersey",
+        alt: "Custom decorative concrete in New Jersey",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Terrazzo Flooring Contractors Wayne & Newark NJ",
+    title: "Custom Decorative Concrete Contractors | Wayne & Newark NJ",
     description:
-      "Restore your floors to a mirror finish. TopCoat Artistry LLC offers professional terrazzo polishing and installation across North Jersey.",
-    images: ["https://www.topcoat-llc.com/Images/terrazzo.webp"],
+      "Artisan-grade concrete finishes for patios, walkways, and more. Transform your NJ property with TopCoat Artistry LLC. Get a free quote today.",
+    images: ["https://www.topcoat-llc.com/Images/Decorative.webp"],
     site: "@topcoatartistry",
   },
 
@@ -77,10 +77,10 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#f8f9fa",
+  themeColor: "#3d3d3d",
 };
 
-export default function TerrazzoLayout({
+export default function CustomDecorativeConcreteLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -92,13 +92,13 @@ export default function TerrazzoLayout({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HousePainter",
+            "@type": "GeneralContractor",
             name: "TopCoat Artistry LLC",
-            image: "https://www.topcoat-llc.com/Images/terrazzo.webp",
-            "@id": " https://www.topcoat-llc.com/services/terrazzo",
-            url: " https://www.topcoat-llc.com/services/terrazzo",
+            image: "https://www.topcoat-llc.com/Images/Decorative.webp",
+            "@id": "https://www.topcoat-llc.com/services/custom-decorative-concrete-contractors-wayne-nj",
+            url: "https://www.topcoat-llc.com/services/custom-decorative-concrete-contractors-wayne-nj",
             telephone: "+1-201-315-2633",
-            priceRange: "$$",
+            priceRange: "$$$",
             address: {
               "@type": "PostalAddress",
               streetAddress: "108 Fairfield Rd",
@@ -120,27 +120,34 @@ export default function TerrazzoLayout({
             ],
             hasOfferCatalog: {
               "@type": "OfferCatalog",
-              name: "Terrazzo and Epoxy Services",
+              name: "Custom Decorative Concrete Services",
               itemListElement: [
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Terrazzo Floor Installation",
+                    name: "Custom Decorative Concrete Installation",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Terrazzo Floor Restoration",
+                    name: "Colored Decorative Concrete",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Terrazzo Polishing",
+                    name: "Custom Concrete Patio Construction",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Artisan Stamped Concrete",
                   },
                 },
               ],

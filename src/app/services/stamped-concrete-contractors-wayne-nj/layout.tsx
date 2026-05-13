@@ -3,17 +3,17 @@ import type { Metadata, Viewport } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.topcoat-llc.com"),
 
-  title: "Custom Decorative Concrete NJ | Bespoke Surface Artistry | TopCoat Artistry",
+  title: "Stamped Concrete Wayne NJ | Decorative Patios & Driveways | TopCoat Artistry",
 
   description:
-    "TopCoat Artistry LLC: Premier decorative concrete contractors in NJ. Expert custom installation, colored concrete, and stamped designs in Wayne, Newark, & Jersey City. Artisan-grade outdoor surfaces.",
+    "TopCoat Artistry LLC: Professional stamped concrete in Wayne, Newark, & Jersey City. We specialize in decorative stamped concrete patios, driveways, and installation services. Salt-resistant NJ finishes. Free quotes!",
 
   keywords: [
-    "decorative concrete contractors near me",
-    "custom decorative concrete NJ",
-    "decorative concrete installation Wayne NJ",
-    "custom concrete patio Newark",
-    "decorative concrete Jersey City",
+    "stamped concrete near me",
+    "stamped concrete contractors Wayne NJ",
+    "stamped concrete patio Newark",
+    "stamped concrete driveway Jersey City",
+    "decorative concrete Paterson",
     "TopCoat Artistry LLC",
   ],
 
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.topcoat-llc.com/services/custom-decorative-concrete",
+    canonical: "https://www.topcoat-llc.com/services/stamped-concrete-contractors-wayne-nj",
   },
 
   referrer: "strict-origin-when-cross-origin",
@@ -41,32 +41,32 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black",
-    title: "TopCoat Artistry",
+    title: "TopCoat Concrete",
   },
 
   openGraph: {
     type: "website",
-    title: "Bespoke Surface Artistry: Premier Custom Decorative Concrete NJ",
+    title: "Expert Stamped Concrete Patios & Driveways in North Jersey",
     description:
-      "Elevate your outdoor space with artisan-grade decorative concrete. Serving Wayne, Newark, and Jersey City with custom colors and textures. Professional NJ installation.",
-    url: "https://www.topcoat-llc.com/services/custom-decorative-concrete",
+      "Elevate your curb appeal with professional stamped concrete services. Serving Wayne, Newark, Paterson, and Jersey City. High-end textures by TopCoat Artistry LLC.",
+    url: "https://www.topcoat-llc.com/services/stamped-concrete-contractors-wayne-nj",
     siteName: "TopCoat Artistry LLC",
     images: [
       {
-        url: "https://www.topcoat-llc.com/Images/Decorative.webp",
+        url: "https://www.topcoat-llc.com/Images/stamped-concrete.webp",
         width: 1200,
         height: 630,
-        alt: "Custom decorative concrete in New Jersey",
+        alt: "Stamped concrete patio in New Jersey",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Custom Decorative Concrete Contractors | Wayne & Newark NJ",
+    title: "Stamped Concrete Contractors in Wayne & Newark NJ",
     description:
-      "Artisan-grade concrete finishes for patios, walkways, and more. Transform your NJ property with TopCoat Artistry LLC. Get a free quote today.",
-    images: ["https://www.topcoat-llc.com/Images/Decorative.webp"],
+      "Custom stamped concrete installation for NJ homes. Beautiful, weather-resistant outdoor surfaces. Get your free estimate from TopCoat Artistry LLC today.",
+    images: ["https://www.topcoat-llc.com/Images/stamped-concrete.webp"],
     site: "@topcoatartistry",
   },
 
@@ -77,10 +77,10 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#3d3d3d",
+  themeColor: "#4a5d4e",
 };
 
-export default function CustomDecorativeConcreteLayout({
+export default function StampedConcreteLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -94,11 +94,11 @@ export default function CustomDecorativeConcreteLayout({
             "@context": "https://schema.org",
             "@type": "GeneralContractor",
             name: "TopCoat Artistry LLC",
-            image: "https://www.topcoat-llc.com/Images/Decorative.webp",
-            "@id": "https://www.topcoat-llc.com/services/custom-decorative-concrete",
-            url: "https://www.topcoat-llc.com/services/custom-decorative-concrete",
+            image: "https://www.topcoat-llc.com/Images/stamped-concrete.webp",
+            "@id": "https://www.topcoat-llc.com/services/stamped-concrete-contractors-wayne-nj",
+            url: "https://www.topcoat-llc.com/services/stamped-concrete-contractors-wayne-nj",
             telephone: "+1-201-315-2633",
-            priceRange: "$$$",
+            priceRange: "$$",
             address: {
               "@type": "PostalAddress",
               streetAddress: "108 Fairfield Rd",
@@ -120,34 +120,27 @@ export default function CustomDecorativeConcreteLayout({
             ],
             hasOfferCatalog: {
               "@type": "OfferCatalog",
-              name: "Custom Decorative Concrete Services",
+              name: "Stamped Concrete Services",
               itemListElement: [
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Custom Decorative Concrete Installation",
+                    name: "Stamped Concrete Installation",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Colored Decorative Concrete",
+                    name: "Stamped Concrete Patio Construction",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Custom Concrete Patio Construction",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Artisan Stamped Concrete",
+                    name: "Stamped Concrete Driveway Installation",
                   },
                 },
               ],

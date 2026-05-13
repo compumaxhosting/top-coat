@@ -17,7 +17,7 @@ const CustomDecorativeConcretePage = () => {
 				<WhyChooseUs />
 				<Details />
 				<ProjectGallery />
-				<OtherServices currentSlug="custom-decorative-concrete" />
+				<OtherServices currentSlug="custom-decorative-concrete-contractors-wayne-nj" />
 				<CTASection />
 			</main>
 			<Footer />

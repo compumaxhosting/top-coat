@@ -74,27 +74,27 @@ export default function NotFound() {
 
             <div className="flex flex-wrap justify-center gap-3">
               <Link
-                href="/services/epoxy-flooring"
+                href="/services/epoxy-flooring-wayne-new-jersey"
                 className="hover:text-primary"
               >
                 Epoxy Flooring NJ
               </Link>
               <span>•</span>
               <Link
-                href="/services/stamped-concrete"
+                href="/services/stamped-concrete-contractors-wayne-nj"
                 className="hover:text-primary"
               >
                 Stamped Concrete
               </Link>
               <span>•</span>
               <Link
-                href="/services/garage-floors"
+                href="/services/garage-floor-coating-contractors-in-wayne-nj"
                 className="hover:text-primary"
               >
                 Garage Floor Epoxy
               </Link>
               <span>•</span>
-              <Link href="/services/terrazzo" className="hover:text-primary">
+              <Link href="/services/terrazzo-flooring-contractors-wayne-nj" className="hover:text-primary">
                 Terrazzo Flooring
               </Link>
             </div>

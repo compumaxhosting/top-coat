@@ -17,7 +17,7 @@ const TerrazzoPage = () => {
 				<WhyChooseUs />
 				<Details />
 				<ProjectGallery />
-				<OtherServices currentSlug="terrazzo" />
+				<OtherServices currentSlug="terrazzo-flooring-contractors-wayne-nj" />
 				<CTASection />
 			</main>
 			<Footer />

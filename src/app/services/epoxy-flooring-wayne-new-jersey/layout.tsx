@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.topcoat-llc.com/services/epoxy-flooring",
+    canonical: "https://www.topcoat-llc.com/services/epoxy-flooring-wayne-new-jersey",
   },
 
   referrer: "strict-origin-when-cross-origin",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    url: "https://www.topcoat-llc.com/services/epoxy-flooring",
+    url: "https://www.topcoat-llc.com/services/epoxy-flooring-wayne-new-jersey",
     title: "TopCoat Artistry LLC: Durable Epoxy Flooring & Coatings in North Jersey",
     description:
       "Transform your garage, home, or business with industrial-grade epoxy floor coatings. Serving Wayne, Newark, Paterson, and Jersey City.",
@@ -91,8 +91,8 @@ export default function ServicesLayout({
             "@type": "HousePainter",
             name: "TopCoat Artistry LLC",
             image: "https://www.topcoat-llc.com/Images/Service-Epoxy-Flooring.webp",
-            "@id": "https://www.topcoat-llc.com/services/epoxy-flooring",
-            url: "https://www.topcoat-llc.com/services/epoxy-flooring",
+            "@id": "https://www.topcoat-llc.com/services/epoxy-flooring-wayne-new-jersey",
+            url: "https://www.topcoat-llc.com/services/epoxy-flooring-wayne-new-jersey",
             telephone: "+1-201-315-2633",
             address: {
               "@type": "PostalAddress",

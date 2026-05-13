@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.topcoat-llc.com/services/garage-floors",
+    canonical: "https://www.topcoat-llc.com/services/garage-floor-coating-contractors-in-wayne-nj",
   },
 
   referrer: "strict-origin-when-cross-origin",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Top-Rated Garage Floor Coating in Wayne & North Jersey",
     description:
       "Expert garage epoxy and resurfacing services in Wayne, Newark, Paterson, and Jersey City. Weather-resistant, industrial-grade floor systems by TopCoat Artistry LLC.",
-    url: "https://www.topcoat-llc.com/services/garage-floors",
+    url: "https://www.topcoat-llc.com/services/garage-floor-coating-contractors-in-wayne-nj",
     siteName: "TopCoat Artistry LLC",
     images: [
       {
@@ -95,8 +95,8 @@ export default function GarageFloorsLayout({
             "@type": "HousePainter",
             name: "TopCoat Artistry LLC",
             image: "https://www.topcoat-llc.com/Images/garage-floor.webp",
-            "@id": "https://www.topcoat-llc.com/services/garage-floors",
-            url: "https://www.topcoat-llc.com/services/garage-floors",
+            "@id": "https://www.topcoat-llc.com/services/garage-floor-coating-contractors-in-wayne-nj",
+            url: "https://www.topcoat-llc.com/services/garage-floor-coating-contractors-in-wayne-nj",
             telephone: "+1-201-315-2633",
             priceRange: "$$",
             address: {

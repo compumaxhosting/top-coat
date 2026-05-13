@@ -17,7 +17,8 @@ const GarageFloorsPage = () => {
 				<WhyChooseUs />
 				<Details />
 				<ProjectGallery />
-				<OtherServices currentSlug="garage-floors" />
+				<OtherServices currentSlug="garage-floor-coating-contractors-in-wayne-nj
+" />
 				<CTASection />
 			</main>
 			<Footer />
