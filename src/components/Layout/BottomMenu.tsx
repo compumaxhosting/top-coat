@@ -47,8 +47,8 @@ const BottomMenu = () => {
                   rel={item.external ? "noopener noreferrer" : undefined}
                   className="group flex min-h-16 flex-col items-center justify-center gap-1 border-r border-black/10 text-[#0d0f12] transition-colors duration-300 last:border-r-0 hover:bg-[#0d0f12] hover:text-primary"
                 >
-                  <Icon className="h-5 w-5 transition-transform duration-300 group-hover:-translate-y-0.5" />
-                  <span className="text-[11px] font-semibold uppercase tracking-[0.14em]">
+                  <Icon className="h-5 w-5 text-white transition-transform duration-300 group-hover:-translate-y-0.5" />
+                  <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-white">
                     {item.label}
                   </span>
                 </Link>
