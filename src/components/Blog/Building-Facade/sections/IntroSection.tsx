@@ -12,7 +12,7 @@ export default function IntroSection() {
         Curb Appeal
       </h2>
       <p className="max-w-4xl font-sans text-base leading-relaxed text-secondary-foreground/70 md:text-lg">
-        <Link href="/services/building-facade-contractors-wayne-nj">
+        <Link href="/services/building-facade-contractors-wayne-nj" className="text-primary">
           Building facade in New Jersey
         </Link>{" "} focus on improving the exterior performance, appearance, and longevity of commercial and residential properties. These solutions enhance durability, energy efficiency, safety, and curb appeal while protecting buildings from harsh weather conditions.
       </p> <br />

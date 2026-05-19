@@ -7,7 +7,7 @@ export default function DefinitionSection() {
       <Label>Definition</Label>
       <SectionHeading>What Are Building Facade Solutions?</SectionHeading>
       <p className="font-sans text-base leading-relaxed text-secondary-foreground/70">
-        <Link href="/services/building-facade-contractors-wayne-nj">
+        <Link href="/services/building-facade-contractors-wayne-nj" className="text-primary">
           Building facade
         </Link>{" "} solutions refer to exterior systems and services designed
         to protect and enhance a building&apos;s outer shell. This includes cladding,

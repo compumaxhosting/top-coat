@@ -32,7 +32,7 @@ export default function ApplicationsSection() {
         ))}
       </div>
       <p className="mt-8 font-sans text-base leading-relaxed text-secondary-foreground/70">
-        <Link href="/services/terrazzo-flooring-contractors-wayne-nj" className="text-secondary-foreground/70">Terrazzo flooring</Link> is suitable for a wide range of spaces due to its
+        <Link href="/services/terrazzo-flooring-contractors-wayne-nj" className="text-primary" >Terrazzo flooring</Link> is suitable for a wide range of spaces due to its
         durability, elegant finish, and design flexibility.
       </p>
     </section>

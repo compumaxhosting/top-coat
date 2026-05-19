@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Label, SectionHeading } from "../SectionPrimitives";
 
 export default function InvestmentSection() {
@@ -5,7 +6,9 @@ export default function InvestmentSection() {
     <section className="border-b border-charcoal-lighter py-16">
       <Label>Investment</Label>
       <SectionHeading>Cost of Terrazzo Flooring</SectionHeading>
-      <p className="mb-4 font-sans text-base leading-relaxed text-secondary-foreground/70"><strong>Quick Answer:</strong> Terrazzo flooring typically costs $20 to $70 per square foot in North Jersey, depending on materials and design complexity.</p>
+      <p className="mb-4 font-sans text-base leading-relaxed text-secondary-foreground/70"><strong>Quick Answer:</strong> <Link href="/services/terrazzo-flooring-contractors-wayne-nj" className="text-primary">
+          Terrazzo flooring
+        </Link> typically costs $20 to $70 per square foot in North Jersey, depending on materials and design complexity.</p>
 
       <div className="mt-6 overflow-x-auto rounded-lg border border-charcoal-lighter bg-charcoal-light p-4">
         <table className="w-full border-collapse text-left font-sans text-sm text-secondary-foreground/70">
