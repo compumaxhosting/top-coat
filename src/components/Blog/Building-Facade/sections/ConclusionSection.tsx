@@ -8,13 +8,24 @@ export default function ConclusionSection() {
       <SectionHeading>Final Thoughts</SectionHeading>
       <p className="font-sans text-base leading-relaxed text-secondary-foreground/70">
         <Link href="/services/building-facade-contractors-wayne-nj">
+<<<<<<< HEAD
                   Building facade solutions
                   in New Jersey
         </Link>{" "} are essential for protecting
               structures, improving energy efficiency, and enhancing architectural appeal. Whether for commercial properties, residential buildings, or renovation projects, a well-designed facade system increases durability, safety, and long-term value.
+=======
+          Building facade solutions in New Jersey
+        </Link>{" "}
+        are essential for protecting structures, improving energy efficiency,
+        and enhancing architectural appeal. Whether for commercial properties,
+        residential buildings, or renovation projects, a well-designed facade
+        system increases durability, safety, and long-term value.
+>>>>>>> eaf1bf537392a09df285b196afbca199012b2cbc
       </p>
       <p className="mt-4 font-sans text-base leading-relaxed text-secondary-foreground/70">
-              From cladding systems and curtain walls to waterproofing and restoration, professional facade services help buildings withstand New Jersey’s climate while maintaining modern design standards.
+        From cladding systems and curtain walls to waterproofing and
+        restoration, professional facade services help buildings withstand New
+        Jersey’s climate while maintaining modern design standards.
       </p>
     </section>
   );
