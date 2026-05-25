@@ -37,6 +37,17 @@ export async function POST(req: Request) {
 
     const formData = validationResult.data;
 
+    // Basic server-side captcha validation (numeric code match)
+    if (String(formData.captchaInput).trim() !== String(formData.captchaCode).trim()) {
+      return Response.json(
+        {
+          error: "Captcha validation failed",
+          fieldErrors: { captchaInput: "Incorrect captcha" },
+        },
+        { status: 400 }
+      );
+    }
+
     // Get email configuration from environment
     const toEmails = parseEmailList(process.env.CONTACT_TO_EMAIL);
     const ccEmails = parseEmailList(process.env.CONTACT_CC_EMAIL);

@@ -19,11 +19,17 @@ export const contactFormSchema = z.object({
   service: z
     .string()
     .min(1, "Please select a service"),
+  preferredDate: z
+    .string()
+    .optional()
+    .or(z.literal("")),
   message: z
     .string()
     .trim()
     .min(10, "Message must be at least 10 characters")
     .max(2000, "Message must be less than 2000 characters"),
+  captchaInput: z.string().trim().min(1, "Please enter the captcha"),
+  captchaCode: z.string().trim().min(1),
 });
 
 export type ContactFormInput = z.infer<typeof contactFormSchema>;

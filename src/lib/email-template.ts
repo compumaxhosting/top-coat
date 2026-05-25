@@ -20,6 +20,7 @@ export interface EmailTemplateData {
   email: string;
   phone?: string;
   service: string;
+  preferredDate?: string;
   message: string;
 }
 
@@ -29,6 +30,7 @@ export function generateContactEmailTemplate(data: EmailTemplateData): string {
   const escapedEmail = escapeHtmlServer(data.email);
   const escapedPhone = data.phone ? escapeHtmlServer(data.phone) : '';
   const escapedService = escapeHtmlServer(data.service);
+  const escapedPreferredDate = data.preferredDate ? escapeHtmlServer(data.preferredDate) : '';
   const escapedMessage = escapeHtmlServer(data.message).replace(/\n/g, '<br>');
 
   // Brand colors from theme
@@ -170,6 +172,13 @@ export function generateContactEmailTemplate(data: EmailTemplateData): string {
         <div class="field-value">${escapedService}</div>
       </div>
 
+      ${escapedPreferredDate ? `
+      <div class="field-row">
+        <div class="field-label">Preferred Date</div>
+        <div class="field-value">${escapedPreferredDate}</div>
+      </div>
+      ` : ''}
+
       <div class="message-block">
         <div class="field-label">Project Details</div>
         <div class="message-text">${escapedMessage}</div>
@@ -198,6 +207,7 @@ export function generateContactEmailText(data: EmailTemplateData): string {
 Name: ${data.name}
 Email: ${data.email}
 ${data.phone ? `Phone: ${data.phone}\n` : ''}Service Interested In: ${data.service}
+${data.preferredDate ? `Preferred Date: ${data.preferredDate}\n` : ''}
 
 PROJECT DETAILS:
 ${data.message}
