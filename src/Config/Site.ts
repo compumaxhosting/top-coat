@@ -7,7 +7,7 @@ export const siteConfig = {
   url: "https://topcoat-llc.com",
   phone: "201 315 2633",
   email: "Almahairi@gmail.com",
-  address: "108 Fairfield Rd, Wayne, NJ 07470",
+  address: "86 Lackawanna Ave, Suite 215, Woodland Park, NJ 07424",
   services: [
     { name: "Epoxy Flooring", slug: "epoxy-flooring-wayne-new-jersey" },
     { name: "Terrazzo", slug: "terrazzo-flooring-contractors-wayne-nj" },
