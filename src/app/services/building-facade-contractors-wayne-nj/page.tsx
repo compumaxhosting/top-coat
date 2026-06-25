@@ -3,10 +3,10 @@ import Navbar from "@/components/Layout/Navbar";
 import BackToTop from "@/components/Layout/BackToTop";
 import OtherServices from "@/components/Home/OtherServices";
 import CTASection from "@/components/BuildingFacades/CTASection";
-import Details from "@/components/BuildingFacades/Details";
 import HeroSection from "@/components/BuildingFacades/HeroSection";
 import ProjectGallery from "@/components/BuildingFacades/ProjectGallery";
-import WhyChooseUs from "@/components/BuildingFacades/WhyChooseUs";
+import ContentSection from "@/components/BuildingFacades/table-content/ContentSection";
+import TableOfContents from "@/components/BuildingFacades/table-content/TableOfContent";
 
 const BuildingFacadesPage = () => {
 	return (
@@ -14,8 +14,8 @@ const BuildingFacadesPage = () => {
 			<Navbar />
 			<main className="bg-[#14161A]">
 				<HeroSection />
-				<WhyChooseUs />
-				<Details />
+				<TableOfContents />
+				<ContentSection />
 				<ProjectGallery />
 				<OtherServices currentSlug="building-facade-contractors-wayne-nj" />
 				<CTASection />

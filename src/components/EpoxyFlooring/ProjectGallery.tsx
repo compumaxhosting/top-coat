@@ -14,7 +14,7 @@ const ProjectGallery = () => {
 	const { ref, isVisible } = useScrollAnimation<HTMLElement>();
 
 	return (
-		<section className="bg-[#14161A] py-20" ref={ref}>
+		<section className="bg-[#0d0f12] py-20" ref={ref}>
 			<div className="container mx-auto px-4">
 				<h2 className="mb-10 text-center font-serif text-3xl font-bold text-white/90">
 					Project <span className="text-gradient-copper">Gallery</span>

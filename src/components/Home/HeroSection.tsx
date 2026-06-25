@@ -1,68 +1,66 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Eye } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => (
   <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-18 lg:pt-28 pb-5">
-    {/* BACKGROUND IMAGE */}
+    {/* Background Image */}
     <div className="absolute inset-0 -z-10">
       <Image
         src="/Images/Hero-section.webp"
-        alt="Epoxy flooring installation in New Jersey luxury showroom with metallic finish"
+        alt="Epoxy Flooring & Decorative Concrete in New Jersey"
         fill
         priority
-        quality={55} // 🔥 slightly reduced
-        sizes="100vw" // 🔥 important for LCP
+        quality={55}
+        sizes="100vw"
         className="object-cover"
       />
 
-      {/* overlays (kept lightweight) */}
-      <div className="absolute inset-0 bg-linear-to-r from-transparent via-black/40 to-transparent" />
-      <div className="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-black/40 to-transparent sm:h-36" />
+      {/* Overlays */}
+      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black/40 to-transparent sm:h-36" />
     </div>
 
-    {/* CONTENT */}
+    {/* Content */}
     <div className="relative z-10 container mx-auto px-4 text-center">
-      <div className="mx-auto max-w-4xl">
-        {/* TOP TAGLINE */}
-        <p className="mb-6 text-sm px-1 font-sans uppercase tracking-[0.3em] text-white/90">
-          Epoxy Flooring & Decorative Concrete Experts in New Jersey
+      <div className="mx-auto max-w-5xl">
+        {/* Top Tagline */}
+        <p className="py-6 text-sm uppercase tracking-[0.3em] text-white/90">
+          Epoxy Flooring & Decorative Concrete in New Jersey
         </p>
 
-        {/* 🔥 MAIN H1 */}
-        <h1 className="mb-6 text-4xl leading-[1.08] font-bold font-serif text-amber-300 md:text-5xl lg:text-6xl">
-          Epoxy Flooring & Decorative Concrete <br />
-          <span className="text-white">in New Jersey</span>
+        {/* Main Heading */}
+        <h1 className="mb-6 text-4xl font-bold leading-[1.08] text-amber-300 md:text-5xl lg:text-6xl">
+          Epoxy Flooring & Decorative Concrete
+          <br />
+          <span className="text-white text-3xl md:text-4xl lg:text-5xl">Experts in New Jersey</span>
         </h1>
 
-        {/* SUPPORTING TEXT */}
-        <p className="mx-auto mb-10 max-w-4xl text-lg font-sans text-white md:text-xl">
-          20+ years of experience delivering premium epoxy flooring, terrazzo,
-          stamped concrete, and custom decorative concrete solutions for
-          residential, commercial, and industrial spaces.
+        {/* Description */}
+        <p className="mx-auto mb-4 max-w-6xl text-md text-white md:text-xl">
+         We provide epoxy flooring and decorative concrete solutions for residential, commercial, and industrial spaces across New Jersey.
         </p>
 
-        {/* CTA BUTTONS */}
-        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <p className="mx-auto mb-4 max-w-6xl text-md text-white/90 md:text-lg">
+          With 20+ years of experience, we deliver epoxy garage floors, commercial coatings, terrazzo, stamped, and decorative concrete built for durability and design.
+
+        </p>
+
+        <p className="mx-auto mb-6 max-w-6xl text-md text-white/90 md:text-lg">
+          Serving Newark, Jersey City, Trenton, and surrounding areas.
+
+        </p>
+
+        {/* CTA */}
+        <div className="flex justify-center">
           <Link href="/contact" prefetch={false}>
             <Button
               size="lg"
-              className="bg-primary px-8 py-6 text-base font-sans tracking-wide text-primary-foreground hover:bg-copper-light"
+              className="bg-primary px-8 py-6 text-base font-medium text-primary-foreground hover:bg-primary/90"
             >
-              Get Free Quote
+              Get a Free Quote
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
-
-          <Link href="/portfolio" prefetch={false}>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary/30 bg-[#0d0f12] px-8 py-6 text-base font-sans tracking-wide text-white hover:border-primary hover:bg-transparent"
-            >
-              <Eye className="mr-2 h-5 w-5" />
-              View Our Projects
             </Button>
           </Link>
         </div>

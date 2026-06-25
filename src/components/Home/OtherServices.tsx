@@ -21,7 +21,7 @@ const OtherServices = ({ currentSlug }: OtherServicesProps) => {
 	);
 
 	return (
-		<section className="bg-[#0d0f12] py-20 md:py-28">
+		<section className="bg-[#14161A] py-20 md:py-28">
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 				{/* Heading */}
 				<div

@@ -3,10 +3,10 @@ import Navbar from "@/components/Layout/Navbar";
 import BackToTop from "@/components/Layout/BackToTop";
 import OtherServices from "@/components/Home/OtherServices";
 import CTASection from "@/components/Terrazzo/CTASection";
-import Details from "@/components/Terrazzo/Details";
 import HeroSection from "@/components/Terrazzo/HeroSection";
 import ProjectGallery from "@/components/Terrazzo/ProjectGallery";
-import WhyChooseUs from "@/components/Terrazzo/WhyChooseUs";
+import TableOfContents from "@/components/Terrazzo/table-content/TableOfContent";
+import TerrazzoContent from "@/components/Terrazzo/table-content/ContentSection";
 
 const TerrazzoPage = () => {
 	return (
@@ -14,8 +14,8 @@ const TerrazzoPage = () => {
 			<Navbar />
 			<main className="bg-[#14161A]">
 				<HeroSection />
-				<WhyChooseUs />
-				<Details />
+				<TableOfContents />
+				<TerrazzoContent />
 				<ProjectGallery />
 				<OtherServices currentSlug="terrazzo-flooring-contractors-wayne-nj" />
 				<CTASection />

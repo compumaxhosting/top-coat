@@ -3,17 +3,23 @@ import type { Metadata, Viewport } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.topcoat-llc.com"),
 
-  title: "Top-Rated Garage Floor Coating in Wayne & North Jersey | TopCoat Artistry LLC",
+  title: "Garage Floor Coating Contractors in Wayne, NJ | Epoxy & Polyaspartic Flooring | TopCoat Artistry LLC",
 
   description:
-    "TopCoat Artistry LLC is your local authority for high-performance garage floor coating near me. Serving Wayne, Newark, Paterson, and Jersey City with durable, weather-resistant epoxy systems.",
+    "TopCoat Artistry LLC provides professional garage floor coating services in Wayne, NJ. We specialize in epoxy flooring, polyaspartic coatings, decorative concrete, concrete resurfacing, and commercial flooring for homes and businesses throughout Bergen County and Northern New Jersey.",
 
   keywords: [
-    "garage floor coating near me",
-    "garage epoxy floor coating Newark NJ",
-    "garage floor repair Paterson NJ",
-    "garage floor installation Wayne NJ",
-    "garage flooring contractors New Jersey",
+    "garage floor coating contractors Wayne NJ",
+    "epoxy garage floor coating Wayne NJ",
+    "garage floor coating company Wayne NJ",
+    "polyaspartic garage floor coating NJ",
+    "epoxy flooring Bergen County",
+    "decorative concrete Wayne NJ",
+    "garage floor epoxy near Newark",
+    "commercial epoxy flooring NJ",
+    "residential garage flooring Wayne NJ",
+    "concrete resurfacing NJ",
+    "garage floor coatings Northern NJ",
     "TopCoat Artistry LLC",
   ],
 
@@ -41,33 +47,33 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black",
-    title: "TopCoat Garage Floors",
+    title: "TopCoat Artistry LLC",
   },
 
   openGraph: {
     type: "website",
-    title: "Top-Rated Garage Floor Coating in Wayne & North Jersey",
+    title: "Garage Floor Coating Contractors in Wayne, NJ | TopCoat Artistry LLC",
     description:
-      "Expert garage epoxy and resurfacing services in Wayne, Newark, Paterson, and Jersey City. Weather-resistant, industrial-grade floor systems by TopCoat Artistry LLC.",
+      "Transform your garage with premium epoxy and polyaspartic floor coatings in Wayne, NJ. Durable, slip-resistant, and professionally installed concrete coating solutions for residential and commercial properties.",
     url: "https://www.topcoat-llc.com/services/garage-floor-coating-contractors-in-wayne-nj",
     siteName: "TopCoat Artistry LLC",
     images: [
       {
-        url: "https://www.topcoat-llc.com/Images/garage-floor.webp",
+        url: "https://www.topcoat-llc.com/images/garage-floor-coating-wayne-nj.jpg",
         width: 1200,
         height: 630,
-        alt: "Garage epoxy floor coating in New Jersey",
+        alt: "Garage Floor Coating Contractors in Wayne NJ by TopCoat Artistry LLC",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "NJ Garage Floor Coating | Epoxy & Resurfacing",
+    title: "Garage Floor Coating Contractors in Wayne, NJ | TopCoat Artistry LLC",
     description:
-      "Professional garage floor coating near me for Wayne, Newark, and Jersey City homeowners. Durable epoxy systems and fast installations.",
-    images: ["https://www.topcoat-llc.com/Images/garage-floor.webp"],
-    site: "@topcoatartistry",
+      "Professional epoxy and polyaspartic garage floor coatings in Wayne, NJ. Durable flooring systems for homes, garages, warehouses, and commercial facilities.",
+    images: ["https://www.topcoat-llc.com/images/garage-floor-coating-wayne-nj.jpg"],
+    site: "@TopCoatLLC",
   },
 
   other: {
@@ -94,7 +100,7 @@ export default function GarageFloorsLayout({
             "@context": "https://schema.org",
             "@type": "HousePainter",
             name: "TopCoat Artistry LLC",
-            image: "https://www.topcoat-llc.com/Images/garage-floor.webp",
+            image: "https://www.topcoat-llc.com/images/garage-floor-coating-wayne-nj.jpg",
             "@id": "https://www.topcoat-llc.com/services/garage-floor-coating-contractors-in-wayne-nj",
             url: "https://www.topcoat-llc.com/services/garage-floor-coating-contractors-in-wayne-nj",
             telephone: "+1-201-315-2633",

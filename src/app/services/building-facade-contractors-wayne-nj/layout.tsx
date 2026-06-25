@@ -1,161 +1,63 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.topcoat-llc.com"),
-
-  title: "Building Facade Contractors New Jersey | Restoration & Repair | TopCoat Artistry",
-
-  description:
-    "TopCoat Artistry LLC: Leading building facade contractors in New Jersey. Expert facade restoration, waterproofing, and exterior renovation in Wayne, Newark, & Jersey City. Protect your building today!",
-
+  title: "Building Facade Contractors Wayne NJ | Facade Restoration & Repair | Topcoat LLC",
+  description: "Expert Building Facade Contractors Wayne NJ providing facade restoration, waterproofing, masonry repair & building envelope services.",
   keywords: [
-    "building facade contractors near me",
-    "facade restoration services NJ",
-    "facade repair New Jersey",
-    "exterior building renovation Wayne",
-    "facade waterproofing Newark",
-    "TopCoat Artistry LLC",
+    "Building Facade Contractors Wayne NJ",
+    "Facade Restoration Wayne NJ",
+    "Commercial Facade Repair Wayne NJ",
+    "Building Envelope Contractors Wayne NJ",
+    "Exterior Wall Restoration Wayne NJ",
+    "Brick Facade Repair Wayne NJ",
+    "Facade Waterproofing Wayne NJ",
+    "Commercial Masonry Restoration Wayne NJ",
+    "Building Facade Inspection Wayne NJ",
+    "Structural Facade Repair Wayne NJ",
+    "Building Facade Contractors Passaic County NJ",
+    "Building Facade Contractors Totowa NJ",
+    "Building Facade Contractors Paterson NJ",
+    "Building Facade Contractors Fairfield NJ",
+    "Building Facade Contractors Little Falls NJ",
+    "Building Facade Contractors North Jersey"
   ],
-
-  authors: [{ name: "TopCoat Artistry LLC" }],
-  creator: "TopCoat Artistry LLC",
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-snippet": -1,
-      "max-image-preview": "large",
-      "max-video-preview": -1,
-    },
-  },
-
+  authors: [{ name: "Topcoat LLC" }],
   alternates: {
     canonical: "https://www.topcoat-llc.com/services/building-facade-contractors-wayne-nj",
   },
-
-  referrer: "strict-origin-when-cross-origin",
-
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: "black",
-    title: "TopCoat Facades",
+  robots: {
+    index: true,
+    follow: true,
   },
-
   openGraph: {
     type: "website",
+    title: "Building Facade Contractors Wayne NJ | Facade Restoration & Repair",
+    description: "Professional facade restoration, commercial facade repair, waterproofing, masonry restoration and building envelope services in Wayne NJ.",
     url: "https://www.topcoat-llc.com/services/building-facade-contractors-wayne-nj",
-    title: "Expert Building Facade Restoration & Repair Services in NJ",
-    description:
-      "Industrial-grade facade restoration and waterproofing for commercial properties in Wayne, Newark, and Jersey City. Professional care by TopCoat Artistry LLC.",
-    siteName: "TopCoat Artistry LLC",
+    siteName: "Topcoat LLC",
     images: [
       {
         url: "https://www.topcoat-llc.com/Images/building-facade.webp",
-        width: 1200,
-        height: 630,
-        alt: "Building facade restoration in New Jersey",
+        alt: "Building Facade Contractors Wayne NJ - Facade Restoration and Exterior Wall Repair",
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "NJ Building Facade Contractors | Restoration & Waterproofing",
-    description:
-      "Restore and protect your building exterior with TopCoat Artistry LLC. Serving Wayne, Paterson, and Newark with expert facade repair.",
+    title: "Building Facade Contractors Wayne NJ | Topcoat LLC",
+    description: "Trusted facade restoration, masonry repair and building envelope contractors serving Wayne NJ and North Jersey.",
     images: ["https://www.topcoat-llc.com/Images/building-facade.webp"],
-    site: "@topcoatartistry",
   },
-
-  other: {
-    "cache-control": "public",
-    expires: "Wed, 01 Jan 2030 00:00:00 GMT",
-  },
+  referrer: "strict-origin-when-cross-origin",
 };
 
-export const viewport: Viewport = {
-  themeColor: "#2c3e50",
-};
-
-export default function BuildingFacadesLayout({
+export default function ServicesLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "GeneralContractor",
-            name: "TopCoat Artistry LLC",
-            image: "https://www.topcoat-llc.com/Images/building-facade.webp",
-            "@id": "https://www.topcoat-llc.com/services/building-facade-contractors-wayne-nj",
-            url: "https://www.topcoat-llc.com/services/building-facade-contractors-wayne-nj",
-            telephone: "+1-201-315-2633",
-            priceRange: "$$$",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "108 Fairfield Rd",
-              addressLocality: "Wayne",
-              addressRegion: "NJ",
-              postalCode: "07470",
-              addressCountry: "US",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 40.8876,
-              longitude: -74.2576,
-            },
-            areaServed: [
-              { "@type": "City", name: "Wayne" },
-              { "@type": "City", name: "Newark" },
-              { "@type": "City", name: "Paterson" },
-              { "@type": "City", name: "Jersey City" },
-            ],
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "Building Facade Services",
-              itemListElement: [
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Building Facade Restoration",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Facade Waterproofing",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Exterior Building Renovation",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Building Facade Repair",
-                  },
-                },
-              ],
-            },
-          }),
-        }}
-      />
-
       {children}
     </>
   );
