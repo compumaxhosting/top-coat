@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone, X } from "lucide-react";
 
 import { siteConfig } from "@/Config/Site";
 
@@ -50,10 +50,9 @@ const Footer = () => (
 
           <p className="text-[#818898] text-sm leading-relaxed mb-6">
             TopCoat Artistry LLC is a leading epoxy flooring and decorative
-            concrete contractor in New Jersey, specializing in terrazzo,
-            stamped concrete, garage floor coatings, and custom surface
-            solutions. Over 20 years of experience delivering durable,
-            high-end finishes.
+            concrete contractor in New Jersey, specializing in terrazzo, stamped
+            concrete, garage floor coatings, and custom surface solutions. Over
+            20 years of experience delivering durable, high-end finishes.
           </p>
 
           <p className="text-primary italic font-serif text-sm">
@@ -167,6 +166,15 @@ const Footer = () => (
                   <path d="M12.75 2.25a.75.75 0 0 1 .75-.75h2.25a.75.75 0 0 1 .75.75c0 1.52.44 2.68 1.18 3.5.74.82 1.8 1.25 2.82 1.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75c-1.13 0-2.23-.23-3.18-.7v6.7a5.25 5.25 0 1 1-5.25-5.25.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75 1.5 1.5 0 1 0 1.5 1.5V2.25Z" />
                 </svg>
               </Link>
+              <Link
+                href="https://x.com/TopCoatnj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5"
+                aria-label="Follow Top Coat on X"
+              >
+                <X className="size-4" />
+              </Link>
             </div>
           </div>
         </div>
@@ -180,7 +188,6 @@ const Footer = () => (
         >
           © {new Date().getFullYear()} TopCoat Artistry LLC.
         </Link>
-
       </div>
     </div>
   </footer>
