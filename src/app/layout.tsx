@@ -107,7 +107,7 @@ export default function RootLayout({
 
         {/* Google Analytics */}
         {/* Google Tag Manager */}
-          <Script id="gtm-script" strategy="lazyOnload">
+        <Script id="gtm-script" strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];
             w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
@@ -119,7 +119,21 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-TWZ7246B');
           `}
         </Script>
+        {/* ✅ Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-B9B54X856E"
+          strategy="lazyOnload"
+        />
 
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-B9B54X856E');
+  `}
+        </Script>
         {/* SCHEMA */}
         <Script
           id="schema"
