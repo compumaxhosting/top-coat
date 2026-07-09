@@ -7,7 +7,8 @@ export default function ConclusionSection() {
       <Label>Conclusion</Label>
       <SectionHeading>Final Thoughts</SectionHeading>
       <p className="font-sans text-base leading-relaxed text-secondary-foreground/70">
-        <Link href="/services/building-facade-contractors-wayne-nj" className="text-primary">
+        <Link href="/" className="text-primary hover:underline"
+              target="/blank">
                   Building facade solutions
                   in New Jersey
         </Link>{" "} are essential for protecting
