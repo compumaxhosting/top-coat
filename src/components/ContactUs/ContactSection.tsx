@@ -45,7 +45,7 @@ const ContactSection = () => {
               >
                 <div className="relative overflow-hidden rounded-2xl border border-red-500/20 bg-white p-3 transition-all duration-300 group-hover:border-red-400/50 group-hover:shadow-[0_0_30px_rgba(220,38,38,0.35)]">
                   <Image
-                    src="/images/scanner.jpg"
+                    src="/Images/scanner.jpg"
                     alt="Scan QR Code to Leave a Review"
                     width={400}
                     height={400}
