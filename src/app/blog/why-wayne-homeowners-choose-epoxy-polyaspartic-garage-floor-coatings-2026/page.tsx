@@ -2,7 +2,6 @@ import Footer from "@/components/Layout/Footer";
 import Navbar from "@/components/Layout/Navbar";
 import BackToTop from "@/components/Layout/BackToTop";
 import BlogPostHero from "@/components/Blog/garage-floor-coatings-2026/BlogPostHero";
-import BlogPostContent from "@/components/Blog/garage-floor-coatings-2026/BlogPostContent";
 import BlogBreadcrumbs from "@/components/Blog/BlogBreadcrumbs";
 import ContentSection from "@/components/Blog/garage-floor-coatings-2026/table-content/ContentSection";
 import TableOfContents from "@/components/Blog/garage-floor-coatings-2026/table-content/TableOfContent";
