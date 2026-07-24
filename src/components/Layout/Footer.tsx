@@ -133,17 +133,9 @@ const Footer = () => (
 
             {/* SOCIAL */}
             <div className="flex items-center gap-3 pt-2">
+              {/* Facebook */}
               <Link
-                href={siteConfig.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5"
-              >
-                <Instagram className="size-4" />
-              </Link>
-
-              <Link
-                href={siteConfig.social.facebook}
+                href="https://www.facebook.com/topcoatllc.net/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5"
@@ -151,8 +143,19 @@ const Footer = () => (
                 <Facebook className="size-4" />
               </Link>
 
+              {/* Instagram */}
               <Link
-                href={siteConfig.social.tiktok}
+                href="https://www.instagram.com/top.coat.artistry"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5"
+              >
+                <Instagram className="size-4" />
+              </Link>
+
+              {/* TikTok */}
+              <Link
+                href="https://www.tiktok.com/@almahairi1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5"
