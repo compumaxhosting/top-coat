@@ -31,6 +31,26 @@ const filters: PortfolioFilter[] = [
 
 const projects: Project[] = [
   {
+  id: "church-lobby-terrazzo-nj",
+  name: "Church Welcome Center Terrazzo Flooring – NJ",
+  type: "Commercial",
+  image: "/Images/top-img-1.webp",
+  description:
+    "Custom terrazzo flooring installation in a New Jersey church welcome center featuring polished floors, decorative stone walls, and architectural finishes.",
+  alt: "Church welcome center with polished terrazzo flooring in New Jersey",
+  animationDelayClass: "delay-0",
+},
+{
+  id: "church-hallway-terrazzo-nj",
+  name: "Church Hallway Terrazzo Flooring – NJ",
+  type: "Commercial",
+  image: "/Images/top-img-2.webp",
+  description:
+    "Elegant terrazzo flooring installation in a New Jersey church hallway with engraved scripture arches, decorative stone walls, and durable commercial flooring.",
+  alt: "Church hallway with terrazzo flooring and engraved stone arches in New Jersey",
+  animationDelayClass: "delay-100",
+},
+  {
     id: "terrazzo-corporate-lobby-nj",
     name: "Commercial Terrazzo Flooring – NJ Corporate Lobby",
     type: "Commercial",
