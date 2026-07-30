@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
       "Discover why homeowners in Wayne, NJ are upgrading their garages with professional epoxy and polyaspartic floor coatings. Learn about the benefits, installation process, cost factors, maintenance, and why these durable flooring systems are a smart long-term investment.",
     image: "/Images/garage-floor2.webp",
     category: "Garage Floor Coating",
-    date: "30 July 2026",
+    date: "17 July 2026",
     readTime: "10 min read",
   },
   {
