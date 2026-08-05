@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function IntroSection() {
   return (
@@ -10,7 +11,7 @@ export default function IntroSection() {
         Garage Floor Coating Wayne NJ
       </h2>
       <p className="max-w-4xl font-sans text-base leading-relaxed text-secondary-foreground/70 md:text-lg">
-        If you&apos;re considering garage floor coating in Wayne, NJ, epoxy and
+        If you&apos;re considering <Link href="/services/garage-floor-coating-contractors-in-wayne-nj" className="text-primary">Garage Floor Coating in Wayne</Link>, NJ, epoxy and
         polyaspartic flooring are among the smartest home upgrades in 2026.
         These high-performance coatings transform ordinary concrete into durable,
         attractive, low-maintenance surfaces that withstand heavy vehicles,

@@ -10,7 +10,7 @@ export default function WhyChooseSection() {
         <Link href="/" className="text-primary">
           TopCoat Artistry LLC
         </Link>{" "}
-        specializes in Garage Floor Coating Wayne NJ using premium epoxy and
+              specializes in <Link href="/services/garage-floor-coating-contractors-in-wayne-nj" className="text-primary">Garage Floor Coating Wayne NJ</Link> using premium epoxy and
         polyaspartic systems designed for long-term performance. Serving Wayne,
         Newark, Paterson, Jersey City, Bergen County, and nearby communities,
         the team focuses on meticulous concrete preparation, professional
