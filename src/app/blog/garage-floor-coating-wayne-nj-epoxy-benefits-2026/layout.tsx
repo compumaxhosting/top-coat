@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 
 const url =
-  "https://www.topcoat-llc.com/blog/garage-floor-coating-wayne-nj-epoxy-benefits-2026";
-const image = "https://www.topcoat-llc.com/images/garage-floor-coating-wayne-nj.webp";
+  "/blog/garage-floor-coating-wayne-nj-epoxy-benefits-2026";
+const image = "/Images/garage-floor-coating-wayne-nj.webp";
 const title = "Garage Floor Coating Wayne NJ | Epoxy Garage Flooring Experts";
 const description =
   "Upgrade your garage with Garage Floor Coating Wayne NJ. Durable epoxy and polyaspartic flooring for homes and businesses in Wayne & Bergen County.";
