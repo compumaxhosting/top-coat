@@ -10,6 +10,17 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "garage-floor-coating-wayne-nj-epoxy-benefits-2026",
+    title:
+      "Garage Floor Coating Wayne NJ: 15 Reasons Homeowners Are Upgrading to Epoxy in 2026",
+    excerpt:
+      "Explore 15 reasons Wayne homeowners are choosing professional epoxy and polyaspartic garage floor coatings for durable, attractive concrete protection.",
+    image: "/Images/garage-floor-coating-wayne-nj.webp",
+    category: "Garage Floor Coating",
+    date: "5 August 2026",
+    readTime: "9 min read",
+  },
+  {
     slug: "why-wayne-homeowners-choose-epoxy-polyaspartic-garage-floor-coatings-2026",
     title:
       "Why Wayne, NJ Homeowners Are Choosing Epoxy & Polyaspartic Garage Floor Coatings in 2026",
