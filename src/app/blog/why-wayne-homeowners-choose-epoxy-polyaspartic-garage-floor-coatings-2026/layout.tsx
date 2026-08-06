@@ -1,10 +1,25 @@
 import React from "react";
 import type { Metadata, Viewport } from "next";
 
+const title = "Why Wayne Homeowners Choose Epoxy Garage Floor Coatings in 2026";
+
+const description =
+  "Discover why homeowners in Wayne, NJ are choosing epoxy and polyaspartic garage floor coatings in 2026 for durable, attractive, and long-lasting concrete floor protection.";
+
+const canonical =
+  "https://www.topcoat-llc.com/blog/why-wayne-homeowners-choose-epoxy-polyaspartic-garage-floor-coatings-2026";
+
+const image = "https://www.topcoat-llc.com/Images/garage-floor.webp";
+
 export const metadata: Metadata = {
-  title: "Why Wayne Homeowners Choose Epoxy Garage Floor Coatings in 2026",
-  description:
-    "Discover why homeowners in Wayne, NJ are choosing epoxy and polyaspartic garage floor coatings in 2026 for durable, attractive, and long-lasting concrete floor protection.",
+  metadataBase: new URL("https://www.topcoat-llc.com"),
+
+  title: {
+    absolute: title,
+  },
+
+  description,
+
   keywords: [
     "Garage Floor Coating Wayne NJ",
     "Epoxy Garage Flooring Wayne",
@@ -32,7 +47,19 @@ export const metadata: Metadata = {
     "Long Lasting Floor Protection",
     "Decorative Epoxy Installations",
   ],
-  authors: [{ name: "TopCoat Artistry LLC" }],
+
+  authors: [
+    {
+      name: "TopCoat Artistry LLC",
+    },
+  ],
+
+  creator: "TopCoat Artistry LLC",
+
+  publisher: "TopCoat Artistry LLC",
+
+  category: "Home Improvement",
+
   robots: {
     index: true,
     follow: true,
@@ -44,46 +71,36 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+
   alternates: {
-    canonical:
-      "https://www.topcoat-llc.com/blog/why-wayne-homeowners-choose-epoxy-polyaspartic-garage-floor-coatings-2026",
+    canonical,
   },
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: "black",
-    title: "TopCoat Artistry LLC",
-  },
+
   openGraph: {
     type: "article",
-    title: "Why Wayne Homeowners Choose Epoxy Garage Floor Coatings in 2026",
-    description:
-      "Learn why epoxy and polyaspartic garage floor coatings are the top choice for homeowners in Wayne, NJ, offering durability, style, and long-lasting protection.",
-    url: "https://www.topcoat-llc.com/blog/why-wayne-homeowners-choose-epoxy-polyaspartic-garage-floor-coatings-2026",
+    url: canonical,
+    title,
+    description,
     siteName: "TopCoat Artistry LLC",
+
     images: [
       {
-        url: "https://www.topcoat-llc.com/assets/images/blog/epoxy-garage-floor-coating-wayne-nj-2026.jpg",
+        url: image,
         width: 1200,
         height: 630,
-        alt: "Epoxy Garage Floor Coating Wayne NJ",
+        alt: "Epoxy Garage Floor Coating in Wayne NJ",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Why Wayne Homeowners Choose Epoxy Garage Floor Coatings in 2026",
-    description:
-      "Explore the benefits of epoxy and polyaspartic garage floor coatings for Wayne, NJ homeowners in 2026.",
-    images: [
-      "https://www.topcoat-llc.com/assets/images/blog/epoxy-garage-floor-coating-wayne-nj-2026.jpg",
-    ],
-    site: "@TopCoatArtistry",
+    title,
+    description,
+    images: [image],
   },
+
   referrer: "strict-origin-when-cross-origin",
-  other: {
-    "cache-control": "public",
-    expires: "Wed, 01 Jan 2030 00:00:00 GMT",
-  },
 };
 
 export const viewport: Viewport = {
@@ -93,39 +110,56 @@ export const viewport: Viewport = {
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline:
-    "Why Homeowners in Wayne, NJ Are Choosing Epoxy & Polyaspartic Garage Floor Coatings in 2026",
-  description:
-    "Discover why epoxy and polyaspartic garage floor coatings are becoming the preferred flooring solution for homeowners in Wayne, NJ in 2026.",
-  image:
-    "https://www.topcoat-llc.com/assets/images/blog/epoxy-garage-floor-coating-wayne-nj-2026.jpg",
+
+  headline: title,
+
+  description,
+
+  url: canonical,
+
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonical,
+  },
+
+  image: {
+    "@type": "ImageObject",
+    url: image,
+    width: 1200,
+    height: 630,
+  },
+
   author: {
     "@type": "Organization",
     name: "TopCoat Artistry LLC",
   },
+
   publisher: {
     "@type": "Organization",
     name: "TopCoat Artistry LLC",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.topcoat-llc.com/assets/images/logo.png",
+      url: "https://www.topcoat-llc.com/Images/logo.webp",
     },
   },
-  datePublished: "2026-07-17",
-  dateModified: "2026-07-17",
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id":
-      "https://www.topcoat-llc.com/blog/why-wayne-homeowners-choose-epoxy-polyaspartic-garage-floor-coatings-2026",
-  },
+
+  datePublished: "2026-07-17T00:00:00-04:00",
+
+  dateModified: "2026-07-17T00:00:00-04:00",
+
+  inLanguage: "en-US",
+
+  articleSection: "Garage Floor Coatings",
+
   keywords: [
     "Garage Floor Coating Wayne NJ",
     "Epoxy Garage Flooring Wayne",
-    "Polyaspartic Floor Systems",
+    "Polyaspartic Garage Floors",
     "Concrete Floor Resurfacing",
-    "Decorative Concrete Solutions",
+    "Garage Floor Restoration",
   ],
-  inLanguage: "en-US",
+
+  isAccessibleForFree: true,
 };
 
 export default function GarageFloorCoatingsBlogLayout({
