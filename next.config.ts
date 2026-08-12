@@ -32,6 +32,31 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/services/epoxy-flooring",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/services/building-facades",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/services/terrazzo",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/services/custom-decorative-concrete",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/services/garage-floors",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
 };
