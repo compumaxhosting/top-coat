@@ -10,6 +10,17 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "stamped-concrete-contractor-nj-nyc-ideas",
+    title:
+      "Stamped Concrete Contractor NJ & NYC: Driveway, Patio & Walkway Ideas",
+    excerpt:
+      "Find a trusted Stamped Concrete Contractor Wayne NJ for driveways, patios and walkways. Explore stamped concrete ideas for NJ & NYC homes and businesses.",
+    image: "/Images/stamped-concrete-contractor-nj-nyc-ideas.webp",
+    category: "Decorative Concrete",
+    date: "12 August 2026",
+    readTime: "9 min read",
+  },
+  {
     slug: "garage-floor-coating-wayne-nj-epoxy-benefits-2026",
     title:
       "Garage Floor Coating Wayne NJ: 15 Reasons Homeowners Are Upgrading to Epoxy in 2026",

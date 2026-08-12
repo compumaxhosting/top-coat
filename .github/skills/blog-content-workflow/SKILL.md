@@ -65,7 +65,7 @@ For an existing blog post:
 
 ## Project-Specific Conventions
 
-- Follow the structure already used in the sample blog implementation under src/components/Blog/Garage-Floor-Coating-Wayne and src/app/blog/garage-floor-coating-wayne-nj-epoxy-benefits-2026/page.tsx.
+- Follow the structure already used in the sample blog implementation under src/components/Blog/Epoxy-Flooring and src/app/blog/epoxy-flooring-benefits-for-homes-businesses/page.tsx.
 - Prefer modular component files over a single large page component.
 - Keep folder names and route slugs consistent and descriptive.
 - Match the existing visual tone, spacing, and typography used across the site.
