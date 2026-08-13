@@ -2,7 +2,7 @@ import { Label, SectionHeading } from "../SectionPrimitives";
 
 export default function IdeasSection() {
   return (
-    <section className="border-b border-charcoal-lighter py-16">
+    <section className="border-b border-charcoal-lighter py-16" id="three">
       <Label>Design Inspiration</Label>
       <SectionHeading>Stamped Concrete Driveway, Patio &amp; Walkway Ideas</SectionHeading>
 

@@ -2,7 +2,7 @@ import { Label, SectionHeading } from "../SectionPrimitives";
 
 export default function BenefitsSection() {
   return (
-    <section className="border-b border-charcoal-lighter py-16">
+    <section className="border-b border-charcoal-lighter py-16" id="four">
       <Label>Advantages</Label>
       <SectionHeading>Benefits of Decorative Concrete</SectionHeading>
       <p className="font-sans text-base leading-relaxed text-secondary-foreground/70">

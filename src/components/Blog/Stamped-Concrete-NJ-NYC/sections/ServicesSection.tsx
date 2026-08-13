@@ -2,7 +2,7 @@ import { Label, SectionHeading } from "../SectionPrimitives";
 
 export default function ServicesSection() {
   return (
-    <section className="border-b border-charcoal-lighter py-16">
+    <section className="border-b border-charcoal-lighter py-16" id="ten">
       <Label>Service Areas</Label>
       <SectionHeading>Stamped Concrete Services in NJ &amp; NYC</SectionHeading>
       <p className="font-sans text-base leading-relaxed text-secondary-foreground/70">

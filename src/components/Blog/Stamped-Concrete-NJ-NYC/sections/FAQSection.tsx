@@ -50,7 +50,7 @@ export default function FAQSection() {
   const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
 
   return (
-    <section className="border-b border-charcoal-lighter py-16">
+    <section className="border-b border-charcoal-lighter py-16" id="nine">
       <Label>FAQ</Label>
       <SectionHeading>Frequently Asked Questions</SectionHeading>
       <div className="mt-8 flex flex-col">

@@ -3,7 +3,7 @@ import { Label, SectionHeading } from "../SectionPrimitives";
 
 export default function ProfessionalInstallationSection() {
   return (
-    <section className="border-b border-charcoal-lighter py-16">
+    <section className="border-b border-charcoal-lighter py-16" id="seven">
       <Label>Professional Service</Label>
       <SectionHeading>Why Professional Installation Matters</SectionHeading>
       <p className="font-sans text-base leading-relaxed text-secondary-foreground/70">

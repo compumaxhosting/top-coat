@@ -2,7 +2,7 @@ import { Label, SectionHeading } from "../SectionPrimitives";
 
 export default function CostFactorsSection() {
   return (
-    <section className="border-b border-charcoal-lighter py-16">
+    <section className="border-b border-charcoal-lighter py-16" id="six">
       <Label>Budgeting</Label>
       <SectionHeading>What Affects Stamped Concrete Cost?</SectionHeading>
       <p className="font-sans text-base leading-relaxed text-secondary-foreground/70">

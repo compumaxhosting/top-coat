@@ -2,7 +2,7 @@ import { Label, SectionHeading } from "../SectionPrimitives";
 
 export default function DefinitionSection() {
   return (
-    <section className="border-b border-charcoal-lighter py-16">
+    <section className="border-b border-charcoal-lighter py-16" id="one">
       <Label>Overview</Label>
       <SectionHeading>What Is Stamped Concrete?</SectionHeading>
       <p className="font-sans text-base leading-relaxed text-secondary-foreground/70">

@@ -2,7 +2,7 @@ import { Label, SectionHeading } from "../SectionPrimitives";
 
 export default function ConclusionSection() {
   return (
-    <section className="py-16">
+    <section className="py-16" id="Conclusion">
       <Label>Conclusion</Label>
       <SectionHeading>Stamped Concrete for NJ &amp; NYC Properties</SectionHeading>
       <p className="font-sans text-base leading-relaxed text-secondary-foreground/70">
