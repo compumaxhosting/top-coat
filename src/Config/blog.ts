@@ -1,14 +1,25 @@
 export type BlogPost = {
-	slug: string;
-	title: string;
-	excerpt: string;
-	image: string;
-	category: string;
-	date: string;
-	readTime: string;
+  slug: string;
+  title: string;
+  excerpt: string;
+  image: string;
+  category: string;
+  date: string;
+  readTime: string;
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "custom-decorative-concrete-wayne-nj-ideas-2026",
+    title:
+      "Custom Decorative Concrete in Wayne, NJ: 10 Stunning Ideas Transforming Outdoor Spaces in 2026",
+    excerpt:
+      "Discover stamped concrete, overlays, resurfacing, artistic finishes, patios, walkways, pool decks, and more decorative concrete ideas for homes and businesses across New Jersey.",
+    image: "/Images/custom-decorative-concrete-wayne-nj-ideas-2026.webp",
+    category: "Decorative Concrete",
+    date: "18 August 2026",
+    readTime: "8 min read",
+  },
   {
     slug: "stamped-concrete-contractor-nj-nyc-ideas",
     title:
