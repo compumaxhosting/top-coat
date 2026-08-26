@@ -10,6 +10,15 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "epoxy-flooring-nyc-homes-businesses",
+    title: "Is Epoxy Flooring a Good Choice for NYC Homes and Businesses?",
+    excerpt: "Discover if epoxy flooring is right for NYC and NJ homes and businesses, including benefits, costs, durability, installation, and maintenance.",
+    image: "/Images/epoxy-flooring-nyc-homes-businesses.webp",
+    category: "Epoxy Flooring",
+    date: "26 August 2026",
+    readTime: "8 min read",
+  },
+  {
     slug: "custom-decorative-concrete-wayne-nj-ideas-2026",
     title:
       "Custom Decorative Concrete in Wayne, NJ: 10 Stunning Ideas Transforming Outdoor Spaces in 2026",
