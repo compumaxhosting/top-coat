@@ -137,6 +137,7 @@ const Footer = () => (
                 href={siteConfig.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Follow TopCoat Artistry on Instagram"
                 className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5"
               >
                 <Instagram className="size-4" />
@@ -146,6 +147,7 @@ const Footer = () => (
                 href={siteConfig.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Follow TopCoat Artistry on Facebook"
                 className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5"
               >
                 <Facebook className="size-4" />
@@ -155,6 +157,7 @@ const Footer = () => (
                 href={siteConfig.social.tiktok}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Follow TopCoat Artistry on TikTok"
                 className="group flex h-10 w-10 items-center justify-center rounded-sm border border-white/12 bg-white/5 text-white transition-all duration-300 hover:-translate-y-0.5"
               >
                 <svg
