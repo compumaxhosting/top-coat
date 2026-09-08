@@ -27,29 +27,24 @@ const HeroSection = () => (
       <div className="mx-auto max-w-5xl">
         {/* Top Tagline */}
         <p className="py-6 text-sm uppercase tracking-[0.3em] text-white/90">
-          Epoxy Flooring & Decorative Concrete in New Jersey
+          New Jersey Epoxy Flooring & Decorative Concrete Contractors
         </p>
 
         {/* Main Heading */}
         <h1 className="mb-6 text-4xl font-bold leading-[1.08] text-amber-300 md:text-5xl lg:text-6xl">
           Epoxy Flooring & Decorative Concrete
           <br />
-          <span className="text-white text-3xl md:text-4xl lg:text-5xl">Experts in New Jersey</span>
+          <span className="text-white text-3xl md:text-4xl lg:text-5xl">
+            Experts in New Jersey
+          </span>
         </h1>
 
         {/* Description */}
         <p className="mx-auto mb-4 max-w-6xl text-md text-white md:text-xl">
-         We provide epoxy flooring and decorative concrete solutions for residential, commercial, and industrial spaces across New Jersey.
-        </p>
-
-        <p className="mx-auto mb-4 max-w-6xl text-md text-white/90 md:text-lg">
-          With 20+ years of experience, we deliver epoxy garage floors, commercial coatings, terrazzo, stamped, and decorative concrete built for durability and design.
-
-        </p>
-
-        <p className="mx-auto mb-6 max-w-6xl text-md text-white/90 md:text-lg">
-          Serving Newark, Jersey City, Trenton, and surrounding areas.
-
+          Expert epoxy flooring and decorative concrete services in New Jersey.
+          We install epoxy garage floors, commercial coatings, terrazzo, and
+          stamped concrete for homes and businesses. 20+ years of experience
+          serving Newark, Jersey City, Trenton, and surrounding areas.
         </p>
 
         {/* CTA */}

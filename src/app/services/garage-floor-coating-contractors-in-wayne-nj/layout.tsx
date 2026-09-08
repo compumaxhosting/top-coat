@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     siteName: "TopCoat Artistry LLC",
     images: [
       {
-        url: "https://www.topcoat-llc.com/images/garage-floor-coating-wayne-nj.jpg",
+        url: "https://www.topcoat-llc.com/Images/garage-floor.webp",
         width: 1200,
         height: 630,
         alt: "Garage Floor Coating Contractors in Wayne NJ by TopCoat Artistry LLC",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     title: "Garage Floor Coating Contractors in Wayne, NJ | TopCoat Artistry LLC",
     description:
       "Professional epoxy and polyaspartic garage floor coatings in Wayne, NJ. Durable flooring systems for homes, garages, warehouses, and commercial facilities.",
-    images: ["https://www.topcoat-llc.com/images/garage-floor-coating-wayne-nj.jpg"],
+    images: ["https://www.topcoat-llc.com/Images/garage-floor.webp"],
     site: "@TopCoatLLC",
   },
 
@@ -100,7 +100,7 @@ export default function GarageFloorsLayout({
             "@context": "https://schema.org",
             "@type": "HousePainter",
             name: "TopCoat Artistry LLC",
-            image: "https://www.topcoat-llc.com/images/garage-floor-coating-wayne-nj.jpg",
+            image: "https://www.topcoat-llc.com/Images/garage-floor.webp",
             "@id": "https://www.topcoat-llc.com/services/garage-floor-coating-contractors-in-wayne-nj",
             url: "https://www.topcoat-llc.com/services/garage-floor-coating-contractors-in-wayne-nj",
             telephone: "+1-201-315-2633",
