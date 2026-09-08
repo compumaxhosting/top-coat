@@ -10,6 +10,17 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "terrazzo-flooring-contractors-new-jersey",
+    title:
+      "Looking for Terrazzo Flooring Contractors in New Jersey? Here’s What You Need to Know",
+    excerpt:
+      "Looking for terrazzo flooring contractors in New Jersey? Learn about terrazzo flooring, installation, benefits, designs, and choosing the right contractor.",
+    image: "/Images/terrazzo-flooring.webp",
+    category: "Terrazzo Flooring",
+    date: "8 September 2026",
+    readTime: "8 min read",
+  },
+  {
     slug: "epoxy-flooring-nyc-homes-businesses",
     title: "Is Epoxy Flooring a Good Choice for NYC Homes and Businesses?",
     excerpt: "Discover if epoxy flooring is right for NYC and NJ homes and businesses, including benefits, costs, durability, installation, and maintenance.",
