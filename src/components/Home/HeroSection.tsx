@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => (
@@ -47,17 +47,27 @@ const HeroSection = () => (
           serving Newark, Jersey City, Trenton, and surrounding areas.
         </p>
 
-        {/* CTA */}
-        <div className="flex justify-center">
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link href="/contact" prefetch={false}>
             <Button
               size="lg"
-              className="bg-primary px-8 py-6 text-base font-medium text-primary-foreground hover:bg-primary/90"
+              className="w-full sm:w-auto bg-primary px-8 py-6 text-base font-medium text-primary-foreground hover:bg-primary/90"
             >
               Get a Free Quote
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
+          <a href="tel:+12013152633">
+            <Button
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto border-white/30 bg-black/40 px-8 py-6 text-base font-medium text-white hover:bg-white/10 hover:text-white backdrop-blur-sm"
+            >
+              <Phone className="mr-2 h-5 w-5 text-primary" />
+              Call (201) 315-2633
+            </Button>
+          </a>
         </div>
       </div>
     </div>

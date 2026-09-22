@@ -92,7 +92,7 @@ export default function StampedConcreteLayout({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "GeneralContractor",
+            "@type": ["GeneralContractor", "HomeAndConstructionBusiness"],
             name: "TopCoat Artistry LLC",
             image: "https://www.topcoat-llc.com/Images/stamped-concrete.webp",
             "@id": "https://www.topcoat-llc.com/services/stamped-concrete-contractors-wayne-nj",
@@ -101,10 +101,10 @@ export default function StampedConcreteLayout({
             priceRange: "$$",
             address: {
               "@type": "PostalAddress",
-              streetAddress: "108 Fairfield Rd",
-              addressLocality: "Wayne",
+              streetAddress: "86 Lackawanna Ave, Suite 215",
+              addressLocality: "Woodland Park",
               addressRegion: "NJ",
-              postalCode: "07470",
+              postalCode: "07424",
               addressCountry: "US",
             },
             geo: {
@@ -114,9 +114,13 @@ export default function StampedConcreteLayout({
             },
             areaServed: [
               { "@type": "City", name: "Wayne" },
+              { "@type": "City", name: "Woodland Park" },
               { "@type": "City", name: "Newark" },
               { "@type": "City", name: "Paterson" },
               { "@type": "City", name: "Jersey City" },
+              { "@type": "City", name: "Clifton" },
+              { "@type": "AdministrativeArea", name: "Passaic County" },
+              { "@type": "AdministrativeArea", name: "Bergen County" },
             ],
             hasOfferCatalog: {
               "@type": "OfferCatalog",

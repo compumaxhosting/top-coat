@@ -2,6 +2,17 @@ import BackToTop from "@/components/Layout/BackToTop";
 import ContactForm from "@/components/ContactUs/ContactForm";
 import Footer from "@/components/Layout/Footer";
 import Navbar from "@/components/Layout/Navbar";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.topcoat-llc.com"),
+  title: "Book an Appointment | Free Estimate | TopCoat Artistry LLC",
+  description:
+    "Schedule an appointment or request a free estimate for epoxy flooring, terrazzo, garage coatings, and stamped concrete in Wayne & Northern NJ.",
+  alternates: {
+    canonical: "/book-appointment",
+  },
+};
 
 const BookAppointmentPage = () => {
   return (

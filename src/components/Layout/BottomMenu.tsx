@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { BriefcaseBusiness, Mail, MapPin, Phone } from "lucide-react";
 
 import { siteConfig } from "@/Config/Site";
 
@@ -11,6 +11,12 @@ const bottomMenuItems = [
     href: formatPhoneHref(siteConfig.phone),
     icon: Phone,
     ariaLabel: `Call ${siteConfig.name}`,
+  },
+  {
+    label: "Services",
+    href: "/services",
+    icon: BriefcaseBusiness,
+    ariaLabel: "View our services",
   },
   {
     label: "Email",
@@ -34,7 +40,7 @@ const BottomMenu = () => {
         aria-label="Quick contact actions"
         className="w-full border-t border-black/10 bg-primary shadow-[0_-6px_16px_rgba(0,0,0,0.18)] pb-[env(safe-area-inset-bottom)]"
       >
-        <ul className="grid grid-cols-3">
+        <ul className="grid grid-cols-4">
           {bottomMenuItems.map((item) => {
             const Icon = item.icon;
 

@@ -16,7 +16,11 @@ const HeroSection = () => {
 				<p className="mb-3 font-sans text-sm uppercase tracking-[0.3em] text-white/90">
 					Industrial &amp; Commercial Solutions
 				</p>
-				<h2 className="font-serif text-4xl font-bold text-white/95 md:text-6xl">Epoxy Flooring</h2>
+				<h1 className="font-serif text-3xl font-bold text-white/95 md:text-5xl">
+					Epoxy Flooring Wayne NJ
+					<br />
+					<span className="text-2xl md:text-4xl font-semibold text-white/80">Commercial &amp; Garage Coatings</span>
+				</h1>
 			</div>
 		</section>
 	);

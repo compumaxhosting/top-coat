@@ -112,15 +112,25 @@ export function DesktopNav({ links }: DesktopNavProps) {
 				);
 			})}
 
-			<Button
-				asChild
-				className="bg-primary font-sans text-sm tracking-wide text-primary-foreground hover:bg-copper-light"
-			>
-				<Link href="/contact" className="inline-flex items-center gap-2">
-					<Phone className="size-4" aria-hidden="true" />
-					<span>Get a Quote</span>
-				</Link>
-			</Button>
+			<div className="flex items-center gap-4">
+				<a
+					href="tel:+12013152633"
+					className="group inline-flex items-center gap-2 text-sm font-sans font-medium text-white/90 hover:text-primary transition-colors"
+					aria-label="Call TopCoat Artistry at (201) 315-2633"
+				>
+					<Phone className="size-4 text-primary group-hover:scale-110 transition-transform" aria-hidden="true" />
+					<span className="hidden xl:inline tracking-wide font-semibold">(201) 315-2633</span>
+				</a>
+
+				<Button
+					asChild
+					className="bg-primary font-sans text-sm tracking-wide text-primary-foreground hover:bg-copper-light"
+				>
+					<Link href="/contact" className="inline-flex items-center gap-2">
+						<span>Get a Quote</span>
+					</Link>
+				</Button>
+			</div>
 		</nav>
 	);
 }

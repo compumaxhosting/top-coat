@@ -80,7 +80,7 @@ export default function AboutLayout({
       >
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "HousePainter",
+          "@type": ["GeneralContractor", "HomeAndConstructionBusiness"],
           name: "TopCoat Artistry LLC",
           image: "https://www.topcoat-llc.com/Images/About.webp",
           "@id": "https://www.topcoat-llc.com/about",
@@ -91,10 +91,10 @@ export default function AboutLayout({
             "TopCoat Artistry LLC provides professional epoxy flooring and concrete coating services in Wayne, Newark, Paterson, and Jersey City, NJ.",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "108 Fairfield Rd",
-            addressLocality: "Wayne",
+            streetAddress: "86 Lackawanna Ave, Suite 215",
+            addressLocality: "Woodland Park",
             addressRegion: "NJ",
-            postalCode: "07470",
+            postalCode: "07424",
             addressCountry: "US",
           },
           geo: {
@@ -104,9 +104,13 @@ export default function AboutLayout({
           },
           areaServed: [
             { "@type": "City", name: "Wayne" },
+            { "@type": "City", name: "Woodland Park" },
             { "@type": "City", name: "Newark" },
             { "@type": "City", name: "Paterson" },
             { "@type": "City", name: "Jersey City" },
+            { "@type": "City", name: "Clifton" },
+            { "@type": "AdministrativeArea", name: "Passaic County" },
+            { "@type": "AdministrativeArea", name: "Bergen County" },
           ],
           hasOfferCatalog: {
             "@type": "OfferCatalog",

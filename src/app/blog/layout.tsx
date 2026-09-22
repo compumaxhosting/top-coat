@@ -7,6 +7,9 @@ export const metadata: Metadata = {
 
   description:
     "Expert tips, industry trends, and project showcases from TopCoat Artistry LLC. Learn about epoxy flooring, decorative concrete, and more.",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 export default function BlogLayout({

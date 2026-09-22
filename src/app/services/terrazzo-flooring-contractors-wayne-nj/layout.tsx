@@ -92,59 +92,104 @@ export default function TerrazzoLayout({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HousePainter",
-            name: "TopCoat Artistry LLC",
-            image: "https://www.topcoat-llc.com/Images/terrazzo.webp",
-            "@id": "https://www.topcoat-llc.com/services/terrazzo-flooring-contractors-wayne-nj",
-            url: "https://www.topcoat-llc.com/services/terrazzo-flooring-contractors-wayne-nj",
-            telephone: "+1-201-315-2633",
-            priceRange: "$$",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "108 Fairfield Rd",
-              addressLocality: "Wayne",
-              addressRegion: "NJ",
-              postalCode: "07470",
-              addressCountry: "US",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 40.8876,
-              longitude: -74.2576,
-            },
-            areaServed: [
-              { "@type": "City", name: "Wayne" },
-              { "@type": "City", name: "Newark" },
-              { "@type": "City", name: "Paterson" },
-              { "@type": "City", name: "Jersey City" },
+            "@graph": [
+              {
+                "@type": ["GeneralContractor", "HomeAndConstructionBusiness"],
+                name: "TopCoat Artistry LLC",
+                image: "https://www.topcoat-llc.com/Images/terrazzo.webp",
+                "@id": "https://www.topcoat-llc.com/services/terrazzo-flooring-contractors-wayne-nj",
+                url: "https://www.topcoat-llc.com/services/terrazzo-flooring-contractors-wayne-nj",
+                telephone: "+1-201-315-2633",
+                priceRange: "$$",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "86 Lackawanna Ave, Suite 215",
+                  addressLocality: "Woodland Park",
+                  addressRegion: "NJ",
+                  postalCode: "07424",
+                  addressCountry: "US",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 40.8876,
+                  longitude: -74.2576,
+                },
+                areaServed: [
+                  { "@type": "City", name: "Wayne" },
+                  { "@type": "City", name: "Woodland Park" },
+                  { "@type": "City", name: "Newark" },
+                  { "@type": "City", name: "Paterson" },
+                  { "@type": "City", name: "Jersey City" },
+                  { "@type": "City", name: "Clifton" },
+                  { "@type": "AdministrativeArea", name: "Passaic County" },
+                  { "@type": "AdministrativeArea", name: "Bergen County" },
+                ],
+                hasOfferCatalog: {
+                  "@type": "OfferCatalog",
+                  name: "Terrazzo and Epoxy Services",
+                  itemListElement: [
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Terrazzo Floor Installation",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Terrazzo Floor Restoration",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Terrazzo Polishing",
+                      },
+                    },
+                  ],
+                },
+              },
+              {
+                "@type": "FAQPage",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "How long does terrazzo flooring last?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "A professionally installed terrazzo floor can last 40 to 75 years or more with proper maintenance.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Is terrazzo flooring expensive?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Terrazzo typically has a higher upfront cost than many flooring options, but its longevity often makes it more cost-effective over time.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Is terrazzo flooring suitable for homes?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes. Terrazzo is increasingly popular in luxury homes due to its durability, seamless appearance, and custom design options.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Can terrazzo flooring be customized?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Absolutely. Terrazzo can incorporate custom colors, decorative patterns, logos, and unique design elements.",
+                    },
+                  },
+                ],
+              },
             ],
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "Terrazzo and Epoxy Services",
-              itemListElement: [
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Terrazzo Floor Installation",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Terrazzo Floor Restoration",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Terrazzo Polishing",
-                  },
-                },
-              ],
-            },
           }),
         }}
       />

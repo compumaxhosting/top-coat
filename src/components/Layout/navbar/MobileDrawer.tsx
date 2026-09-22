@@ -140,11 +140,10 @@ export function MobileDrawer({ isOpen, links, onClose }: MobileDrawerProps) {
 					</Link>
 
 					<Link
-						href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
+						href="/contact"
 						onClick={onClose}
 						className="flex items-center justify-center gap-2.5 w-full py-3 px-5 rounded-sm bg-primary text-primary-foreground text-xs font-sans font-semibold tracking-[0.16em] uppercase hover:bg-copper-light transition-colors duration-300 ring-1 ring-primary/30"
 					>
-						<Phone className="size-4" aria-hidden="true" />
 						<span>Get a Quote</span>
 					</Link>
 				</div>

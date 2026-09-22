@@ -34,27 +34,32 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/services/epoxy-flooring",
-        destination: "/",
+        destination: "/services/epoxy-flooring-wayne-new-jersey",
         permanent: true,
       },
       {
         source: "/services/building-facades",
-        destination: "/",
+        destination: "/services/building-facade-contractors-wayne-nj",
         permanent: true,
       },
       {
         source: "/services/terrazzo",
-        destination: "/",
+        destination: "/services/terrazzo-flooring-contractors-wayne-nj",
         permanent: true,
       },
       {
         source: "/services/custom-decorative-concrete",
-        destination: "/",
+        destination: "/services/custom-decorative-concrete-contractors-wayne-nj",
         permanent: true,
       },
       {
         source: "/services/garage-floors",
-        destination: "/",
+        destination: "/services/garage-floor-coating-contractors-in-wayne-nj",
+        permanent: true,
+      },
+      {
+        source: "/services/stamped-concrete",
+        destination: "/services/stamped-concrete-contractors-wayne-nj",
         permanent: true,
       },
     ];

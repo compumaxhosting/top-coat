@@ -143,19 +143,19 @@ export default function RootLayout({
           {`
           {
             "@context": "https://schema.org",
-            "@type": "HousePainter",
+            "@type": ["GeneralContractor", "HomeAndConstructionBusiness"],
             "name": "TopCoat Artistry LLC",
             "image": "https://www.topcoat-llc.com/Images/TopCoat-white-logo.webp",
             "url": "https://www.topcoat-llc.com/",
             "telephone": "+1-201-315-2633",
             "priceRange": "$$",
-            "description": "Leading epoxy flooring and decorative concrete contractor in New Jersey with 20+ years experience.",
+            "description": "Leading epoxy flooring, decorative concrete, terrazzo, and building facade contractor in New Jersey with 20+ years experience.",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "108 Fairfield Rd",
-              "addressLocality": "Wayne",
+              "streetAddress": "86 Lackawanna Ave, Suite 215",
+              "addressLocality": "Woodland Park",
               "addressRegion": "NJ",
-              "postalCode": "07470",
+              "postalCode": "07424",
               "addressCountry": "US"
             },
             "geo": {
@@ -167,15 +167,29 @@ export default function RootLayout({
               {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-                "opens": "08:00",
+                "opens": "07:00",
                 "closes": "18:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday"],
+                "opens": "08:00",
+                "closes": "14:00"
               }
             ],
             "areaServed": [
               { "@type": "City", "name": "Wayne" },
+              { "@type": "City", "name": "Woodland Park" },
               { "@type": "City", "name": "Newark" },
               { "@type": "City", "name": "Paterson" },
-              { "@type": "City", "name": "Jersey City" }
+              { "@type": "City", "name": "Jersey City" },
+              { "@type": "City", "name": "Clifton" },
+              { "@type": "City", "name": "Hoboken" },
+              { "@type": "AdministrativeArea", "name": "Passaic County" },
+              { "@type": "AdministrativeArea", "name": "Bergen County" },
+              { "@type": "AdministrativeArea", "name": "Essex County" },
+              { "@type": "AdministrativeArea", "name": "Morris County" },
+              { "@type": "City", "name": "New York City" }
             ]
           }
           `}

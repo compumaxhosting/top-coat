@@ -88,59 +88,96 @@ export default function ServicesLayout({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HousePainter",
-            name: "TopCoat Artistry LLC",
-            image: "https://www.topcoat-llc.com/Images/Service-Epoxy-Flooring.webp",
-            "@id": "https://www.topcoat-llc.com/services/epoxy-flooring-wayne-new-jersey",
-            url: "https://www.topcoat-llc.com/services/epoxy-flooring-wayne-new-jersey",
-            telephone: "+1-201-315-2633",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "108 Fairfield Rd",
-              addressLocality: "Wayne",
-              addressRegion: "NJ",
-              postalCode: "07470",
-              addressCountry: "US",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 40.8876,
-              longitude: -74.2576,
-            },
-            areaServed: [
-              { "@type": "City", name: "Wayne" },
-              { "@type": "City", name: "Newark" },
-              { "@type": "City", name: "Paterson" },
-              { "@type": "City", name: "Jersey City" },
+            "@graph": [
+              {
+                "@type": ["GeneralContractor", "HomeAndConstructionBusiness"],
+                name: "TopCoat Artistry LLC",
+                image: "https://www.topcoat-llc.com/Images/Service-Epoxy-Flooring.webp",
+                "@id": "https://www.topcoat-llc.com/services/epoxy-flooring-wayne-new-jersey",
+                url: "https://www.topcoat-llc.com/services/epoxy-flooring-wayne-new-jersey",
+                telephone: "+1-201-315-2633",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "86 Lackawanna Ave, Suite 215",
+                  addressLocality: "Woodland Park",
+                  addressRegion: "NJ",
+                  postalCode: "07424",
+                  addressCountry: "US",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 40.8876,
+                  longitude: -74.2576,
+                },
+                areaServed: [
+                  { "@type": "City", name: "Wayne" },
+                  { "@type": "City", name: "Woodland Park" },
+                  { "@type": "City", name: "Newark" },
+                  { "@type": "City", name: "Paterson" },
+                  { "@type": "City", name: "Jersey City" },
+                  { "@type": "City", name: "Clifton" },
+                  { "@type": "AdministrativeArea", name: "Passaic County" },
+                  { "@type": "AdministrativeArea", name: "Bergen County" },
+                ],
+                priceRange: "$$",
+                hasOfferCatalog: {
+                  "@type": "OfferCatalog",
+                  name: "Epoxy Flooring Services",
+                  itemListElement: [
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Garage Epoxy Flooring",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Commercial Epoxy Flooring",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Industrial Epoxy Flooring",
+                      },
+                    },
+                  ],
+                },
+              },
+              {
+                "@type": "FAQPage",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "Is epoxy flooring good for garages in Wayne, NJ?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, it resists salt, oil, and moisture damage, making it ideal for New Jersey garage conditions.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "How long does epoxy flooring last?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Typically 10–20 years with proper installation.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Can epoxy handle heavy traffic?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, it is designed for both light and heavy-duty residential and commercial use.",
+                    },
+                  },
+                ],
+              },
             ],
-            priceRange: "$$",
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "Epoxy Flooring Services",
-              itemListElement: [
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Garage Epoxy Flooring",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Commercial Epoxy Flooring",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Industrial Epoxy Flooring",
-                  },
-                },
-              ],
-            },
           }),
         }}
       />

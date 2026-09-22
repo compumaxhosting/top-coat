@@ -38,10 +38,10 @@ export const metadata: Metadata = {
     siteName: "TopCoat Artistry LLC",
     images: [
       {
-        url: "/images/portfolio-featured.jpg",
+        url: "/Images/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Epoxy flooring and decorative concrete portfolio",
+        alt: "TopCoat Artistry epoxy flooring and decorative concrete portfolio",
       },
     ],
   },
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Our NJ Flooring & Concrete Projects | TopCoat Artistry",
     description:
       "High-end surface transformations in Wayne, Newark, and Jersey City. 20+ years of durable, artistic finishes.",
-    images: ["/images/portfolio-featured.jpg"],
+    images: ["/Images/og-image.webp"],
   },
 
   other: {

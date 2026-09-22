@@ -98,66 +98,111 @@ export default function GarageFloorsLayout({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HousePainter",
-            name: "TopCoat Artistry LLC",
-            image: "https://www.topcoat-llc.com/Images/garage-floor.webp",
-            "@id": "https://www.topcoat-llc.com/services/garage-floor-coating-contractors-in-wayne-nj",
-            url: "https://www.topcoat-llc.com/services/garage-floor-coating-contractors-in-wayne-nj",
-            telephone: "+1-201-315-2633",
-            priceRange: "$$",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "108 Fairfield Rd",
-              addressLocality: "Wayne",
-              addressRegion: "NJ",
-              postalCode: "07470",
-              addressCountry: "US",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 40.8876,
-              longitude: -74.2576,
-            },
-            areaServed: [
-              { "@type": "City", name: "Wayne" },
-              { "@type": "City", name: "Newark" },
-              { "@type": "City", name: "Paterson" },
-              { "@type": "City", name: "Jersey City" },
+            "@graph": [
+              {
+                "@type": ["GeneralContractor", "HomeAndConstructionBusiness"],
+                name: "TopCoat Artistry LLC",
+                image: "https://www.topcoat-llc.com/Images/garage-floor.webp",
+                "@id": "https://www.topcoat-llc.com/services/garage-floor-coating-contractors-in-wayne-nj",
+                url: "https://www.topcoat-llc.com/services/garage-floor-coating-contractors-in-wayne-nj",
+                telephone: "+1-201-315-2633",
+                priceRange: "$$",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "86 Lackawanna Ave, Suite 215",
+                  addressLocality: "Woodland Park",
+                  addressRegion: "NJ",
+                  postalCode: "07424",
+                  addressCountry: "US",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: 40.8876,
+                  longitude: -74.2576,
+                },
+                areaServed: [
+                  { "@type": "City", name: "Wayne" },
+                  { "@type": "City", name: "Woodland Park" },
+                  { "@type": "City", name: "Newark" },
+                  { "@type": "City", name: "Paterson" },
+                  { "@type": "City", name: "Jersey City" },
+                  { "@type": "City", name: "Clifton" },
+                  { "@type": "AdministrativeArea", name: "Passaic County" },
+                  { "@type": "AdministrativeArea", name: "Bergen County" },
+                ],
+                hasOfferCatalog: {
+                  "@type": "OfferCatalog",
+                  name: "Garage Flooring Services",
+                  itemListElement: [
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Garage Floor Coating",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Garage Epoxy Flooring",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Garage Floor Repair",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Garage Floor Resurfacing",
+                      },
+                    },
+                  ],
+                },
+              },
+              {
+                "@type": "FAQPage",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "How long does epoxy garage flooring last?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "With professional installation and proper maintenance, epoxy flooring typically lasts 10 to 20 years or longer, depending on traffic and usage patterns.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Is polyaspartic better than epoxy?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Polyaspartic coatings cure faster, resist UV discoloration entirely, and perform exceptionally well in varying temperatures. Epoxy remains an excellent option for many residential garages due to its thickness, impact durability, and cost-effectiveness.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Which garage floor coating is best for New Jersey winters?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Polyaspartic and high-quality epoxy systems both provide excellent resistance to road salt, heavy winter moisture tracking, and local freeze-thaw subfloor conditions when professionally installed.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Can epoxy flooring be installed over old concrete?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes. Existing, aged concrete can absolutely be coated successfully after performing proper surface grinding, industrial patch-work preparation, and explicit crack repairs.",
+                    },
+                  },
+                ],
+              },
             ],
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "Garage Flooring Services",
-              itemListElement: [
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Garage Floor Coating",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Garage Epoxy Flooring",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Garage Floor Repair",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Garage Floor Resurfacing",
-                  },
-                },
-              ],
-            },
           }),
         }}
       />

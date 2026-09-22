@@ -33,15 +33,26 @@ const CTASection = () => {
         </p>
 
         {/* CTA */}
-        <Link href="/contact">
-          <Button
-            size="lg"
-            className="bg-primary h-auto whitespace-normal px-6 py-3 text-center text-base font-sans leading-snug text-primary-foreground hover:bg-copper-light md:px-10 md:py-4 cursor-pointer"
-          >
-            Get a Free Quote
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-        </Link>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Link href="/contact">
+            <Button
+              size="lg"
+              className="w-full sm:w-auto bg-primary h-auto whitespace-normal px-6 py-3 text-center text-base font-sans leading-snug text-primary-foreground hover:bg-copper-light md:px-10 md:py-4 cursor-pointer"
+            >
+              Get a Free Quote
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
+          <a href="tel:+12013152633">
+            <Button
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto border-primary/40 bg-primary/10 h-auto whitespace-normal px-6 py-3 text-center text-base font-sans leading-snug text-white hover:bg-primary/20 md:px-10 md:py-4 cursor-pointer"
+            >
+              Call (201) 315-2633
+            </Button>
+          </a>
+        </div>
         {/* New paragraph added after existing content */}
         <h3 className="font-serif text-xl  font-bold text-[#efece7] md:text-4xl pt-8 md:pt-8">Premium Epoxy Flooring & Decorative Concrete in NJ & NYC </h3>
         <h3 className="mb-6 font-serif text-xl  font-bold text-[#efece7] md:text-3xl">– Serving Wayne, Newark, Paterson, Jersey City & Bergen County</h3>

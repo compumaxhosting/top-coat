@@ -3,6 +3,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useEffect, useState } from "react";
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const stats = [
   { label: "Years of Epoxy & Concrete Experience", value: 20, suffix: "+" },
@@ -131,9 +132,9 @@ const ExperienceSection = () => {
 
           <p className="text-white font-semibold">
             Ready to upgrade your surface?{" "}
-            <span className="text-primary cursor-pointer">
-              Request a Free Estimate Today
-            </span>
+            <Link href="/contact" className="text-primary hover:underline transition-colors">
+              Request a Free Estimate Today &rarr;
+            </Link>
           </p>
         </div>
 
