@@ -10,6 +10,16 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "building-facade-restoration-cost-new-jersey-2026",
+    title: "How Much Does Building Facade Restoration Cost in New Jersey in 2026?",
+    excerpt:
+      "Learn how much building facade restoration costs in New Jersey in 2026, including masonry repairs, waterproofing, access, structural repairs, and major cost factors.",
+    image: "/Images/building-facade-restoration-new-jersey.webp",
+    category: "Building Facade Restoration",
+    date: "29 September 2026",
+    readTime: "10 min read",
+  },
+  {
     slug: "terrazzo-flooring-contractors-new-jersey",
     title:
       "Looking for Terrazzo Flooring Contractors in New Jersey? Here’s What You Need to Know",
