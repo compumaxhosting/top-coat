@@ -109,7 +109,7 @@ export default function BlogPostContent() {
             </p>
 
             <div className="mt-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
-              <div className="relative h-72 w-full md:h-[450px]">
+              <div className="relative h-72 w-full md:h-112.5">
                 <Image
                   src="/Images/building-facade-restoration-new-jersey.webp"
                   alt="Building facade restoration in New Jersey"
@@ -252,31 +252,31 @@ export default function BlogPostContent() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-white/5 text-white/80">
-                    <tr className="hover:bg-white/[0.02]">
+                    <tr className="hover:bg-white/2">
                       <td className="py-4 px-6">Minor localized repairs</td>
                       <td className="py-4 px-6 font-medium text-emerald-400">Lower</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02]">
+                    <tr className="hover:bg-white/2">
                       <td className="py-4 px-6">Repointing and brick replacement</td>
                       <td className="py-4 px-6 font-medium text-yellow-400">Moderate</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02]">
+                    <tr className="hover:bg-white/2">
                       <td className="py-4 px-6">Concrete spall and structural repairs</td>
                       <td className="py-4 px-6 font-medium text-amber-400">Moderate to high</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02]">
+                    <tr className="hover:bg-white/2">
                       <td className="py-4 px-6">Extensive waterproofing</td>
                       <td className="py-4 px-6 font-medium text-amber-400">Moderate to high</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02]">
+                    <tr className="hover:bg-white/2">
                       <td className="py-4 px-6">Large-scale masonry restoration</td>
                       <td className="py-4 px-6 font-medium text-orange-400">High</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02]">
+                    <tr className="hover:bg-white/2">
                       <td className="py-4 px-6">High-rise or difficult-access restoration</td>
                       <td className="py-4 px-6 font-medium text-orange-400">High</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02]">
+                    <tr className="hover:bg-white/2">
                       <td className="py-4 px-6">Historic or highly detailed facade</td>
                       <td className="py-4 px-6 font-medium text-rose-400">High to very high</td>
                     </tr>
@@ -444,7 +444,7 @@ export default function BlogPostContent() {
             </div>
 
             {/* CTA CARD */}
-            <div className="mt-8 rounded-2xl border border-primary/40 bg-gradient-to-r from-[#171b22] to-[#101216] p-6 md:p-8 shadow-xl">
+            <div className="mt-8 rounded-2xl border border-primary/40 bg-linear-to-r from-[#171b22] to-[#101216] p-6 md:p-8 shadow-xl">
               <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
                   <h3 className="font-serif text-2xl font-bold text-white mb-2">

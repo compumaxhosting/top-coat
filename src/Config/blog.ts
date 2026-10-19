@@ -10,6 +10,16 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "choose-best-garage-floor-coating-contractors-2026",
+    title: "How to Choose the Best Garage Floor Coating Contractors in 2026",
+    excerpt:
+      "Learn how to choose the best garage floor coating contractors in Wayne, NJ, and nearby areas. Compare coatings, costs, warranties, and installation quality.",
+    image: "/Images/garage-floor-coating-2026.webp",
+    category: "Garage Floor Coating",
+    date: "19 October 2026",
+    readTime: "8 min read",
+  },
+  {
     slug: "building-facade-restoration-cost-new-jersey-2026",
     title: "How Much Does Building Facade Restoration Cost in New Jersey in 2026?",
     excerpt:
