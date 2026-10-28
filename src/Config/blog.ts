@@ -10,6 +10,16 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "epoxy-garage-flooring-cost-new-jersey-2027",
+    title: "How Much Does Epoxy Garage Flooring Cost in New Jersey in 2027?",
+    excerpt:
+      "Discover epoxy garage flooring costs in New Jersey for 2027, including installation prices, cost factors, coating options, and expert tips.",
+    image: "/Images/epoxy-garage-flooring-new-jersey.webp",
+    category: "Epoxy Flooring",
+    date: "28 October 2026",
+    readTime: "9 min read",
+  },
+  {
     slug: "choose-best-garage-floor-coating-contractors-2026",
     title: "How to Choose the Best Garage Floor Coating Contractors in 2026",
     excerpt:
