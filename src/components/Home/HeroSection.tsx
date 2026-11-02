@@ -9,9 +9,10 @@ const HeroSection = () => (
     <div className="absolute inset-0 -z-10">
       <Image
         src="/Images/Hero-section.webp"
-        alt="Epoxy Flooring & Decorative Concrete in New Jersey"
+        alt="Epoxy Flooring &amp; Decorative Concrete in New Jersey"
         fill
         priority
+        fetchPriority="high"
         quality={55}
         sizes="100vw"
         className="object-cover"
@@ -27,15 +28,16 @@ const HeroSection = () => (
       <div className="mx-auto max-w-5xl">
         {/* Top Tagline */}
         <p className="py-6 text-sm uppercase tracking-[0.3em] text-white/90">
-          New Jersey Epoxy Flooring & Decorative Concrete Contractors
+          New Jersey Epoxy Flooring &amp; Decorative Concrete Contractors
         </p>
 
-        {/* Main Heading */}
-        <h1 className="mb-6 text-4xl font-bold leading-[1.08] text-amber-300 md:text-5xl lg:text-6xl">
-          Epoxy Flooring & Decorative Concrete
-          <br />
-          <span className="text-white text-3xl md:text-4xl lg:text-5xl">
-            Experts in New Jersey
+        {/* ✅ Single H1 – correct wording, proper spacing, no <br /> */}
+        <h1 className="mb-6 font-bold leading-tight text-white">
+          <span className="block text-amber-300 text-4xl md:text-5xl lg:text-6xl">
+            Professional Epoxy Flooring &amp; Decorative Concrete
+          </span>
+          <span className="block text-white text-3xl md:text-4xl lg:text-5xl mt-2">
+            in New Jersey
           </span>
         </h1>
 

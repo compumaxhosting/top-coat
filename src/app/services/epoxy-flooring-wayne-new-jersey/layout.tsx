@@ -177,6 +177,30 @@ export default function ServicesLayout({
                   },
                 ],
               },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.topcoat-llc.com/services/epoxy-flooring-wayne-new-jersey#breadcrumb",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: "https://www.topcoat-llc.com/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Services",
+                    item: "https://www.topcoat-llc.com/services",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Epoxy Flooring Wayne NJ",
+                    item: "https://www.topcoat-llc.com/services/epoxy-flooring-wayne-new-jersey",
+                  },
+                ],
+              },
             ],
           }),
         }}

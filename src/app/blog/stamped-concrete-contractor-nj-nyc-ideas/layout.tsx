@@ -70,6 +70,21 @@ export default function StampedConcreteBlogLayout({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "@id": "https://www.topcoat-llc.com/blog/stamped-concrete-contractor-nj-nyc-ideas/#breadcrumb",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.topcoat-llc.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.topcoat-llc.com/blog/" },
+              { "@type": "ListItem", "position": 3, "name": "Stamped Concrete Contractor NJ NYC Ideas", "item": "https://www.topcoat-llc.com/blog/stamped-concrete-contractor-nj-nyc-ideas" },
+            ],
+          }),
+        }}
+      />
       {children}
     </>
   );

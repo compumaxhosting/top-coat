@@ -129,9 +129,9 @@ const schemaData = {
     },
   },
 
-  datePublished: "",
+  datePublished: "2026-07-15",
 
-  dateModified: "",
+  dateModified: "2026-07-15",
 
   inLanguage: "en-US",
 
@@ -164,6 +164,36 @@ export default function BlogLayout({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(schemaData),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "@id": "https://www.topcoat-llc.com/blog/epoxy-flooring-benefits-for-homes-businesses/#breadcrumb",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.topcoat-llc.com/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Blog",
+                item: "https://www.topcoat-llc.com/blog",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "Epoxy Flooring Benefits for Homes & Businesses",
+                item: "https://www.topcoat-llc.com/blog/epoxy-flooring-benefits-for-homes-businesses",
+              },
+            ],
+          }),
         }}
       />
       <main>{children}</main>

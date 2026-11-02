@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "energy efficient facades",
     "exterior cladding New Jersey",
   ],
-  authors: [{ name: "Topcoat LLC" }],
+  authors: [{ name: "TopCoat Artistry LLC" }],
   robots: {
     index: true,
     follow: true,
@@ -37,12 +37,12 @@ export const metadata: Metadata = {
     title: "Building Facade Solutions NJ",
   },
   openGraph: {
-    type: "website",
+    type: "article",
     title: "Building Facade Solutions in New Jersey",
     description:
       "Professional building facade solutions in New Jersey. Improve durability, energy efficiency, design, and curb appeal with expert exterior services.",
     url: "https://www.topcoat-llc.com/blog/building-facade-solutions-in-new-jersey",
-    siteName: "Topcoat LLC",
+    siteName: "TopCoat Artistry LLC",
     images: [
       {
         url: "https://www.topcoat-llc.com/Images/building-facade-blog.webp",
@@ -66,39 +66,83 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-	themeColor: "#ffffff",
+  themeColor: "#ffffff",
 };
 
 const schemaData = {
-	"@context": "https://schema.org",
-	"@type": "HomeAndConstructionBusiness",
-	name: "Topcoat LLC",
-	url: "https://www.topcoat-llc.com/blog/building-facade-solutions-in-new-jersey",
-	telephone: "+12013152633",
-	email: "Almahairi@gmail.com",
-	address: {
-		"@type": "PostalAddress",
-		streetAddress: "108 Fairfield Rd",
-		addressLocality: "Wayne",
-		addressRegion: "NJ",
-		postalCode: "07470",
-		addressCountry: "US",
-	},
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.topcoat-llc.com/blog/building-facade-solutions-in-new-jersey/#blogposting",
+      headline: "Building Facade Solutions in New Jersey",
+      description:
+        "Professional building facade solutions in New Jersey. Improve durability, energy efficiency, design, and curb appeal with expert exterior services.",
+      url: "https://www.topcoat-llc.com/blog/building-facade-solutions-in-new-jersey",
+      image: "https://www.topcoat-llc.com/Images/building-facade-blog.webp",
+      author: {
+        "@type": "Organization",
+        "@id": "https://www.topcoat-llc.com/#organization",
+        name: "TopCoat Artistry LLC",
+        url: "https://www.topcoat-llc.com/",
+      },
+      publisher: {
+        "@type": "Organization",
+        "@id": "https://www.topcoat-llc.com/#organization",
+        name: "TopCoat Artistry LLC",
+        url: "https://www.topcoat-llc.com/",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://www.topcoat-llc.com/Images/TopCoat-white-logo.webp",
+        },
+      },
+      datePublished: "2026-06-10",
+      dateModified: "2026-06-10",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://www.topcoat-llc.com/blog/building-facade-solutions-in-new-jersey",
+      },
+      inLanguage: "en-US",
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.topcoat-llc.com/blog/building-facade-solutions-in-new-jersey/#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.topcoat-llc.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: "https://www.topcoat-llc.com/blog",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Building Facade Solutions in New Jersey",
+          item: "https://www.topcoat-llc.com/blog/building-facade-solutions-in-new-jersey",
+        },
+      ],
+    },
+  ],
 };
 
 export default function BuildingFacadeBlogLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return (
-		<>
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-			/>
-			<main>{children}</main>
-		</>
-	);
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      <main>{children}</main>
+    </>
+  );
 }
-

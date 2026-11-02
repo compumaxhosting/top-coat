@@ -16,16 +16,17 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+// ✅ Root layout metadata – overridden by individual page metadata exports
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.topcoat-llc.com"),
 
   title: {
-    default: "Epoxy Flooring & Decorative Concrete NJ | TopCoat Artistry LLC",
+    default: "Epoxy Flooring NJ | TopCoat Artistry LLC",
     template: "%s | TopCoat Artistry LLC",
   },
 
   description:
-    "TopCoat Artistry LLC provides expert epoxy flooring and decorative concrete in Wayne, Newark, and Jersey City, NJ. 20+ years of high-end garage coatings and terrazzo.",
+    "TopCoat Artistry LLC offers expert epoxy flooring and decorative concrete in New Jersey. Custom garage floors, commercial coatings and terrazzo.",
 
   keywords: [
     "Epoxy Flooring NJ",
@@ -41,16 +42,16 @@ export const metadata: Metadata = {
   publisher: "TopCoat Artistry LLC",
 
   alternates: {
-    canonical: "/",
+    canonical: "https://www.topcoat-llc.com/",
   },
 
   openGraph: {
     type: "website",
     url: "https://www.topcoat-llc.com/",
     siteName: "TopCoat Artistry LLC",
-    title: "Premium Epoxy Flooring & Decorative Concrete in New Jersey",
+    title: "Epoxy Flooring NJ | TopCoat Artistry LLC",
     description:
-      "Transform your surfaces with TopCoat Artistry LLC. High-end epoxy, terrazzo, and stamped concrete across Newark, Wayne, and Jersey City.",
+      "Discover professional epoxy flooring, decorative concrete, garage floor coatings, commercial flooring, and terrazzo solutions from TopCoat Artistry LLC in New Jersey.",
     images: [
       {
         url: "/Images/hero-epoxy.webp",
@@ -64,9 +65,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "TopCoat Artistry LLC | NJ Concrete & Epoxy Experts",
+    title: "Epoxy Flooring NJ | TopCoat Artistry LLC",
     description:
-      "20+ years of durable, high-end concrete finishes in North Jersey. Get a free estimate today.",
+      "Discover professional epoxy flooring, decorative concrete, garage floor coatings, commercial flooring, and terrazzo solutions from TopCoat Artistry LLC in New Jersey.",
     images: ["/Images/hero-epoxy.webp"],
   },
 
@@ -79,10 +80,73 @@ export const metadata: Metadata = {
     google: "lpZ_-TCT1nbuvHSDi3FaXuvWw0OM5RVxYz1o15FH8tU",
   },
 
-  // ✅ Pinterest Verification Added
+  // ✅ Pinterest Verification
   other: {
     "p:domain_verify": "596afcb1388c302e37d8afe7bbce01f0",
   },
+};
+
+// ✅ Improved GeneralContractor + HomeAndConstructionBusiness schema
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["GeneralContractor", "HomeAndConstructionBusiness"],
+  "@id": "https://www.topcoat-llc.com/#business",
+  name: "TopCoat Artistry LLC",
+  image: "https://www.topcoat-llc.com/Images/TopCoat-white-logo.webp",
+  url: "https://www.topcoat-llc.com/",
+  telephone: "+1-201-315-2633",
+  email: "Almahairi@gmail.com",
+  priceRange: "$$",
+  description:
+    "Professional epoxy flooring, decorative concrete, terrazzo, and building facade contractor in New Jersey.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "86 Lackawanna Ave, Suite 215",
+    addressLocality: "Woodland Park",
+    addressRegion: "NJ",
+    postalCode: "07424",
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "40.8876",
+    longitude: "-74.2574",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "07:00",
+      closes: "18:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Saturday"],
+      opens: "08:00",
+      closes: "14:00",
+    },
+  ],
+  areaServed: [
+    { "@type": "City", name: "Wayne" },
+    { "@type": "City", name: "Woodland Park" },
+    { "@type": "City", name: "Newark" },
+    { "@type": "City", name: "Paterson" },
+    { "@type": "City", name: "Jersey City" },
+    { "@type": "City", name: "Clifton" },
+    { "@type": "City", name: "Hoboken" },
+    { "@type": "AdministrativeArea", name: "Passaic County" },
+    { "@type": "AdministrativeArea", name: "Bergen County" },
+    { "@type": "AdministrativeArea", name: "Essex County" },
+    { "@type": "AdministrativeArea", name: "Morris County" },
+    { "@type": "City", name: "New York City" },
+  ],
+  hasMap: "https://maps.app.goo.gl/kAzRomcnvKNRFmjK8",
+  sameAs: [
+    "https://www.facebook.com/topcoatllc.net/",
+    "https://www.instagram.com/top.coat.artistry",
+    "https://www.tiktok.com/@top.coat.artistry",
+    "https://x.com/TopCoatnj",
+  ],
 };
 
 export default function RootLayout({
@@ -105,7 +169,6 @@ export default function RootLayout({
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
 
-        {/* Google Analytics */}
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="lazyOnload">
           {`
@@ -119,6 +182,7 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-TWZ7246B');
           `}
         </Script>
+
         {/* ✅ Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-B9B54X856E"
@@ -130,70 +194,19 @@ export default function RootLayout({
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-B9B54X856E');
   `}
         </Script>
-        {/* SCHEMA */}
+
+        {/* ✅ Improved GeneralContractor + HomeAndConstructionBusiness schema */}
         <Script
-          id="schema"
+          id="local-business-schema"
           type="application/ld+json"
           strategy="afterInteractive"
-        >
-          {`
-          {
-            "@context": "https://schema.org",
-            "@type": ["GeneralContractor", "HomeAndConstructionBusiness"],
-            "name": "TopCoat Artistry LLC",
-            "image": "https://www.topcoat-llc.com/Images/TopCoat-white-logo.webp",
-            "url": "https://www.topcoat-llc.com/",
-            "telephone": "+1-201-315-2633",
-            "priceRange": "$$",
-            "description": "Leading epoxy flooring, decorative concrete, terrazzo, and building facade contractor in New Jersey with 20+ years experience.",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "86 Lackawanna Ave, Suite 215",
-              "addressLocality": "Woodland Park",
-              "addressRegion": "NJ",
-              "postalCode": "07424",
-              "addressCountry": "US"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": "40.8876",
-              "longitude": "-74.2574"
-            },
-            "openingHoursSpecification": [
-              {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-                "opens": "07:00",
-                "closes": "18:00"
-              },
-              {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Saturday"],
-                "opens": "08:00",
-                "closes": "14:00"
-              }
-            ],
-            "areaServed": [
-              { "@type": "City", "name": "Wayne" },
-              { "@type": "City", "name": "Woodland Park" },
-              { "@type": "City", "name": "Newark" },
-              { "@type": "City", "name": "Paterson" },
-              { "@type": "City", "name": "Jersey City" },
-              { "@type": "City", "name": "Clifton" },
-              { "@type": "City", "name": "Hoboken" },
-              { "@type": "AdministrativeArea", "name": "Passaic County" },
-              { "@type": "AdministrativeArea", "name": "Bergen County" },
-              { "@type": "AdministrativeArea", "name": "Essex County" },
-              { "@type": "AdministrativeArea", "name": "Morris County" },
-              { "@type": "City", "name": "New York City" }
-            ]
-          }
-          `}
-        </Script>
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
       </head>
 
       <body className="font-sans antialiased bg-background text-foreground">

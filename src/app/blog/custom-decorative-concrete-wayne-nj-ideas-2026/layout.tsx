@@ -109,6 +109,36 @@ export default function BlogLayout({
                     __html: JSON.stringify(schemaData),
                 }}
             />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "@id": "https://www.topcoat-llc.com/blog/custom-decorative-concrete-wayne-nj-ideas-2026/#breadcrumb",
+                        itemListElement: [
+                            {
+                                "@type": "ListItem",
+                                position: 1,
+                                name: "Home",
+                                item: "https://www.topcoat-llc.com/",
+                            },
+                            {
+                                "@type": "ListItem",
+                                position: 2,
+                                name: "Blog",
+                                item: "https://www.topcoat-llc.com/blog",
+                            },
+                            {
+                                "@type": "ListItem",
+                                position: 3,
+                                name: "Custom Decorative Concrete Wayne NJ: 10 Stunning Ideas",
+                                item: "https://www.topcoat-llc.com/blog/custom-decorative-concrete-wayne-nj-ideas-2026",
+                            },
+                        ],
+                    }),
+                }}
+            />
             {children}
         </>
     );

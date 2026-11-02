@@ -153,6 +153,36 @@ export default function StampedConcreteLayout({
         }}
       />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "@id": "https://www.topcoat-llc.com/services/stamped-concrete-contractors-wayne-nj#breadcrumb",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.topcoat-llc.com/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Services",
+                item: "https://www.topcoat-llc.com/services",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "Stamped Concrete Contractors Wayne NJ",
+                item: "https://www.topcoat-llc.com/services/stamped-concrete-contractors-wayne-nj",
+              },
+            ],
+          }),
+        }}
+      />
       {children}
     </>
   );

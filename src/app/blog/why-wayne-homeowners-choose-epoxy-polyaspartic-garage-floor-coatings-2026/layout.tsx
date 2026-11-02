@@ -175,7 +175,37 @@ export default function GarageFloorCoatingsBlogLayout({
           __html: JSON.stringify(schemaData),
         }}
       />
-      <main>{children}</main>
+      <main>      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "@id": "https://www.topcoat-llc.com/blog/why-wayne-homeowners-choose-epoxy-polyaspartic-garage-floor-coatings-2026/#breadcrumb",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.topcoat-llc.com/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Blog",
+                item: "https://www.topcoat-llc.com/blog",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "Why Wayne Homeowners Choose Epoxy Polyaspartic Garage Floor Coatings 2026",
+                item: "https://www.topcoat-llc.com/blog/why-wayne-homeowners-choose-epoxy-polyaspartic-garage-floor-coatings-2026",
+              },
+            ],
+          }),
+        }}
+      />
+{children}</main>
     </>
   );
 }

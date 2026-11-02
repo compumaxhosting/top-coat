@@ -8,8 +8,10 @@ export default function TerrazzoContractorsBlogPage() {
   return (
     <div className="bg-[#17191E]">
       <Navbar />
-      <BlogBreadcrumbs title="Terrazzo Flooring Contractors in New Jersey" />
-      <BlogPostContent />
+      <main>
+        <BlogBreadcrumbs title="Terrazzo Flooring Contractors in New Jersey" />
+        <BlogPostContent />
+      </main>
       <Footer />
       <BackToTop />
     </div>

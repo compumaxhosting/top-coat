@@ -17,16 +17,16 @@ type Service = {
 
 const services: Service[] = [
   {
-    title: "Epoxy Flooring NJ",
-    desc: "High-performance epoxy flooring systems in New Jersey for commercial, industrial, and residential spaces. Durable, chemical-resistant, and built to last.",
+    title: "Epoxy Flooring",
+    desc: "Epoxy flooring provides a durable, seamless surface for residential and commercial environments. It offers a clean, attractive finish and can help protect properly prepared concrete against everyday wear, stains, and surface damage. Different colors, finishes, and decorative options allow property owners to create flooring that suits their space.",
     image: "/Images/Service-Epoxy-Flooring.webp",
     path: "/services/epoxy-flooring-wayne-new-jersey",
     alt: "Epoxy flooring contractor in New Jersey installing commercial epoxy floor coating",
     animationDelayClass: "delay-0",
   },
   {
-    title: "Terrazzo Flooring Installation",
-    desc: "Luxury terrazzo flooring installation in NJ for corporate lobbies, hotels, and high-end interiors with timeless durability and elegance.",
+    title: "Terrazzo Flooring",
+    desc: "Terrazzo flooring is a decorative flooring option known for its distinctive appearance and design flexibility. It can incorporate different aggregates, colors, and finishes to create unique surfaces for residential and commercial spaces. Terrazzo offers an elegant appearance and can be suitable for projects where aesthetics and long-term performance are important.",
     image: "/Images/terrazzo.webp",
     path: "/services/terrazzo-flooring-contractors-wayne-nj",
     alt: "Terrazzo flooring installation in New Jersey commercial building lobby",
@@ -41,24 +41,24 @@ const services: Service[] = [
     animationDelayClass: "delay-200",
   },
   {
-    title: "Garage Floor Epoxy Coatings",
-    desc: "Garage epoxy flooring in NJ with anti-slip coatings, decorative flakes, and high durability for residential and commercial garages.",
+    title: "Garage Floor Coatings",
+    desc: "Upgrade your garage with a professionally installed floor coating designed to improve the appearance and usability of your concrete floor. Garage floor coatings can provide a more attractive, easier-to-clean surface while helping protect concrete from common garage-related wear, dirt, and stains.",
     image: "/Images/garage-floor.webp",
     path: "/services/garage-floor-coating-contractors-in-wayne-nj",
     alt: "Garage epoxy flooring coating with flakes in New Jersey residential garage",
     animationDelayClass: "delay-300",
   },
   {
-    title: "Stamped Concrete Patios & Driveways",
-    desc: "Stamped concrete in New Jersey for patios, walkways, and driveways designed to replicate stone, brick, and tile finishes.",
+    title: "Decorative Concrete",
+    desc: "Decorative concrete transforms ordinary concrete surfaces into attractive design features. Depending on the project, options may include stamped patterns, decorative finishes, colors, and textures. These solutions are suitable for outdoor living areas, walkways, patios, and other concrete surfaces.",
     image: "/Images/Lawn.webp",
     path: "/services/stamped-concrete-contractors-wayne-nj",
     alt: "Stamped concrete patio design in New Jersey backyard with natural stone pattern",
     animationDelayClass: "delay-500",
   },
   {
-    title: "Custom Decorative Concrete",
-    desc: "Bespoke decorative concrete solutions in NJ including overlays, resurfacing, and artistic finishes tailored to your vision.",
+    title: "Commercial Floor Coatings",
+    desc: "Commercial floor coatings offer practical flooring solutions for businesses and commercial properties. The right coating system depends on the facility's traffic, operational requirements, surface condition, and maintenance needs. Professionally installed coatings can help create functional and attractive flooring.",
     image: "/Images/custom-concrete2.webp",
     path: "/services/custom-decorative-concrete-contractors-wayne-nj",
     alt: "Custom decorative concrete surface finish in New Jersey with artistic texture",
@@ -78,9 +78,12 @@ const ServicesSection = () => {
             Our Services
           </p>
 
-          {/* 🔥 SEO H2 */}
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white/90">
-            Epoxy Flooring & Decorative Concrete Services{" "}
+          {/* ✅ SEO H2 */}
+          <h2
+            id="flooring-services"
+            className="text-3xl md:text-4xl font-serif font-bold text-white/90"
+          >
+            Epoxy Flooring &amp; Decorative Concrete Services{" "}
             <span className="text-gradient-copper">in New Jersey</span>
           </h2>
         </div>
@@ -111,11 +114,11 @@ const ServicesSection = () => {
               />
 
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h2 className="text-xl font-serif font-bold text-white/90 mb-2">
+                <h3 className="text-xl font-serif font-bold text-white/90 mb-2">
                   {service.title}
-                </h2>
+                </h3>
 
-                <p className="text-muted-foreground text-sm font-sans mb-4 line-clamp-2">
+                <p className="text-muted-foreground text-sm font-sans mb-4 line-clamp-3">
                   {service.desc}
                 </p>
 

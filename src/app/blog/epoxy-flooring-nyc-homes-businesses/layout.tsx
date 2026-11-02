@@ -83,6 +83,36 @@ export default function EpoxyFlooringNYCBlogLayout({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "@id": "https://www.topcoat-llc.com/blog/epoxy-flooring-nyc-homes-businesses/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.topcoat-llc.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://www.topcoat-llc.com/blog/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Epoxy Flooring for NYC Homes & Businesses",
+                "item": "https://www.topcoat-llc.com/blog/epoxy-flooring-nyc-homes-businesses"
+              }
+            ]
+          }),
+        }}
+      />
       {children}
     </>
   );

@@ -161,6 +161,30 @@ export default function ServicesLayout({
                   },
                 ],
               },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.topcoat-llc.com/services/building-facade-contractors-wayne-nj#breadcrumb",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: "https://www.topcoat-llc.com/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Services",
+                    item: "https://www.topcoat-llc.com/services",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Building Facade Contractors Wayne NJ",
+                    item: "https://www.topcoat-llc.com/services/building-facade-contractors-wayne-nj",
+                  },
+                ],
+              },
             ],
           }),
         }}

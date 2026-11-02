@@ -1,24 +1,8 @@
 "use client";
 
 import Image from "next/image";
-// import {
-//   CalendarCheck,
-//   Clock,
-//   DollarSign,
-//   HeadphonesIcon,
-//   Users,
-// } from "lucide-react";
-
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Link from "next/link";
-
-// const highlights = [
-//   { icon: Clock, text: "20+ Years Experience" },
-//   { icon: Users, text: "Skilled Professional Team" },
-//   { icon: DollarSign, text: "Competitive Pricing" },
-//   { icon: CalendarCheck, text: "On-Time Delivery" },
-//   { icon: HeadphonesIcon, text: "Professional Aftersales" },
-// ];
 
 const AboutSection = () => {
   const { ref, isVisible } = useScrollAnimation<HTMLElement>();
@@ -29,10 +13,11 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 items-center gap-6 md:gap-16 lg:grid-cols-2">
           {/* IMAGE */}
           <div
-            className={`relative order-2 lg:order-1 transition-all duration-1000 ${isVisible
+            className={`relative order-2 lg:order-1 transition-all duration-1000 ${
+              isVisible
                 ? "translate-x-0 opacity-100"
                 : "-translate-x-10 opacity-0"
-              }`}
+            }`}
           >
             <div className="relative overflow-hidden rounded-lg">
               <Image
@@ -41,6 +26,7 @@ const AboutSection = () => {
                 width={900}
                 height={1000}
                 quality={60}
+                loading="lazy"
                 className="h-125 w-full object-cover"
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/65 via-black/25 to-transparent" />
@@ -50,65 +36,99 @@ const AboutSection = () => {
 
           {/* CONTENT */}
           <div
-            className={`order-1 lg:order-2 transition-all delay-200 duration-1000 ${isVisible
+            className={`order-1 lg:order-2 transition-all delay-200 duration-1000 ${
+              isVisible
                 ? "translate-x-0 opacity-100"
                 : "translate-x-10 opacity-0"
-              }`}
+            }`}
           >
             <p className="mb-3 text-sm font-sans uppercase tracking-[0.3em] text-primary">
               About TopCoat Artistry LLC
             </p>
 
-            {/* 🔥 SEO H2 */}
-            <h2 className="mb-6 font-serif text-4xl font-bold text-white/90 md:text-5xl">
-              Premium Epoxy Flooring & Decorative Concrete{" "}
-              <span className="text-gradient-copper"> in New Jersey</span>
+            {/* ✅ SEO H2 */}
+            <h2
+              id="about-topcoat"
+              className="mb-6 font-serif text-4xl font-bold text-white/90 md:text-5xl"
+            >
+              About TopCoat Artistry LLC
             </h2>
 
-            {/* SEO CONTENT */}
+            {/* ✅ Updated SEO content */}
             <p className="mb-4 font-sans leading-relaxed text-white/70">
-              TopCoat Artistry LLC is New Jersey’s premier contractor for high-end surface transformations. With over 20 years of expertise, we deliver durable, artistic concrete solutions for residential and commercial properties. From industrial-grade garage coatings to elegant interior terrazzo, we turn functional surfaces into masterpieces.
+              TopCoat Artistry LLC provides professional epoxy flooring and
+              decorative concrete solutions for residential and commercial
+              properties throughout New Jersey. We focus on creating attractive,
+              durable, and functional flooring surfaces that complement each
+              property&apos;s design and everyday requirements.
             </p>
-            <h3 className="mb-6 font-serif text-2xl font-bold text-white/90 md:text-3xl">Professional Surfacing & Masonry Services</h3>
+
+            <p className="mb-4 font-sans leading-relaxed text-white/70">
+              From custom garage floor coatings to commercial flooring systems
+              and decorative concrete finishes, our team offers flooring
+              solutions designed around different spaces, surface conditions, and
+              aesthetic preferences.
+            </p>
+
+            <p className="mb-4 font-sans leading-relaxed text-white/70">
+              Whether you are upgrading your garage, improving a commercial
+              facility, or looking for a distinctive decorative flooring finish,
+              TopCoat Artistry LLC can help you explore suitable options for
+              your project.
+            </p>
 
             <p className="mb-8 font-sans leading-relaxed text-white/70">
-              We solve common flooring issues—like cracking, moisture damage, and wear—using premium materials engineered for the Northeast climate.
+              Our goal is to deliver quality workmanship, attention to detail,
+              and flooring solutions that combine appearance, durability, and
+              practical performance.
             </p>
+
+            <h3 className="mb-4 font-serif text-2xl font-bold text-white/90 md:text-3xl">
+              Professional Surfacing &amp; Masonry Services
+            </h3>
+
             <ul className="mb-8 list-disc space-y-2 pl-5 text-white/70">
               <li>
-                <strong><Link href="/services/epoxy-flooring-wayne-new-jersey">
-                Epoxy Flooring & Garage Coatings</Link>:</strong> High-performance,
-                slip-resistant finishes for Newark garages and industrial basements.
+                <strong>
+                  <Link href="/services/epoxy-flooring-wayne-new-jersey">
+                    Epoxy Flooring &amp; Garage Coatings
+                  </Link>
+                  :
+                </strong>{" "}
+                High-performance, slip-resistant finishes for Newark garages and
+                industrial basements.
               </li>
               <li>
-                <strong><Link href="/services/stamped-concrete-contractors-wayne-nj">
-                Decorative Stamped Concrete</Link>:</strong> Elegant patterns for patios
-                and walkways that mimic stone or brick.
+                <strong>
+                  <Link href="/services/stamped-concrete-contractors-wayne-nj">
+                    Decorative Stamped Concrete
+                  </Link>
+                  :
+                </strong>{" "}
+                Elegant patterns for patios and walkways that mimic stone or
+                brick.
               </li>
               <li>
-                <strong><Link href="/services/terrazzo-flooring-contractors-wayne-nj">
-                Terrazzo & Custom Concrete</Link>:</strong> Seamless, high-end interior
-                flooring for modern homes and retail spaces.
+                <strong>
+                  <Link href="/services/terrazzo-flooring-contractors-wayne-nj">
+                    Terrazzo &amp; Custom Concrete
+                  </Link>
+                  :
+                </strong>{" "}
+                Seamless, high-end interior flooring for modern homes and retail
+                spaces.
               </li>
               <li>
-                <strong><Link href="/services/building-facade-contractors-wayne-nj">
-                Building Facades</Link>:</strong> Expert masonry restoration to enhance
-                curb appeal and structural integrity.
+                <strong>
+                  <Link href="/services/building-facade-contractors-wayne-nj">
+                    Building Facades
+                  </Link>
+                  :
+                </strong>{" "}
+                Expert masonry restoration to enhance curb appeal and structural
+                integrity.
               </li>
             </ul>
-
-            {/* HIGHLIGHTS */}
-            {/* <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {highlights.map(({ icon: Icon, text }) => (
-                <div
-                  key={text}
-                  className="flex items-center gap-3 rounded-lg border border-primary/40 bg-[#14161A] p-3"
-                >
-                  <Icon className="h-5 w-5 shrink-0 text-primary" />
-                  <span className="text-sm font-sans text-white">{text}</span>
-                </div>
-              ))}
-            </div> */}
           </div>
         </div>
       </div>
