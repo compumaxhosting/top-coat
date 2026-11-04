@@ -10,6 +10,18 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "terrazzo-floor-restoration-vs-replacement",
+    title:
+      "Terrazzo Floor Restoration vs. Replacement: Which Is the Better Option?",
+    excerpt:
+      "Compare terrazzo floor restoration vs. replacement in Wayne, NJ. Discover costs, benefits, and expert solutions for restoring or replacing terrazzo floors.",
+    image:
+      "/Images/terrazzo-floor-restoration-vs-replacement-nj.webp",
+    category: "Terrazzo Flooring",
+    date: "4 November 2026",
+    readTime: "9 min read",
+  },
+  {
     slug: "epoxy-garage-flooring-cost-new-jersey-2027",
     title: "How Much Does Epoxy Garage Flooring Cost in New Jersey in 2027?",
     excerpt:
