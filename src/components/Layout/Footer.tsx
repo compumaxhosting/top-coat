@@ -61,7 +61,7 @@ const Footer = () => (
           <p className="mt-2 text-[#818898] text-xs leading-relaxed">
             New Jersey Home Improvement Contractor Registration
             <br />
-            Registration Number: 13VH1042890
+            Registration Number: 13VH13600400
           </p>
         </div>
 
