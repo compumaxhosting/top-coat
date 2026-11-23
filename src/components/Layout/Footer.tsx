@@ -58,6 +58,11 @@ const Footer = () => (
           <p className="text-primary italic font-serif text-sm">
             &quot; If&nbsp;You Can Imagine It, We Can Build It. &quot;
           </p>
+          <p className="mt-2 text-[#818898] text-xs leading-relaxed">
+            New Jersey Home Improvement Contractor Registration
+            <br />
+            Registration Number: 13VH1042890
+          </p>
         </div>
 
         {/* SERVICES */}
